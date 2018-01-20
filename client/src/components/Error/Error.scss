@@ -1,0 +1,10 @@
+@import "../../stylesheets/settings";
+
+.container {
+  text-align: center;
+  padding: 1em;
+}
+
+.text {
+  color: map-get($brand-status-colors, critical);
+}

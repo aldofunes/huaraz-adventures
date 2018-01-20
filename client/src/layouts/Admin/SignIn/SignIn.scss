@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  background-color: #eee;
+  padding: 1em;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form {
+  background-color: #fff;
+  padding: 2em;
+  width: 30em;
+  max-width: 100%;
+  border-radius: 5px;
+}

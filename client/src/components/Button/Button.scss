@@ -1,0 +1,49 @@
+@import "stylesheets/settings";
+
+.button {
+  font-size: 1.125em;
+  padding: 0.4em 1.5em;
+  background-color: transparent;
+  border: 2px solid $brand-color;
+  border-radius: 0.25em;
+  transition: all 200ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #777;
+    border: none;
+    cursor: not-allowed;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $brand-color;
+  }
+}
+
+.primary {
+  color: #fff;
+  background-color: darken($brand-color, 10%);
+  border: none;
+
+  &:hover {
+    background-color: darken($brand-color, 5%);
+  }
+}
+
+.plain {
+  border: none;
+}
+
+.icon {
+  padding: 0.5em;
+}
+
+.fill {
+  width: 100%;
+}

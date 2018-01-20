@@ -1,0 +1,18 @@
+query EditTourQuery($id: ID! $localeCode: String!) {
+  tour(id: $id) {
+    id
+    altitud
+    summary(localeCode: $localeCode)
+    difficulty
+    duration(localeCode: $localeCode)
+    image
+    itinerary(localeCode: $localeCode)
+    lists(localeCode: $localeCode) {
+      name
+      body
+    }
+    location(localeCode: $localeCode)
+    name(localeCode: $localeCode)
+    season(localeCode: $localeCode)
+  }
+}

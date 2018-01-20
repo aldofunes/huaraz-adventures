@@ -1,0 +1,50 @@
+query getTrips {
+  trips {
+    id
+    title(localeCode: "en")
+    duration
+    tours {
+      id
+      name(localeCode: "en")
+    }
+  }
+}
+
+query countTrips {
+  tripsCount
+}
+
+mutation deleteTrip {
+  deleteTrip(id: "59f7513100a4c98ea659b5b8")
+}
+
+mutation updateTrip {
+  updateTrip(
+    id: "59f74c9f00a4c98ea659b5af"
+    order: 1
+  ) {
+    id
+    isPublic
+    order
+    image
+  }
+}
+
+mutation createTrips {
+  trip1: createTrip(
+    isPublic: true
+    order: 1
+    title: "Transactional information that reflects the reality of your organisation",
+    subtitle: "Acquire a clear and global vision of your business",
+    image: "https://cdn.lovis.co/www.lovis.company/images/541f3c7238f0869738393792319c3110.jpg",
+    body: "Operate your business, while having access online and on real-time to the information of all your transactions. With LOVIS EOS, all your people works directly on the application. From financial, logistics and manufacturing information, automatically derive your accounting, eliminate closing procedures and have access to up-to-date financial statements.\n\nHave full certainty of the your business current state every moment."
+  ) { id }
+  trip2: createTrip(
+    isPublic: true
+    order: 2
+    title: "Focus on your core business",
+    subtitle: "Universal system, with flexibility in mind",
+    image: "https://cdn.lovis.co/www.lovis.company/images/a2070c59c095f4cd442f4974fe493e36.jpg",
+    body: "We dont believe in workarounds; but we know things not always go according to plan. Thats why we built one system for any organisation (no custom code) with every possible variant you may think of, thanks to our powerful and simple parametrisation system."
+  ) { id }
+}

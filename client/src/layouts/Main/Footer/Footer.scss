@@ -1,0 +1,44 @@
+@import "stylesheets/settings";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-top: 1px solid #ddd;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLinks {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.socialLink {
+  font-size: 1.5em;
+  color: #999;
+}
+
+.link {
+  padding: 0.5em;
+  margin-left: 0.5em;
+  text-decoration: none;
+  border-radius: 0.2em;
+  font-size: 1.25em;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+}
+
+.active {
+  color: #000;
+}

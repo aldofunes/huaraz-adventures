@@ -1,0 +1,10 @@
+query ContactListQuery {
+  contacts {
+    id
+    createdAt
+    email
+    message
+    modifiedAt
+    name
+  }
+}

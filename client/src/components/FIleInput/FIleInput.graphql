@@ -1,0 +1,7 @@
+query FileInputQuery {
+  securityToken: s3SecurityToken {
+    accessKeyId
+    secretAccessKey
+    sessionToken
+  }
+}

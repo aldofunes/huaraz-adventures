@@ -1,0 +1,68 @@
+# Queries
+
+query getAllUsers {
+  users {
+    id
+    name
+    email
+  }
+}
+
+query getOneUser {
+  user(id: "65090932-c6a6-45e5-928f-690a73ba973e") {
+    id
+    name
+    email
+  }
+}
+
+query getMyUser {
+  myUser {
+    id
+    name
+    email
+  }
+}
+
+query sessionIsValid {
+  sessionIsValid
+}
+
+query getUserCount {
+  usersCount
+}
+
+# Mutations
+
+mutation createUser {
+  admin: createUser(
+    name: "Administrator"
+    email: "aldo@funes.mx"
+  ) {
+    id
+    name
+    email
+  }
+}
+
+mutation updateUser {
+  updateUser(
+    id: "65090932-c6a6-45e5-928f-690a73ba973e"
+    name: "Aldo Funes Minutti"
+  ) {
+    id
+    name
+    email
+  }
+}
+
+mutation deleteUser {
+  deleteUser(id: "59a426d979ac8d154073d341")
+}
+
+mutation signIn {
+  signIn(
+    email: "admin@example.com"
+    password: "admin"
+  )
+}

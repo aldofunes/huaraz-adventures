@@ -1,0 +1,13 @@
+query EditTripQuery($id: ID! $localeCode: String!) {
+  trip(id: $id) {
+    id
+    duration(localeCode: $localeCode)
+    image
+    summary(localeCode: $localeCode)
+    title(localeCode: $localeCode)
+    tours {
+      id
+      name(localeCode: $localeCode)
+    }
+  }
+}

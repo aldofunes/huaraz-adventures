@@ -1,0 +1,29 @@
+mutation updateTripMutation(
+$id: ID!
+$duration: String!
+$image: URL!
+$localeCode: String!
+$summary: String!
+$title: String!
+$tourIds: [ID!]!
+) {
+  updateTrip(
+    id: $id
+    duration: $duration
+    image: $image
+    localeCode: $localeCode
+    summary: $summary
+    title: $title
+    tourIds: $tourIds
+  ) {
+    id
+    duration
+    image
+    summary(localeCode: $localeCode)
+    title(localeCode: $localeCode)
+    tours {
+      id
+      name(localeCode: $localeCode)
+    }
+  }
+}

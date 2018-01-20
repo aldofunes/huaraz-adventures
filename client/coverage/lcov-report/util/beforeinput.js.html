@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for util/beforeinput.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">util</a> beforeinput.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.21% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>7/33</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.9% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.21% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>7/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { resetBlockWithType, getCurrentBlock } from '../model';
+import { Block, HANDLED, NOT_HANDLED } from './constants';
+&nbsp;
+&nbsp;
+/*
+This is a key value pair where the key is the string that is input while typing.
+While typing in an empty block, if the entered text matches any of the keys in
+this dictionary, that particular block's type will be changed to the value
+associated with that key.
+*/
+export const StringToTypeMap = {
+  '--': `${Block.BLOCKQUOTE}:${Block.BLOCKQUOTE_CAPTION}:${Block.CAPTION}`,
+  '&gt; ': Block.BLOCKQUOTE,
+  '*.': Block.UL,
+  '* ': Block.UL,
+  '- ': Block.UL,
+  '1.': Block.OL,
+  '# ': Block.H1,
+  '##': Block.H2,
+  '==': Block.UNSTYLED,
+  '[]': Block.TODO,
+};
+&nbsp;
+&nbsp;
+/*
+This function is called before text is input in a block in `draft-js`. It checks
+whether the input string (first 2 cahracters only) is present in the `StringToTypeMap`
+mapping or not. If present, it converts the current block's type and called the `editor`'s
+`onChange` function. Otherwise, does nothing. By defualt, the above key-value mapping
+is passed. In custom implementation, users can pass their own mapping or extend
+the current one.
+*/
+const beforeInput = (editorState, inputString, onChange, mapping = StringToTypeMap) =&gt; {
+  const selection = editorState.getSelection();
+  const block = getCurrentBlock(editorState);
+  const blockType = block.getType();
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (blockType.indexOf(Block.ATOMIC) === 0) {
+    return NOT_HANDLED;
+  }
+  const blockLength = <span class="cstat-no" title="statement not covered" >block.getLength();</span>
+<span class="cstat-no" title="statement not covered" >  if (selection.getAnchorOffset() &gt; 1 || blockLength &gt; 1) {</span>
+<span class="cstat-no" title="statement not covered" >    return NOT_HANDLED;</span>
+  }
+  const blockTo = <span class="cstat-no" title="statement not covered" >mapping[block.getText()[0] + inputString];</span>
+<span class="cstat-no" title="statement not covered" >  if (!blockTo) {</span>
+<span class="cstat-no" title="statement not covered" >    return NOT_HANDLED;</span>
+  }
+  const finalType = <span class="cstat-no" title="statement not covered" >blockTo.split(':');</span>
+<span class="cstat-no" title="statement not covered" >  if (finalType.length &lt; 1 || finalType.length &gt; 3) {</span>
+<span class="cstat-no" title="statement not covered" >    return NOT_HANDLED;</span>
+  }
+  let fType = <span class="cstat-no" title="statement not covered" >finalType[0];</span>
+<span class="cstat-no" title="statement not covered" >  if (finalType.length === 1) {</span>
+<span class="cstat-no" title="statement not covered" >    if (blockType === finalType[0]) {</span>
+<span class="cstat-no" title="statement not covered" >      return NOT_HANDLED;</span>
+    }
+  } else <span class="cstat-no" title="statement not covered" >if (finalType.length === 2) {</span>
+<span class="cstat-no" title="statement not covered" >    if (blockType === finalType[1]) {</span>
+<span class="cstat-no" title="statement not covered" >      return NOT_HANDLED;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (blockType === finalType[0]) {</span>
+<span class="cstat-no" title="statement not covered" >      fType = finalType[1];</span>
+    }
+  } else <span class="cstat-no" title="statement not covered" >if (finalType.length === 3) {</span>
+<span class="cstat-no" title="statement not covered" >    if (blockType === finalType[2]) {</span>
+<span class="cstat-no" title="statement not covered" >      return NOT_HANDLED;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (blockType === finalType[0]) {</span>
+<span class="cstat-no" title="statement not covered" >      fType = finalType[1];</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      fType = finalType[2];</span>
+    }
+  }
+<span class="cstat-no" title="statement not covered" >  onChange(resetBlockWithType(editorState, fType, {</span>
+    text: '',
+  }));
+<span class="cstat-no" title="statement not covered" >  return HANDLED;</span>
+};
+&nbsp;
+&nbsp;
+export default beforeInput;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Aug 09 2017 11:57:41 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

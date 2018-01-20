@@ -1,0 +1,20 @@
+mutation createTripMutation(
+$duration: String!
+$image: URL!
+$localeCode: String!
+$summary: String!
+$title: String!
+$tourIds: [ID!]!
+) {
+  createTrip(
+    duration: $duration
+    image: $image
+    localeCode: $localeCode
+    summary: $summary
+    title: $title
+    tourIds: $tourIds
+  ) {
+    id
+    title(localeCode: $localeCode)
+  }
+}

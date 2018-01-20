@@ -1,0 +1,9 @@
+@import "stylesheets/settings";
+
+.markdown {
+  code {
+    font-family: $code-font-family;
+    background: #f9f9f9;
+    padding: 0.5em;
+  }
+}

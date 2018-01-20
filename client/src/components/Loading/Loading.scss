@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padSmall { padding: 1em; }
+
+.padMedium { padding: 2em; }
+
+.padLarge { padding: 4em; }
+
+.padXlarge { padding: 8em; }
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  animation: spin 800ms steps(8) infinite;
+}
+
+.small {
+  width: 1em;
+  height: 1em;
+}
+
+.medium {
+  width: 2em;
+  height: 2em;
+}
+
+.large {
+  width: 3em;
+  height: 3em;
+}
+
+.xlarge {
+  width: 4em;
+  height: 4em;
+}

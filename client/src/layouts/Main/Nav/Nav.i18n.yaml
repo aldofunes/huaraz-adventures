@@ -1,0 +1,9 @@
+en:
+  nav:
+    home: Home
+    trips: Trips
+
+es:
+  nav:
+    home: Inicio
+    trips: Viajes

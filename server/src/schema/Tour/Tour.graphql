@@ -1,0 +1,33 @@
+query tours {
+  publicTours {
+    id
+    slug
+    author {
+      id
+      email
+      name
+    }
+    body(localeCode: "en")
+    createdAt
+    image
+    tags {
+      id
+      slug
+    }
+  }
+}
+
+query tourBySlug {
+  tourBySlug(slug: "the-pioneers") {
+    id
+    slug
+    tags {
+      id
+      slug
+      tours {
+        id
+        title
+      }
+    }
+  }
+}

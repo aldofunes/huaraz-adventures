@@ -1,0 +1,16 @@
+query getAllServices {
+  services {
+    id
+    name(localeCode: "es")
+  }
+}
+
+mutation createServices {
+  service1: createService(
+    localeCode: "es"
+    name: "Prueba"
+  ) {
+    id
+    name(localeCode: "es")
+  }
+}

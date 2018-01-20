@@ -1,0 +1,3 @@
+mutation deleteTourMutation($id: ID!) {
+  deleteTour(id: $id)
+}

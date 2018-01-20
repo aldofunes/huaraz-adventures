@@ -1,0 +1,93 @@
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: huaraz-adventures
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+  profile: personal
+  memorySize: 128 # Default is 1024
+  timeout: 10 # Default is 30
+  environment:
+    AWS_ROLE_S3_UPLOADS: arn:aws:iam::966447780516:role/s3-uploads
+    SERVICE_NAME: ${self:service}
+    NODE_ENV: ${file(./settings.${opt:stage}.yml):NODE_ENV}
+    DYNAMODB_ENDPOINT: ${file(./settings.${opt:stage}.yml):DYNAMODB_ENDPOINT}
+    PRIVATE_KEY: ${file(./settings.${opt:stage}.yml):PRIVATE_KEY}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:*
+      Resource: arn:aws:dynamodb:us-east-1:966447780516:table/*
+    - Effect: Allow # xray permissions (required)
+      Action:
+        - xray:PutTraceSegments
+        - xray:PutTelemetryRecords
+      Resource: "*"
+    # We need to add permissions to interact with AWS SES
+    - Effect: Allow
+      Action:
+        - ses:sendEmail
+      Resource: arn:aws:ses:us-east-1:966447780516:identity/huaraz-adventures.com
+
+functions:
+  # GraphQL Public Endpoint
+  graphql:
+    tracing: true
+    handler: src/graphql.handler
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+
+resources:
+  Resources:
+    contactsTable: ${file(./src/schema/Contact/Contact.table.yaml)}
+    servicesTable: ${file(./src/schema/Service/Service.table.yaml)}
+    toursTable: ${file(./src/schema/Tour/Tour.table.yaml)}
+    tripsTable: ${file(./src/schema/Trip/Trip.table.yaml)}
+    usersTable: ${file(./src/schema/User/User.table.yaml)}
+
+custom:
+  webpackIncludeModules: false # enable auto-packing of external modules
+
+  serverless-offline:
+    port: 4000
+
+  dynamodb:
+    start:
+      port: 8000
+      inMemory: true
+      migrate: true
+      seed: true
+    seed:
+      local:
+        sources:
+          - table: ${self:service}-contacts-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/Contact/Contact.seed.json]
+
+          - table: ${self:service}-services-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/Service/Service.seed.json]
+
+          - table: ${self:service}-tours-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/Tour/Tour.seed.json]
+
+          - table: ${self:service}-trips-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/Trip/Trip.seed.json]
+
+          - table: ${self:service}-users-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/User/User.seed.json]
+
+plugins:
+  - serverless-plugin-tracing
+  - serverless-webpack
+  - serverless-dynamodb-local
+  - serverless-offline

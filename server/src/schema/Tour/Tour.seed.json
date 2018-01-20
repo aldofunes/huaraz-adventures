@@ -1,0 +1,28 @@
+[
+  {
+    "id": "6c3ebac0-f05b-4e4a-87ab-dc93fdf7e2ad",
+    "difficulty": "qewr",
+    "image": "https://cdn.huaraz-adventures.com/uploads/e3812073-172a-4b46-9975-0adcee9f06c3.png",
+    "createdAt": 1516307277819,
+    "modifiedAt": 1516307277819,
+    "altitud": 1234,
+    "userId": "65090932-c6a6-45e5-928f-690a73ba973e",
+    "i18n": [
+      {
+        "summary": "{\"entityMap\":{},\"blocks\":[{\"depth\":0,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"asdf\",\"type\":\"unstyled\",\"key\":\"13lj0\",\"entityRanges\":[]}]}",
+        "duration": "qewr",
+        "localeCode": "es",
+        "lists": [
+          {
+            "name": "qwer",
+            "body": "{\"entityMap\":{},\"blocks\":[{\"depth\":0,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"asdf\",\"type\":\"unstyled\",\"key\":\"4uanl\",\"entityRanges\":[]}]}"
+          }
+        ],
+        "name": "asdf",
+        "season": "asdf",
+        "itinerary": "{\"entityMap\":{},\"blocks\":[{\"depth\":0,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"asdf\",\"type\":\"unstyled\",\"key\":\"7vjnc\",\"entityRanges\":[]}]}",
+        "location": "qwer"
+      }
+    ]
+  }
+]

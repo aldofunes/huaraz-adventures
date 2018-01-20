@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "65090932-c6a6-45e5-928f-690a73ba973e",
+    "name" : "Administrator",
+    "email" : "admin@example.com",
+    "isEnabled" : true,
+    "passwordDigest" : "AAAAEAAATiAqxeRhFTLLnSFeLFvYOCggY/c2cc5keMobEIdXCEc4PMO+DkNolMIlu32YF1bVtr4="
+  },
+  {
+    "id" : "878b7c54-e670-4021-9d8f-9885ebc45f53",
+    "name" : "User",
+    "email" : "user@example.com",
+    "isEnabled" : true,
+    "passwordDigest" : "AAAAEAAATiAqxeRhFTLLnSFeLFvYOCggY/c2cc5keMobEIdXCEc4PMO+DkNolMIlu32YF1bVtr4="
+  }
+]

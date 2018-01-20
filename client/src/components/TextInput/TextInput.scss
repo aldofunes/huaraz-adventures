@@ -1,0 +1,16 @@
+@import "stylesheets/settings";
+
+.input {
+  font-size: 1em;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 0.2em;
+  transition: all 200ms;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border-color: $brand-color;
+    box-shadow: 0 0 5px $brand-color;
+  }
+}

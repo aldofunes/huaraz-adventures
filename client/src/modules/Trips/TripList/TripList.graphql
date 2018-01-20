@@ -1,0 +1,12 @@
+query TripListQuery($localeCode: String!) {
+  trips {
+    id
+    duration(localeCode: $localeCode)
+    image
+    title(localeCode: $localeCode)
+    tours {
+      id
+      name(localeCode: $localeCode)
+    }
+  }
+}

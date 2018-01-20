@@ -1,0 +1,64 @@
+.sidebar {
+  position: fixed;
+  top: 4em;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 16em;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: #303038;
+  color: #fff;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  a {
+    color: #fff;
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+
+    &:hover {
+      color: #aaa;
+    }
+  }
+}
+
+.menu {
+  margin: -1em -1em 1em -1em;
+  padding: 1em;
+  background-color: #202028;
+}
+
+.submenu {
+  a {
+    font-size: 0.8em;
+    padding: 0 0.2em 0.2em 2em;
+  }
+}
+
+.active {
+  color: #aaa !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1em;
+
+  a {
+    cursor: pointer;
+  }
+
+  select {
+    appearance: none;
+    background: none;
+    padding: 0.2em 1em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0 0.4em;
+  }
+}

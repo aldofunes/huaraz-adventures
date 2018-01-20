@@ -1,0 +1,28 @@
+parser: babel-eslint
+
+env:
+  node: true
+  jest: true
+  es6: true
+
+globals:
+  db: true
+
+plugins:
+  - node
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+
+extends:
+  - defaults
+
+rules:
+  comma-dangle:
+    - error
+    - always-multiline
+  semi:
+    - error
+    - never
+  node/no-unpublished-require: 0
