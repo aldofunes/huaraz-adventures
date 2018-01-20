@@ -20,5 +20,7 @@
     <orderEntry type="library" name="@types/jest" level="application" />
     <orderEntry type="library" name="@types/react-transition-group" level="application" />
     <orderEntry type="library" name="@types/react-dom" level="application" />
+    <orderEntry type="library" name="@types/draft-js" level="application" />
+    <orderEntry type="library" name="@types/d3-geo" level="application" />
   </component>
 </module>

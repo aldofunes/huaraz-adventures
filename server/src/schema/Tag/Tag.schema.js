@@ -73,12 +73,10 @@ export const resolvers = {
     updateTag(root, { id, slug, ...args }, { jwt }) {
       return authorize(jwt)
         .then(() => Tag.get(id))
-        .then(tag => {
-          const i18n = tag.i18n ? tag.i18n.filter(i => i.localeCode !== args.localeCode) : []
-
+        .then(({ i18n = [] }) => {
           return Tag.update(id, {
             slug,
-            i18n: [...i18n, args],
+            i18n: [...i18n.filter(i => i.localeCode !== args.localeCode), args],
           })
         })
     },

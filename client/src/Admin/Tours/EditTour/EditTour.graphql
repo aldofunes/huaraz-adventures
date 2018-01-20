@@ -14,5 +14,9 @@ query EditTourQuery($id: ID! $localeCode: String!) {
     location(localeCode: $localeCode)
     name(localeCode: $localeCode)
     season(localeCode: $localeCode)
+    tags {
+      id
+      name(localeCode: $localeCode)
+    }
   }
 }

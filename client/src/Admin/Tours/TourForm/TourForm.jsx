@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { convertToRaw, convertFromRaw, EditorState } from 'draft-js'
+import Select from 'react-select'
 import { tourType } from 'lib/propTypes'
 import { Button, Error, FormField, Loading, RichEditor, TextInput, FileInput } from 'components'
 import styles from './TourForm.scss'
@@ -33,6 +34,7 @@ class TourForm extends Component {
         location: props.tour.location,
         name: props.tour.name,
         season: props.tour.season,
+        tagIds: props.tour.tags.map(({ id, name }) => ({ value: id, label: name })),
         isSavingForm: props.tour.isSavingForm,
         formError: props.tour.formError,
       }
@@ -48,6 +50,7 @@ class TourForm extends Component {
         location: '',
         name: '',
         season: '',
+        tagIds: [],
         isSavingForm: false,
         formError: null,
       }
@@ -70,6 +73,7 @@ class TourForm extends Component {
         location: nextProps.tour.location,
         name: nextProps.tour.name,
         season: nextProps.tour.season,
+        tagIds: nextProps.tour.tags.map(({ id, name }) => ({ value: id, label: name })),
         isSavingForm: nextProps.tour.isSavingForm,
         formError: nextProps.tour.formError,
       })
@@ -92,6 +96,7 @@ class TourForm extends Component {
   handleChangeImage = image => this.setState({ image })
   handleSummaryChange = summary => this.setState({ summary })
   handleItineraryChange = itinerary => this.setState({ itinerary })
+  handleTagIdsChange = tagIds => this.setState({ tagIds })
 
   handleListNameChange = (event, index) => {
     const { lists } = this.state
@@ -108,7 +113,7 @@ class TourForm extends Component {
   handleSubmit = event => {
     event.preventDefault()
 
-    const { onSubmit } = this.props
+    const { onSubmit, history } = this.props
     const {
       altitud,
       summary,
@@ -120,9 +125,8 @@ class TourForm extends Component {
       location,
       name,
       season,
+      tagIds,
     } = this.state
-
-    console.log(image)
 
     this.setState({ isSavingForm: true, formError: null })
 
@@ -140,16 +144,14 @@ class TourForm extends Component {
       location,
       name,
       season,
+      tagIds: tagIds.map(tag => tag.value),
     })
-      .then(({ data }) => {
-        console.log('got data', data)
-      })
-      .catch((error) => {
-        this.setState({ isSavingForm: false, formError: error })
-      })
+      .then(() => this.setState({ isSavingForm: false }))
+      .catch(error => this.setState({ isSavingForm: false, formError: error }))
   }
 
   render() {
+    const { error, loading, tags } = this.props
     const {
       altitud,
       summary,
@@ -161,6 +163,7 @@ class TourForm extends Component {
       location,
       name,
       season,
+      tagIds,
       isSavingForm,
       formError,
     } = this.state
@@ -218,6 +221,20 @@ class TourForm extends Component {
           />
         </FormField>
 
+        <FormField htmlFor="tagIds" label="Etiquetas">
+          {error && <Error error={error} size="small" />}
+          {loading && <Loading size="small" />}
+          {tags && (
+            <Select
+              id="tagIds"
+              name="tagIds"
+              multi
+              value={tagIds}
+              onChange={this.handleTagIdsChange}
+              options={tags.map(({ id, name }) => ({ value: id, label: name }))}
+            />
+          )}
+        </FormField>
 
         <FormField htmlFor="season" label="Temporada Recomendada">
           <TextInput

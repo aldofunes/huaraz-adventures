@@ -1,0 +1,7 @@
+query TourFormQuery($localeCode: String!) {
+  tags {
+    id
+    slug
+    name(localeCode: $localeCode)
+  }
+}

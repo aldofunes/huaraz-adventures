@@ -1,5 +1,6 @@
 import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
+import Tag from 'schema/Tag'
 import Tour from './Tour'
 
 export const schema = `
@@ -15,6 +16,7 @@ type Tour {
   location(localeCode: String!): String!
   name(localeCode: String!): String!
   season(localeCode: String!): String!
+  tags: [Tag]
   
   createdAt: DateTime!
   modifiedAt: DateTime!
@@ -49,6 +51,7 @@ extend type RootMutation {
     location: String!
     name: String!
     season: String!
+    tagIds: [ID]
   ): Tour
   
   updateTour(
@@ -64,6 +67,7 @@ extend type RootMutation {
     location: String!
     name: String!
     season: String!
+    tagIds: [ID]
   ): Tour
   
   deleteTour(id: ID!): Boolean
@@ -100,36 +104,52 @@ export const resolvers = {
       return findTranslation(i18n, localeCode).season
     },
 
+    tags({ tagIds = ['empty'] }) {
+      return Tag.query({
+        KeyConditions: { id: { ComparisonOperator: 'EQ', AttributeValueList: tagIds } },
+      })
+    },
   },
 
   RootQuery: {
-    tour: (root, { id, slug }) => id ? Tour.get(id) : Tour.findBySlug(slug),
-    tours: () => Tour.scan(),
-    toursCount: () => Tour.count(),
+    tour(root, { id, slug }) {
+      return id ? Tour.get(id) : Tour.findBySlug(slug)
+    },
+    tours() {
+      return Tour.scan()
+    },
+    toursCount() {
+      return Tour.count()
+    },
   },
 
   RootMutation: {
-    createTour: (root, { altitud, difficulty, image, ...args }, { jwt }) => authorize(jwt)
-      .then(user => Tour.create({
-        altitud,
-        difficulty,
-        image,
-        i18n: [args],
-        userId: user.id,
-      })),
+    createTour(root, { altitud, difficulty, image, tagIds, ...args }, { jwt }) {
+      return authorize(jwt)
+        .then(user => Tour.create({
+          altitud,
+          difficulty,
+          image,
+          tagIds,
+          i18n: [args],
+          userId: user.id,
+        }))
+    },
 
-    updateTour: (root, { id, altitud, difficulty, image, localeCode, ...args }, { jwt }) => authorize(jwt)
-      .then(() => Tour.get(id))
-      .then(tour => Tour.update(id, {
-        altitud,
-        difficulty,
-        image,
-        i18n: [
-          ...tour.i18n.filter(i => i.localeCode !== localeCode),
-          { localeCode: localeCode, ...args },
-        ],
-      })),
+    updateTour(root, { id, altitud, difficulty, image, tagIds, ...args }, { jwt }) {
+      return authorize(jwt)
+        .then(() => Tour.get(id))
+        .then(({ i18n = [] }) => Tour.update(id, {
+          altitud,
+          difficulty,
+          image,
+          tagIds,
+          i18n: [...i18n.filter(i => i.localeCode !== args.localeCode), args],
+        }))
+    },
 
-    deleteTour: (root, { id }) => Tour.delete(id),
+    deleteTour(root, { id }) {
+      return Tour.delete(id)
+    },
   },
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faEdit, faSave, faTimes } from '@fortawesome/fontawesome-free-solid'
+import slugg from 'slugg'
 import { tagType } from 'lib/propTypes'
 import { Button, Error, Loading, TextInput } from 'components'
 import styles from './TagListItem.scss'
@@ -63,6 +64,14 @@ class TagListItem extends Component {
 
   handleInputChange = ({ target }) => { this.setState({ [target.name]: target.value }) }
 
+  handleNameChange = (event) => {
+    const name = event.target.value
+    const { tag } = this.props
+
+    this.setState({ name })
+    if (!tag.slug) { this.setState({ slug: slugg(name) }) }
+  }
+
   render() {
     const { editing, name, slug, error, saving } = this.state
 
@@ -76,7 +85,7 @@ class TagListItem extends Component {
             <TextInput
               id="name"
               name="name"
-              onChange={this.handleInputChange}
+              onChange={this.handleNameChange}
               type="text"
               value={name}
             />
