@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { NotFound, ScrollToTop } from 'components'
-import Contact from 'pages/Contact'
-import Home from 'pages/Home'
-import Trips from 'modules/Trips'
-import Nav from './Nav'
+import Contact from './Contact'
 import Footer from './Footer'
+import Home from './Home'
+import Nav from './Nav'
+import Trips from './Trips'
 
 const Main = () => (
   <div>

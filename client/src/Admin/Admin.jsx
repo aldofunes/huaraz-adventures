@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { bool, string } from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 import { Transition } from 'react-transition-group'
 import cx from 'classnames'
 import { matchType } from 'lib/propTypes'
 import { NotFound } from 'components'
-import Contacts from 'admin/Contacts'
-import Tours from 'admin/Tours'
-import Trips from 'admin/Trips'
-import Users from 'admin/Users'
+import Contacts from './Contacts'
 import NavBar from './NavBar'
 import Sidebar from './Sidebar'
 import SignIn from './SignIn'
+import Tags from './Tags'
+import Tours from './Tours'
+import Trips from './Trips'
+import Users from './Users'
 import styles from './Admin.scss'
 
 class Admin extends Component {
   static propTypes = {
     match: matchType.isRequired,
-    isMobile: PropTypes.bool.isRequired,
-    jwt: PropTypes.string,
+    isMobile: bool.isRequired,
+    jwt: string,
   }
 
   static defaultProps = {
@@ -66,6 +67,7 @@ class Admin extends Component {
           <Switch>
             <Route exact path={match.url} component={Contacts} />
             <Route path={`${match.url}/contacts`} component={Contacts} />
+            <Route path={`${match.url}/tags`} component={Tags} />
             <Route path={`${match.url}/tours`} component={Tours} />
             <Route path={`${match.url}/trips`} component={Trips} />
             <Route path={`${match.url}/users`} component={Users} />

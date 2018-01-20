@@ -1,0 +1,16 @@
+.form { display: table-row; }
+
+.cell {
+  display: table-cell;
+  padding-right: 0.5em;
+}
+
+.editActions {
+  display: table-cell;
+  width: 4.5em;
+  text-align: right;
+}
+
+.image { max-height: 3em; }
+
+.actions { text-align: right; }

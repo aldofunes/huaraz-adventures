@@ -1,0 +1,20 @@
+mutation updateTagMutation(
+$id: ID!
+$slug: String!
+$localeCode: String!
+$name: String!
+) {
+  updateTag(
+    id: $id
+    slug: $slug
+    localeCode: $localeCode
+    name: $name
+  ) {
+    id
+    slug
+    name(localeCode: $localeCode)
+
+    createdAt
+    modifiedAt
+  }
+}

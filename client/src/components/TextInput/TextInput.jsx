@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { any, func, oneOf, string } from 'prop-types'
 import cx from 'classnames'
 import styles from './TextInput.scss'
 
-const TextInput = ({ type = 'text', className, ...props }) => {
+const TextInput = ({ type, className, ...props }) => {
   if (type === 'textArea') {
     return <textarea className={cx(className, styles.input)} {...props} />
   }
@@ -11,7 +11,7 @@ const TextInput = ({ type = 'text', className, ...props }) => {
 }
 
 TextInput.propTypes = {
-  type: PropTypes.oneOf([
+  type: oneOf([
     'color',
     'date',
     'datetime-local',
@@ -21,12 +21,12 @@ TextInput.propTypes = {
     'password',
     'tel',
     'text',
-    'url',
     'textArea',
+    'url',
   ]),
-  className: PropTypes.string,
-  onChange: PropTypes.func,
-  value: PropTypes.any, // eslint-disable-line react/forbid-prop-types
+  className: string,
+  onChange: func,
+  value: any, // eslint-disable-line react/forbid-prop-types
 }
 
 TextInput.defaultProps = {

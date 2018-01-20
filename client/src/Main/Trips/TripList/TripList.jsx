@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { apolloErrorType, localeType, tripType } from 'lib/propTypes'
-import { Error, Loading } from 'components'
+import { Error, Loading } from 'components/index'
 import i18n from 'lib/i18n'
 import translations from './TripList.i18n.yaml'
 import styles from './TripList.scss'
-import TripCard from './TripCard'
+import TripCard from './TripCard/index'
 
 const TripList = ({ error, loading, trips, locale }) => {
   if (error) { return <Error error={error} size="xlarge" /> }

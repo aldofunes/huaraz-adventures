@@ -1,71 +1,90 @@
-import PropTypes, { bool, func, number, object, shape, string, } from 'prop-types'
+import { bool, func, number, object, shape, string, arrayOf } from 'prop-types'
 
 export const apolloErrorType = shape({
-  message: PropTypes.string.isRequired,
-  data: PropTypes.object,
+  message: string.isRequired,
+  data: object,
 })
 
 export const historyType = shape({
-  action: PropTypes.string.isRequired,
-  block: PropTypes.func.isRequired,
-  createHref: PropTypes.func.isRequired,
-  go: PropTypes.func.isRequired,
-  goBack: PropTypes.func.isRequired,
-  goForward: PropTypes.func.isRequired,
-  length: PropTypes.number.isRequired,
-  listen: PropTypes.func.isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-    search: PropTypes.string.isRequired,
-    hash: PropTypes.string.isRequired,
-    state: PropTypes.string,
+  action: string.isRequired,
+  block: func.isRequired,
+  createHref: func.isRequired,
+  go: func.isRequired,
+  goBack: func.isRequired,
+  goForward: func.isRequired,
+  length: number.isRequired,
+  listen: func.isRequired,
+  location: shape({
+    pathname: string.isRequired,
+    search: string.isRequired,
+    hash: string.isRequired,
+    state: string,
   }).isRequired,
-  push: PropTypes.func.isRequired,
-  replace: PropTypes.func.isRequired,
+  push: func.isRequired,
+  replace: func.isRequired,
 })
 
 export const locationType = shape({
-  hash: PropTypes.string.isRequired,
-  key: PropTypes.string,
-  pathname: PropTypes.string.isRequired,
-  search: PropTypes.string.isRequired,
+  hash: string.isRequired,
+  key: string,
+  pathname: string.isRequired,
+  search: string.isRequired,
 })
 
 export const matchType = shape({
-  params: PropTypes.object.isRequired,
-  isExact: PropTypes.bool.isRequired,
-  path: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  params: object.isRequired,
+  isExact: bool.isRequired,
+  path: string.isRequired,
+  url: string.isRequired,
 })
 
 export const localeType = shape({
-  code: PropTypes.string.isRequired,
+  code: string.isRequired,
 })
 
-export const contactType = PropTypes.shape({
-  id: PropTypes.string.isRequired,
-  company: PropTypes.string,
-  createdAt: PropTypes.number,
-  email: PropTypes.string,
-  message: PropTypes.string,
-  modifiedAt: PropTypes.number,
-  name: PropTypes.string,
+export const contactType = shape({
+  id: string.isRequired,
+  createdAt: number,
+  modifiedAt: number,
+
+  company: string,
+  email: string,
+  message: string,
+  name: string,
 })
 
-export const tourType = PropTypes.shape({
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string,
+export const tourType = shape({
+  id: string.isRequired,
+  createdAt: number,
+  modifiedAt: number,
+
+  name: string,
 })
 
-export const tripType = PropTypes.shape({
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string,
-  image: PropTypes.string,
-  duration: PropTypes.string,
-  tours: PropTypes.arrayOf(tourType),
+export const tripType = shape({
+  id: string.isRequired,
+  createdAt: number,
+  modifiedAt: number,
+
+  title: string,
+  image: string,
+  duration: string,
+  tours: arrayOf(tourType),
 })
 
-export const userType = PropTypes.shape({
-  id: PropTypes.string.isRequired,
-  email: PropTypes.string,
+export const userType = shape({
+  id: string.isRequired,
+  createdAt: number,
+  modifiedAt: number,
+
+  email: string,
+})
+
+export const tagType = shape({
+  id: string.isRequired,
+  createdAt: number,
+  modifiedAt: number,
+
+  name: string,
+  slug: string,
 })

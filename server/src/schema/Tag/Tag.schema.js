@@ -5,8 +5,8 @@ import Tag from './Tag'
 export const schema = `
 type Tag {
   id: ID!
-  slug: String!
-  name(localeCode: String!): String!
+  slug: String
+  name(localeCode: String): String
   
   author: User!
   createdAt: DateTime!
@@ -20,11 +20,7 @@ extend type RootQuery {
 }
 
 extend type RootMutation {
-  createTag(
-    slug: String!
-    localeCode: String!
-    name: String!
-  ): Tag
+  createTag: Tag
   
   updateTag(
     id: ID!
@@ -49,31 +45,42 @@ export const resolvers = {
       if (slug) { return Tag.getBySlug(id) }
       return Tag.get(id)
     },
+
     tags() {
       return Tag.scan()
     },
+
     tagsCount() {
       return Tag.count()
     },
   },
 
   RootMutation: {
-    createTag(root, { slug, ...args }, { jwt }) {
+    createTag(root, args, { jwt }) {
       return authorize(jwt)
-        .then(user => Tag.create({
-          slug,
-          i18n: [args],
-          userId: user.id,
-        }))
+        .then(user => Tag.create({ userId: user.id }))
     },
 
+    /**
+     *
+     * @param [root]
+     * @param [id]
+     * @param [slug]
+     * @param [args]
+     * @param [jwt]
+     * @returns {Promise<any>}
+     */
     updateTag(root, { id, slug, ...args }, { jwt }) {
       return authorize(jwt)
         .then(() => Tag.get(id))
-        .then(tag => Tag.update(id, {
-          slug,
-          i18n: [...tag.i18n.filter(i => i.localeCode !== args.localeCode), args],
-        }))
+        .then(tag => {
+          const i18n = tag.i18n ? tag.i18n.filter(i => i.localeCode !== args.localeCode) : []
+
+          return Tag.update(id, {
+            slug,
+            i18n: [...i18n, args],
+          })
+        })
     },
 
     deleteTag(root, { id }) {

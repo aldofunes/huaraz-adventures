@@ -1,15 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import 'stylesheets/styles.global.scss'
+import { render } from 'react-dom'
 import { ApolloProvider } from 'react-apollo'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import client from 'lib/apollo'
 import { store } from 'lib/redux'
-import Admin from 'layouts/Admin'
-import Main from 'layouts/Main'
+import 'stylesheets/styles.global.scss'
+import Admin from './Admin'
+import Main from './Main'
 
-ReactDOM.render((
+render((
   <ApolloProvider client={client}>
     <Provider store={store}>
       <BrowserRouter>

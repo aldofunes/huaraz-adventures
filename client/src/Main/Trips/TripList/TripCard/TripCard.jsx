@@ -1,6 +1,6 @@
 import React from 'react'
 import { tripType } from 'lib/propTypes'
-import { Button } from 'components'
+import { Button } from 'components/index'
 import styles from './TripCard.scss'
 
 const TripCard = ({ trip }) => (

@@ -1,52 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60df2680-a01d-4eac-9d5b-fb2bbb1bbfa7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.seed.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.table.yaml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Tag/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="60df2680-a01d-4eac-9d5b-fb2bbb1bbfa7" name="Default" comment="🙌 - Support Tags">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/updateTag.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/createTag.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/deleteTour.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/index.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" afterPath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/clover.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/coverage-final.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/components/entities/Link.jsx.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/components/entities/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/model/content.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/model/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/model/index.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/prettify.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/prettify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/sort-arrow-sprite.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/sorter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/util/beforeinput.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/util/blockStyleFn.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/util/constants.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/util/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov-report/util/rendermap.js.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/coverage/lcov.info" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/client/images.sh" afterPath="$PROJECT_DIR$/client/images.sh" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
-      <change beforePath="$PROJECT_DIR$/server/serverless.yml" afterPath="$PROJECT_DIR$/server/serverless.yml" />
-      <change beforePath="$PROJECT_DIR$/server/src/lib/Model.js" afterPath="$PROJECT_DIR$/server/src/lib/Model.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Contact/Contact.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Contact/Contact.schema.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Service/Service.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Service/Service.schema.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Tour/Tour.schema.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Trip/Trip.seed.json" afterPath="$PROJECT_DIR$/server/src/schema/Trip/Trip.seed.json" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/User/User.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/User/User.schema.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/index.js" afterPath="$PROJECT_DIR$/server/src/schema/index.js" />
-      <change beforePath="$PROJECT_DIR$/server/yarn-error.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/yarn.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/ContactListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/ContactListItem.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/deleteContact.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/deleteContact.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/Contacts.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/Contacts.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/EditTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/EditTour.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/updateTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/updateTour.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/TourForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/TourForm.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/TourListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/TourListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/deleteTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/deleteTag.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/TourNew.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/TourNew.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/createTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/createTour.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/Tours.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/Tours.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/EditTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/EditTrip.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/updateTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/updateTrip.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/NewTrip.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/NewTrip.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/createTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/createTrip.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.i18n.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/TripListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/TripListItem.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/TripListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/TripListItem.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/deleteTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/deleteTrip.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/Trips.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/Trips.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/UserListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/UserListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/deleteUser.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/deleteUser.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/Users.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/Users.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx" afterPath="$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx" afterPath="$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.jsx" afterPath="$PROJECT_DIR$/client/src/index.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Admin.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Admin.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Admin.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/NavBar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/NavBar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/logo.png" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/logo.png" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/SignIn.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/SignIn.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/SignIn.scss" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/SignIn.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/signIn.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/signIn.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.scss" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Footer/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Main.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Main.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.i18n.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.scss" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Nav/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/logo.svg" afterPath="$PROJECT_DIR$/client/src/Main/Nav/logo.svg" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/index.js" afterPath="$PROJECT_DIR$/client/src/Main/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/lib/propTypes.js" afterPath="$PROJECT_DIR$/client/src/lib/propTypes.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/TripCard.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/TripCard.scss" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.i18n.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.scss" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/Trips.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/Trips.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Contact/Contact.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" afterPath="$PROJECT_DIR$/client/src/Main/Contact/Contact.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/ContactForm.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/ContactForm.translations.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.translations.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/createContact.graphql" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/createContact.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Contact/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.i18n.yaml" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.scss" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/anna-goncharova-112693.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/anna-goncharova-112693.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Home/index.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/logo.svg" afterPath="$PROJECT_DIR$/client/src/Main/Home/logo.svg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/nathan-anderson-214707.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/nathan-anderson-214707.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/quinn-nietfeld-176039.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/quinn-nietfeld-176039.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/scott-webb-181364.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/scott-webb-181364.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/sergei-akulich-120604.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/sergei-akulich-120604.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-1400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-2200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-2600.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-3200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-800.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-1400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-2200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-2600.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-3200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-800.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-1400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-2200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-2600.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-3200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-800.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-1400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-2200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-2600.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-3200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-800.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-1400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-2200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-2600.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-3200.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-400.jpg" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-800.jpg" />
+      <change beforePath="$PROJECT_DIR$/server/src/lib/i18n.js" afterPath="$PROJECT_DIR$/server/src/lib/i18n.js" />
+      <change beforePath="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,11 +185,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Sidebar.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.jsx">
+      <file leaf-file-name="TagListItem.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,19 +199,23 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tour</find>
       <find>.all({})</find>
       <find>.all({ limit })</find>
       <find>.find</find>
+      <find>tour</find>
+      <find>handleInputC</find>
+      <find>PropTypes.</find>
     </findStrings>
     <replaceStrings>
-      <replace>tag</replace>
       <replace>.scan()</replace>
       <replace>.scan({ Limit: limit })</replace>
+      <replace>tag</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/server/src/schema/Tag</dir>
       <dir>$PROJECT_DIR$/server/src</dir>
+      <dir>$PROJECT_DIR$/client/src/Admin/Tags</dir>
+      <dir>$PROJECT_DIR$/client/src/</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -105,8 +234,29 @@
         <option value="$PROJECT_DIR$/server/src/schema/index.js" />
         <option value="$PROJECT_DIR$/server/src/schema/Tag/Tag.js" />
         <option value="$PROJECT_DIR$/server/src/lib/Model.js" />
-        <option value="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
         <option value="$PROJECT_DIR$/client/images.sh" />
+        <option value="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.jsx" />
+        <option value="$PROJECT_DIR$/client/src/index.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Main/Main.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/NewTag/index.js" />
+        <option value="$PROJECT_DIR$/client/src/lib/propTypes.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.scss" />
+        <option value="$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/createTag.graphql" />
+        <option value="$PROJECT_DIR$/graphql.config.json" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagList.graphql" />
+        <option value="$PROJECT_DIR$/server/src/lib/i18n.js" />
+        <option value="$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagList.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/updateTag.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/Tags.graphql" />
+        <option value="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx" />
       </list>
     </option>
   </component>
@@ -198,6 +348,47 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Tags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Tags" type="462c0819:PsiDirectoryNode" />
+              <item name="TagList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Tags" type="462c0819:PsiDirectoryNode" />
+              <item name="TagList" type="462c0819:PsiDirectoryNode" />
+              <item name="TagListItem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -205,7 +396,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -215,16 +406,26 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="javascript.nodejs.core.library.configured.version" value="6.10.3" />
     <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/graphql-custom-types/lib/factory.js&#10;true" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Admin/Tags" />
+      <recent name="$PROJECT_DIR$/client/src/Main" />
+      <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client/src/layouts/Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Admin/Tags" />
+      <recent name="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem" />
+      <recent name="$PROJECT_DIR$/client/src/Admin" />
       <recent name="$PROJECT_DIR$/server/src/schema" />
     </key>
   </component>
@@ -252,12 +453,20 @@
       <option name="presentableId" value="Default" />
       <updated>1516455913866</updated>
       <workItem from="1516455917559" duration="181000" />
-      <workItem from="1516456130214" duration="2725000" />
+      <workItem from="1516456130214" duration="8462000" />
     </task>
+    <task id="LOCAL-00001" summary="🙌 - Support Tag type in server">
+      <created>1516459631328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1516459631329</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2906000" />
+    <option name="totallyTimeSpent" value="8643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -265,11 +474,11 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31176472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31176472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -289,6 +498,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" - Support Tag type in server" />
+    <MESSAGE value=" - Support Tags" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - Support Tags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,26 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/lib/i18n.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/src/lib/Model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262">
           <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="66" column="11" lean-forward="false" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -439,10 +637,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Main/Main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Admin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="69" column="58" lean-forward="true" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/NewTag/NewTag.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/SignIn/SignIn.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/lib/propTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/createTag.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/NewTag/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Button/Button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/lib/i18n.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/updateTag.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tours/EditTour/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="24" column="5" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/Tags.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="73" column="12" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tours/Tours.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>

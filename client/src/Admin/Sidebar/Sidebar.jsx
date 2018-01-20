@@ -13,6 +13,7 @@ const Sidebar = ({ match, className, signOut, localeCode, setLocale }) => {
       <nav>
         <NavLink exact activeClassName={styles.active} to={match.url}>Inicio</NavLink>
         <NavLink activeClassName={styles.active} to={`${match.url}/contacts`}>Contactos</NavLink>
+        <NavLink activeClassName={styles.active} to={`${match.url}/tags`}>Etiquetas</NavLink>
         <NavLink activeClassName={styles.active} to={`${match.url}/tours`}>Tours</NavLink>
         <NavLink activeClassName={styles.active} to={`${match.url}/trips`}>Viajes</NavLink>
         <NavLink activeClassName={styles.active} to={`${match.url}/users`}>Usuarios</NavLink>

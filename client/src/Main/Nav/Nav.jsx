@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import cx from 'classnames'
 import i18n from 'lib/i18n'
-import { Menu } from 'components'
+import { Menu } from 'components/index'
 import translations from './Nav.i18n.yaml'
 import styles from './Nav.scss'
 

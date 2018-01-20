@@ -1,0 +1,10 @@
+mutation createTagMutation {
+  createTag {
+    id
+    slug
+    name
+
+    createdAt
+    modifiedAt
+  }
+}

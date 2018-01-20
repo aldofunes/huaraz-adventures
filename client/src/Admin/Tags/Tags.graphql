@@ -1,0 +1,9 @@
+query TagListQuery($localeCode: String!) {
+  tags {
+    id
+    slug
+    name(localeCode: $localeCode)
+    createdAt
+    modifiedAt
+  }
+}
