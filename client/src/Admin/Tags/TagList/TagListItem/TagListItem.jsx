@@ -24,7 +24,6 @@ class TagListItem extends Component {
     }
   }
 
-
   componentWillReceiveProps(nextProps) {
     const { tag } = this.props
 
@@ -35,7 +34,6 @@ class TagListItem extends Component {
       })
     }
   }
-
 
   handleDelete = () => {
     const { tag, deleteTag } = this.props

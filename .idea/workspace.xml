@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60df2680-a01d-4eac-9d5b-fb2bbb1bbfa7" name="Default" comment="🙌 - Support Tags">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/updateTag.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/createTag.graphql" />
+    <list default="true" id="60df2680-a01d-4eac-9d5b-fb2bbb1bbfa7" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.jsx" />
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.jsx" />
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.scss" />
@@ -15,163 +11,8 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.jsx" />
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.scss" />
       <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" afterPath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/ContactListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/ContactListItem.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/deleteContact.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/deleteContact.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/ContactListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactListItem/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/ContactList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/Contacts.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/Contacts.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Contacts/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/EditTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/EditTour.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/EditTour/updateTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/updateTour.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/TourForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/TourForm.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourForm/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/TourListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/TourListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/deleteTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/deleteTag.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/TourListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/TourNew.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/TourNew.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/createTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/createTour.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/TourNew/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/Tours.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/Tours.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Tours/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/EditTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/EditTrip.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/EditTrip/updateTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/updateTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/NewTrip.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/NewTrip.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/createTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/createTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/NewTrip/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/TripForm.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripForm/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripList.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/TripListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/TripListItem.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/TripListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/TripListItem.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/deleteTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/deleteTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/TripListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripListItem/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/TripList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/Trips.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/Trips.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Trips/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserList.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/UserListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/UserListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/deleteUser.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/deleteUser.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/UserListItem/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/UserList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/Users.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/Users.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/admin/Users/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Users/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx" afterPath="$PROJECT_DIR$/client/src/components/EmptyList/EmptyList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx" afterPath="$PROJECT_DIR$/client/src/components/TextInput/TextInput.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.jsx" afterPath="$PROJECT_DIR$/client/src/index.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Admin.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Admin.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Admin.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/NavBar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/NavBar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/NavBar/logo.png" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/logo.png" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/Sidebar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/Sidebar/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/SignIn.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/SignIn.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/SignIn.scss" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/SignIn.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/SignIn/signIn.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/SignIn/signIn.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Admin/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/Footer.scss" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Footer/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Footer/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Main.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Main.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/Nav.scss" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Nav/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/Nav/logo.svg" afterPath="$PROJECT_DIR$/client/src/Main/Nav/logo.svg" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/Main/index.js" afterPath="$PROJECT_DIR$/client/src/Main/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/propTypes.js" afterPath="$PROJECT_DIR$/client/src/lib/propTypes.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/TripCard.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/TripCard.scss" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripCard/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/TripList.scss" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/TripList/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/Trips.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/Trips.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/modules/Trips/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Trips/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Contact/Contact.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/Contact.scss" afterPath="$PROJECT_DIR$/client/src/Main/Contact/Contact.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/ContactForm.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/ContactForm.translations.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.translations.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/createContact.graphql" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/createContact.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/ContactForm/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Contact/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Contact/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/Home.scss" afterPath="$PROJECT_DIR$/client/src/Main/Home/Home.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/anna-goncharova-112693.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/anna-goncharova-112693.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Home/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/logo.svg" afterPath="$PROJECT_DIR$/client/src/Main/Home/logo.svg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/nathan-anderson-214707.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/nathan-anderson-214707.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/quinn-nietfeld-176039.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/quinn-nietfeld-176039.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/scott-webb-181364.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/scott-webb-181364.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/sergei-akulich-120604.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/sergei-akulich-120604.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-1400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-2200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-2600.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-3200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider0-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider0-800.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-1400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-2200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-2600.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-3200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider1-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider1-800.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-1400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-2200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-2600.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-3200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider2-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider2-800.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-1400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-2200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-2600.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-3200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider3-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider3-800.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-1400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-1400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-2200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-2200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-2600.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-2600.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-3200.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-3200.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-400.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-400.jpg" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Home/slider4-800.jpg" afterPath="$PROJECT_DIR$/client/src/Main/Home/slider4-800.jpg" />
-      <change beforePath="$PROJECT_DIR$/server/src/lib/i18n.js" afterPath="$PROJECT_DIR$/server/src/lib/i18n.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -188,8 +29,8 @@
       <file leaf-file-name="TagListItem.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -453,7 +294,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516455913866</updated>
       <workItem from="1516455917559" duration="181000" />
-      <workItem from="1516456130214" duration="8462000" />
+      <workItem from="1516456130214" duration="8483000" />
     </task>
     <task id="LOCAL-00001" summary="🙌 - Support Tag type in server">
       <created>1516459631328</created>
@@ -462,11 +303,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516459631329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="🙌 - Support Tags">
+      <created>1516465385518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516465385518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8643000" />
+    <option name="totallyTimeSpent" value="8664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -500,6 +348,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value=" - Support Tag type in server" />
     <MESSAGE value=" - Support Tags" />
     <option name="LAST_COMMIT_MESSAGE" value=" - Support Tags" />
@@ -855,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem/TagListItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
