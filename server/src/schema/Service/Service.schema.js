@@ -40,7 +40,7 @@ export const resolvers = {
 
   RootQuery: {
     service: (root, { id, slug }) => id ? Service.get(id) : Service.findBySlug(slug),
-    services: (root, { limit }) => Service.all({ limit }),
+    services: (root, { limit }) => Service.scan({ Limit: limit }),
     servicesCount: () => Service.count(),
   },
 

@@ -1,0 +1,33 @@
+query tags {
+  publicTags {
+    id
+    slug
+    author {
+      id
+      email
+      name
+    }
+    body(localeCode: "en")
+    createdAt
+    image
+    tags {
+      id
+      slug
+    }
+  }
+}
+
+query tagBySlug {
+  tagBySlug(slug: "the-pioneers") {
+    id
+    slug
+    tags {
+      id
+      slug
+      tags {
+        id
+        title
+      }
+    }
+  }
+}

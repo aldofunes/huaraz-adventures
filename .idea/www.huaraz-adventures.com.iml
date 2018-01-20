@@ -3,6 +3,11 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/client/build-dev" />
+      <excludeFolder url="file://$MODULE_DIR$/client/build-prod" />
+      <excludeFolder url="file://$MODULE_DIR$/client/coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/server/.serverless" />
+      <excludeFolder url="file://$MODULE_DIR$/server/.webpack" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>

@@ -1,6 +1,6 @@
 {
-  "name": "huaraz-adventures",
-  "version": "1.0.0",
+  "name": "www.huaraz-adventures.com",
+  "version": "0.1.0",
   "description": "Huaraz Adventures",
   "main": "webpack.config.js",
   "scripts": {
@@ -94,7 +94,6 @@
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.10",
     "sass-loader": "^6.0.6",
-    "storybook-router": "^0.3.2",
     "style-loader": "^0.19.1",
     "stylelint": "^8.4.0",
     "url-loader": "^0.6.2",

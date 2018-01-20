@@ -104,7 +104,7 @@ export const resolvers = {
 
   RootQuery: {
     tour: (root, { id, slug }) => id ? Tour.get(id) : Tour.findBySlug(slug),
-    tours: () => Tour.all({}),
+    tours: () => Tour.scan(),
     toursCount: () => Tour.count(),
   },
 

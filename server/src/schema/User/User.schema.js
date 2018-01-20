@@ -48,7 +48,7 @@ export const resolvers = {
 
   RootQuery: {
     user: (root, { id }) => User.get(id),
-    users: () => User.all({}),
+    users: () => User.scan(),
     myUser: (root, args, { jwt }) => User.findByJwt(jwt),
     usersCount: () => User.count(),
   },

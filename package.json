@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "www.huaraz-adventures.com",
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}

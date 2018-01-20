@@ -52,6 +52,7 @@ resources:
   Resources:
     contactsTable: ${file(./src/schema/Contact/Contact.table.yaml)}
     servicesTable: ${file(./src/schema/Service/Service.table.yaml)}
+    tagsTable: ${file(./src/schema/Tag/Tag.table.yaml)}
     toursTable: ${file(./src/schema/Tour/Tour.table.yaml)}
     tripsTable: ${file(./src/schema/Trip/Trip.table.yaml)}
     usersTable: ${file(./src/schema/User/User.table.yaml)}
@@ -76,6 +77,9 @@ custom:
 
           - table: ${self:service}-services-${file(./settings.${opt:stage}.yml):NODE_ENV}
             sources: [./src/schema/Service/Service.seed.json]
+
+          - table: ${self:service}-tags-${file(./settings.${opt:stage}.yml):NODE_ENV}
+            sources: [./src/schema/Tag/Tag.seed.json]
 
           - table: ${self:service}-tours-${file(./settings.${opt:stage}.yml):NODE_ENV}
             sources: [./src/schema/Tour/Tour.seed.json]

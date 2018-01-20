@@ -13,32 +13,6 @@ export default class Model {
     this.tableName = tableName
   }
 
-  all({ filter, attributeValues }) {
-    return docClient.scan({
-      TableName: this.tableName,
-      FilterExpression: filter,
-      ExpressionAttributeValues: attributeValues,
-    }).promise().then(data => data.Items)
-  }
-
-  find(index, query, attributeValues) {
-    return docClient.query({
-      TableName: this.tableName,
-      IndexName: index,
-      KeyConditionExpression: query,
-      ExpressionAttributeValues: attributeValues,
-    }).promise().then(data => data.Items)
-  }
-
-  findOne(index, query, attributeValues) {
-    return docClient.query({
-      TableName: this.tableName,
-      IndexName: index,
-      KeyConditionExpression: query,
-      ExpressionAttributeValues: attributeValues,
-    }).promise().then(data => data.Items[0])
-  }
-
   get(id) {
     return docClient
       .get({ TableName: this.tableName, Key: { id } })

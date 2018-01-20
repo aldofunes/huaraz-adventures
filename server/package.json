@@ -1,4 +1,6 @@
 {
+  "name": "www.huaraz-adventures.com-server",
+  "version": "0.1.0",
   "scripts": {
     "kill": "kill -9 $(lsof -ti tcp:8000)",
     "prestart": "serverless dynamodb install --stage local",

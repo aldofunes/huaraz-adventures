@@ -1,7 +1,6 @@
 [
   {
     "id": "722ceaea-b68e-4829-a759-a701589f9f8b",
-    "duration": "3 días",
     "image": "https://cdn.huaraz-adventures.com/uploads/829fb115-7d01-426e-89a6-0c86bb9c50fb.png",
     "createdAt": 1516307316571,
     "tourIds": [
@@ -12,6 +11,7 @@
     "i18n": [
       {
         "localeCode": "es",
+        "duration": "3 días",
         "summary": "{\"entityMap\":{},\"blocks\":[{\"depth\":0,\"data\":{},\"inlineStyleRanges\":[],\"text\":\"asdf\",\"type\":\"unstyled\",\"key\":\"2hifl\",\"entityRanges\":[]}]}",
         "title": "asdf"
       }

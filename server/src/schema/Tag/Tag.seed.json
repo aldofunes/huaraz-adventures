@@ -1,0 +1,19 @@
+[
+  {
+    "id": "6c3ebac0-f05b-4e4a-87ab-dc93fdf7e2ad",
+    "slug": "cordillera-blanca",
+    "createdAt": 1516307277819,
+    "modifiedAt": 1516307277819,
+    "userId": "65090932-c6a6-45e5-928f-690a73ba973e",
+    "i18n": [
+      {
+        "localeCode": "es",
+        "name": "Caminatas por la Cordillera Blanca"
+      },
+      {
+        "localeCode": "en",
+        "name": "Hikes through the Cordillera Blanca"
+      }
+    ]
+  }
+]

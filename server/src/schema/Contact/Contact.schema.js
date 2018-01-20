@@ -34,7 +34,7 @@ export const resolvers = {
 
   RootQuery: {
     contact: (root, { id }) => Contact.get(id),
-    contacts: (root, { limit }) => Contact.all({ limit }),
+    contacts: (root, { limit }) => Contact.scan({ Limit: limit }),
     contactsCount: () => Contact.count(),
   },
 

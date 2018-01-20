@@ -11,10 +11,11 @@ import {
 } from 'graphql-custom-types'
 import { GraphQLDateTime } from 'lib/customScalars'
 import * as Contact from './Contact'
-import * as Trip from './Trip'
-import * as Tour from './Tour'
 import * as SecurityToken from './SecurityToken'
 import * as Service from './Service'
+import * as Tag from './Tag'
+import * as Tour from './Tour'
+import * as Trip from './Trip'
 import * as User from './User'
 
 const rootSchema = `
@@ -47,10 +48,11 @@ const schema = makeExecutableSchema({
   typeDefs: [
     rootSchema,
     Contact.schema,
-    Trip.schema,
-    Tour.schema,
     SecurityToken.schema,
     Service.schema,
+    Tag.schema,
+    Tour.schema,
+    Trip.schema,
     User.schema,
   ],
   resolvers: merge(
@@ -64,10 +66,11 @@ const schema = makeExecutableSchema({
       UUID: GraphQLUUID,
     },
     Contact.resolvers,
-    Trip.resolvers,
-    Tour.resolvers,
     SecurityToken.resolvers,
     Service.resolvers,
+    Tag.resolvers,
+    Tour.resolvers,
+    Trip.resolvers,
     User.resolvers,
   ),
 })

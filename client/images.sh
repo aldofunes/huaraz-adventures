@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 convert -strip -fill black -colorize 50% src/pages/Home/anna-goncharova-112693.jpg -resize 200 src/pages/Home/slider0-200.jpg
 convert -strip -fill black -colorize 50% src/pages/Home/anna-goncharova-112693.jpg -resize 400 src/pages/Home/slider0-400.jpg
 convert -strip -fill black -colorize 50% src/pages/Home/anna-goncharova-112693.jpg -resize 800 src/pages/Home/slider0-800.jpg
