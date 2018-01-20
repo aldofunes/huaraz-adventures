@@ -25,25 +25,25 @@ exports.indexTemplate = ({ title, description, appMountId }) => ({
   ],
 })
 
-exports.loadJSX = ({ include, exclude }) => ({
+exports.loaders = ({ include, exclude }) => ({
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        include: include,
+        include,
         exclude,
         use: {
           loader: 'babel-loader',
           options: {
             presets: [
-              'stage-3',
               'react',
-              ['env', { targets: { browsers: ['> 1%', 'last 4 versions', 'safari >= 7'] }, modules: false }],
+              ['env', { targets: { browsers: ['last 2 versions'] }, modules: false }],
             ],
             plugins: [
-              'transform-runtime',
+              'syntax-dynamic-import',
               'transform-class-properties',
-              'transform-export-extensions',
+              'transform-object-rest-spread',
+              'transform-runtime',
             ],
             env: {
               start: { presets: ['react-hmre'] },
@@ -51,32 +51,31 @@ exports.loadJSX = ({ include, exclude }) => ({
           },
         },
       },
-    ],
-  },
-})
-
-exports.loadJSON = ({ include, exclude }) => ({
-  module: {
-    rules: [
       { test: /\.json$/, use: 'json-loader', include, exclude },
-    ],
-  },
-})
-
-exports.loadYaml = ({ include, exclude }) => ({
-  module: {
-    rules: [
-      { test: /\.(yml|yaml)$/, use: ['yaml-import-loader'], include, exclude },
-    ],
-  },
-})
-
-exports.loadGraphQL = ({ include, exclude }) => ({
-  module: {
-    rules: [
+      { test: /\.(yml|yaml)$/, use: 'yaml-import-loader', include, exclude },
       { test: /\.(graphql|gql)$/, use: 'graphql-tag/loader', include, exclude },
+      {
+        test: /\.(svg|jpg|png)$/,
+        use: [{ loader: 'file-loader', options: { outputPath: 'images/' } }],
+        include,
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        use: [{ loader: 'file-loader', options: { outputPath: 'fonts/' } }],
+        include,
+      },
     ],
   },
+})
+
+exports.minify = () => ({
+  resolve: {
+    alias: {
+      '@fortawesome/fontawesome-free-brands$': '@fortawesome/fontawesome-free-brands/shakable.es.js',
+      '@fortawesome/fontawesome-free-regular$': '@fortawesome/fontawesome-free-regular/shakable.es.js',
+      '@fortawesome/fontawesome-free-solid$': '@fortawesome/fontawesome-free-solid/shakable.es.js',
+    }
+  }
 })
 
 exports.enableReactPerformanceTools = () => ({
@@ -242,46 +241,6 @@ exports.loadCSS = ({ include }) => ({
           { loader: 'postcss-loader', options: { sourceMap: true } },
         ],
         include,
-      },
-    ],
-  },
-})
-
-exports.loadImages = ({ include, exclude }) => ({
-  module: {
-    rules: [
-      {
-        test: /\.(svg|jpg|png)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'images/',
-            },
-          },
-        ],
-        include,
-        exclude
-      },
-    ],
-  },
-})
-
-exports.loadFonts = ({ include, exclude }) => ({
-  module: {
-    rules: [
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'fonts/',
-            },
-          },
-        ],
-        include,
-        exclude
       },
     ],
   },

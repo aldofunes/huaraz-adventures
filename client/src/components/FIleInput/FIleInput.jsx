@@ -4,7 +4,7 @@ import S3 from 'aws-sdk/clients/s3'
 import uuid from 'uuid'
 import { apolloErrorType } from 'lib/propTypes'
 import { Error, Loading } from 'components'
-import styles from './FileInput.scss'
+import styles from './FIleInput.scss'
 
 export default class FileInput extends Component {
   static propTypes = {
@@ -22,6 +22,7 @@ export default class FileInput extends Component {
   static defaultProps = {
     error: null,
     className: null,
+    securityToken: null,
   }
 
   state = {

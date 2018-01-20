@@ -1,4 +1,4 @@
-const { DynamoDB } = require('aws-sdk') // eslint-disable-line node/no-unpublished-require
+import { DynamoDB } from 'aws-sdk' // eslint-disable-line node/no-unpublished-require
 
 export default new DynamoDB.DocumentClient({
   endpoint: process.env.DYNAMODB_ENDPOINT,
