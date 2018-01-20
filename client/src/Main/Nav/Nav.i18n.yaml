@@ -1,9 +1,11 @@
 en:
   nav:
     home: Home
-    trips: Trips
+    tours: Tours
+    contact: Contacto
 
 es:
   nav:
     home: Inicio
-    trips: Viajes
+    tours: Tours
+    contact: Contact

@@ -15,25 +15,28 @@ const Nav = ({ locale, localeSet }) => {
       <NavLink exact className={styles.link} activeClassName={styles.active} to="/">
         {i18n.t('nav.home')}
       </NavLink>
-      <NavLink exact className={styles.link} activeClassName={styles.active} to="/trips">
-        {i18n.t('nav.trips')}
+      <NavLink exact className={styles.link} activeClassName={styles.active} to="/tours">
+        {i18n.t('nav.tours')}
+      </NavLink>
+      <NavLink exact className={styles.link} activeClassName={styles.active} to="/contact">
+        {i18n.t('nav.contact')}
       </NavLink>
 
       <div className={styles.divider} />
 
-      <a
+      <button
         onClick={() => localeSet('en')}
         className={cx(styles.link, { [styles.active]: locale.code === 'en' })}
       >
         English
-      </a>
+      </button>
 
-      <a
+      <button
         onClick={() => localeSet('es')}
         className={cx(styles.link, { [styles.active]: locale.code === 'es' })}
       >
         Español
-      </a>
+      </button>
     </Menu>
   )
 }
