@@ -16,7 +16,7 @@ class Menu extends Component {
     if (this.state.open) { this.menu.focus() }
   }
 
-  handleKeyPress = event => {
+  handleKeyPress = (event) => {
     if (event.keyCode === 27) { this.closeMenu() }
   }
 
@@ -33,7 +33,7 @@ class Menu extends Component {
           <nav
             tabIndex={0}
             onKeyDown={this.handleKeyPress}
-            ref={menu => { this.menu = menu }}
+            ref={(menu) => { this.menu = menu }}
             onBlur={this.closeMenu}
             onClick={this.closeMenu}
             className={cx(className, styles.responsive)}

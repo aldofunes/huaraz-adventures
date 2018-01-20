@@ -9,16 +9,18 @@ import 'stylesheets/styles.global.scss'
 import Admin from './Admin'
 import Main from './Main'
 
-render((
-  <ApolloProvider client={client}>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/admin" component={Admin} />
-          <Route path="/" component={Main} />
-        </Switch>
-      </BrowserRouter>
-    </Provider>
-  </ApolloProvider>
-), document.getElementById('app'))
+render(
+  (
+    <ApolloProvider client={client}>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/admin" component={Admin} />
+            <Route path="/" component={Main} />
+          </Switch>
+        </BrowserRouter>
+      </Provider>
+    </ApolloProvider>
+  ), document.getElementById('app'),
+)
 

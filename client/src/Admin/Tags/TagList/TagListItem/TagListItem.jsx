@@ -11,6 +11,7 @@ class TagListItem extends Component {
   static propTypes = {
     tag: tagType,
     deleteTag: PropTypes.func.isRequired,
+    updateTag: PropTypes.func.isRequired,
   }
 
   constructor(props) {
@@ -42,7 +43,7 @@ class TagListItem extends Component {
     if (confirm('¿Estás seguro?')) {
       deleteTag({ id: tag.id })
         .then(() => { alert(`Se eliminó el tag '${tag.name}'`) })
-        .catch(error => { console.error(error) })
+        .catch((error) => { console.error(error) })
     }
   }
 

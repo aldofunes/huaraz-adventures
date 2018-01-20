@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { node, string } from 'prop-types'
 import cx from 'classnames'
 import styles from './Form.scss'
 
@@ -17,8 +17,15 @@ const Form = ({ children, className, size = 'medium', ...props }) => (
   </form>
 )
 
-Form.propTypes = {}
+Form.propTypes = {
+  children: node.isRequired,
+  className: string,
+  size: string,
+}
 
-Form.defaultProps = {}
+Form.defaultProps = {
+  className: null,
+  size: null,
+}
 
 export default Form

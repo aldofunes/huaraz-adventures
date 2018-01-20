@@ -10,7 +10,7 @@ const Contacts = ({ match }) => (
 )
 
 Contacts.propTypes = {
-  match: matchType.isRequired
+  match: matchType.isRequired,
 }
 
 export default Contacts

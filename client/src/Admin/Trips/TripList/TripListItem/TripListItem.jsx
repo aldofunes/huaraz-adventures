@@ -12,7 +12,7 @@ const TripListItem = ({ trip, match, deleteTrip }) => {
     if (confirm('¿Estás seguro?')) {
       deleteTrip({ id: trip.id })
         .then(() => { alert(`Se eliminó el viaje '${trip.title}'`) })
-        .catch(error => { console.error(error) })
+        .catch((error) => { console.error(error) })
     }
   }
 

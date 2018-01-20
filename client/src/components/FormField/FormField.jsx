@@ -1,5 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { node, string } from 'prop-types'
+import { apolloErrorType } from 'lib/propTypes'
 import cx from 'classnames'
 import styles from './FormField.scss'
 
@@ -11,13 +12,18 @@ const FormField = ({ className, htmlFor, label, error, children, ...props }) => 
 )
 
 FormField.propTypes = {
-  className: PropTypes.string,
-  htmlFor: PropTypes.string,
-  label: PropTypes.string,
-  error: PropTypes.object,
-  children: PropTypes.node,
+  className: string,
+  htmlFor: string,
+  label: string,
+  error: apolloErrorType,
+  children: node.isRequired,
 }
 
-FormField.defaultProps = {}
+FormField.defaultProps = {
+  className: null,
+  label: null,
+  htmlFor: null,
+  error: null,
+}
 
 export default FormField

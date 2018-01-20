@@ -24,7 +24,7 @@ class SignIn extends Component {
 
     signIn({ email, password })
       .then(({ data }) => { setJwt({ jwt: data.signIn }) })
-      .catch(error => { console.error(error)})
+      .catch((error) => { console.error(error) })
   }
 
   render() {

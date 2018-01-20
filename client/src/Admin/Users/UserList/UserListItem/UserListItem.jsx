@@ -12,7 +12,7 @@ const UserListItem = ({ user, match, deleteUser }) => {
     if (confirm('¿Estás seguro?')) {
       deleteUser({ id: user.id })
         .then(() => { alert(`Se eliminó el usuario '${user.name}'`) })
-        .catch(error => { console.error(error) })
+        .catch((error) => { console.error(error) })
     }
   }
 

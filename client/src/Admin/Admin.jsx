@@ -55,14 +55,14 @@ class Admin extends Component {
         </Transition>
 
         <div
-          role="main"
+          role="button"
           className={cx(styles.content, {
             [styles.mobile]: isMobile,
             [styles.showSidebar]: showSidebar,
             [styles.hideSidebar]: !showSidebar,
           })}
           onClick={showSidebar ? this.toggleSidebar : undefined}
-          onKeyDown={() => {}}
+          tabIndex={0}
         >
           <Switch>
             <Route exact path={match.url} component={Contacts} />

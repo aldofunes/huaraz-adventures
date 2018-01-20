@@ -1,6 +1,10 @@
 {
   "private": true,
   "name": "www.huaraz-adventures.com",
+  "scripts": {
+    "test:lint": "eslint --fix --ext .js --ext .jsx --cache client/src server/src",
+    "test:stylelint": "stylelint --fix 'src/**/*.css' 'src/**/*.scss'"
+  },
   "workspaces": [
     "client",
     "server"

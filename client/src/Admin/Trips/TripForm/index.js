@@ -12,5 +12,5 @@ export default compose(
   graphql(TripFormQuery, {
     options: ({ localeCode }) => ({ variables: { localeCode } }),
     props: ({ data }) => data,
-  })
+  }),
 )(TripForm)

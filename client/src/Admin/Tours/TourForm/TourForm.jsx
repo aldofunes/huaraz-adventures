@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { convertToRaw, convertFromRaw, EditorState } from 'draft-js'
+import { arrayOf, bool, func } from 'prop-types'
+import { convertFromRaw, convertToRaw, EditorState } from 'draft-js'
 import Select from 'react-select'
-import { tourType } from 'lib/propTypes'
-import { Button, Error, FormField, Loading, RichEditor, TextInput, FileInput } from 'components'
+import { apolloErrorType, historyType, tagType, tourType } from 'lib/propTypes'
+import { Button, Error, FileInput, FormField, Loading, RichEditor, TextInput } from 'components'
 import styles from './TourForm.scss'
 
 class TourForm extends Component {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired,
+    error: apolloErrorType,
+    history: historyType.isRequired,
+    loading: bool.isRequired,
+    onSubmit: func.isRequired,
+    tags: arrayOf(tagType),
     tour: tourType,
   }
 
   static defaultProps = {
+    error: null,
+    tags: null,
     tour: null,
   }
 
@@ -110,7 +116,7 @@ class TourForm extends Component {
     this.setState({ lists })
   }
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault()
 
     const { onSubmit, history } = this.props

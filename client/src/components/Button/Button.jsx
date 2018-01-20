@@ -32,9 +32,8 @@ const Button = ({
 
   if (to) {
     return <Link to={to}>{button}</Link>
-  } else {
-    return <a href={href}>{button}</a>
   }
+  return <a href={href}>{button}</a>
 }
 
 Button.propTypes = {

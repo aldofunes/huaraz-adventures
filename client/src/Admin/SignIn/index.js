@@ -8,7 +8,7 @@ export default compose(
   connect(
     null,
     dispatch => ({
-      setJwt: payload => {
+      setJwt: (payload) => {
         dispatch(actions.signIn(payload))
       },
     }),

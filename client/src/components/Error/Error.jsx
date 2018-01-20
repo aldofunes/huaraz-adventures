@@ -33,7 +33,7 @@ Error.propTypes = {
   error: PropTypes.shape({
     name: PropTypes.string,
     message: PropTypes.string,
-  })
+  }),
 }
 
 export default Error

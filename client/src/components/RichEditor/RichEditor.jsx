@@ -38,23 +38,19 @@ class RichEditor extends Component {
   toggleBlockType = (blockType) => {
     const { editorState } = this.props
 
-    this.handleChange(
-      RichUtils.toggleBlockType(
-        editorState,
-        blockType,
-      ),
-    )
+    this.handleChange(RichUtils.toggleBlockType(
+      editorState,
+      blockType,
+    ))
   }
 
   toggleInlineStyle = (inlineStyle) => {
     const { editorState } = this.props
 
-    this.handleChange(
-      RichUtils.toggleInlineStyle(
-        editorState,
-        inlineStyle,
-      ),
-    )
+    this.handleChange(RichUtils.toggleInlineStyle(
+      editorState,
+      inlineStyle,
+    ))
   }
 
   render() {

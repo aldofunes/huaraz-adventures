@@ -16,11 +16,11 @@ class ContactForm extends Component {
     editorState: EditorState.createEmpty(),
   }
 
-  handleChangeInput = event => { this.setState({ [event.target.name]: event.target.value }) }
+  handleChangeInput = (event) => { this.setState({ [event.target.name]: event.target.value }) }
 
   handleEditorChange = editorState => this.setState({ editorState })
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault()
 
     this.setState({ isSavingForm: true, savedForm: false, formError: null })

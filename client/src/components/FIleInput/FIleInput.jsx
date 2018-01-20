@@ -8,7 +8,6 @@ import styles from './FileInput.scss'
 
 export default class FileInput extends Component {
   static propTypes = {
-    accept: PropTypes.string,
     error: apolloErrorType,
     loading: PropTypes.bool.isRequired,
     className: PropTypes.string,
@@ -29,7 +28,7 @@ export default class FileInput extends Component {
     progress: null,
   }
 
-  handleChangeFile = event => {
+  handleChangeFile = (event) => {
     const { securityToken, onChange } = this.props
 
     const s3 = new S3({
@@ -61,11 +60,10 @@ export default class FileInput extends Component {
       .on('httpUploadProgress', ({ loaded, total }) => {
         this.setState({ progress: Math.round((loaded / total) * 100) })
       })
-
   }
 
   render() {
-    const { id, accept, className, error, loading, ref } = this.props
+    const { className, error, loading, ...props } = this.props
     const { progress } = this.state
 
     if (error) { return <Error error={error} /> }
@@ -74,12 +72,10 @@ export default class FileInput extends Component {
     return (
       <div className={className}>
         <input
-          ref={ref}
-          id={id}
           type="file"
           className={styles.input}
           onChange={this.handleChangeFile}
-          accept={accept}
+          {...props}
         />
         {progress && <progress max="100" value={progress} className={styles.progressBar} />}
       </div>

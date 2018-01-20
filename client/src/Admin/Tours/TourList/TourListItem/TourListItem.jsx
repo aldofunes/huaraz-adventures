@@ -12,7 +12,7 @@ const TourListItem = ({ tour, match, deleteTour }) => {
     if (confirm('¿Estás seguro?')) {
       deleteTour({ id: tour.id })
         .then(() => { alert(`Se eliminó el tour '${tour.name}'`) })
-        .catch(error => { console.error(error) })
+        .catch((error) => { console.error(error) })
     }
   }
 

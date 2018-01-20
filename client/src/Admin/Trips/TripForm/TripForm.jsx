@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { convertToRaw, convertFromRaw, EditorState } from 'draft-js'
+import { arrayOf, bool, func } from 'prop-types'
+import { convertFromRaw, convertToRaw, EditorState } from 'draft-js'
 import Select from 'react-select'
-import { apolloErrorType, tourType, tripType } from 'lib/propTypes'
-import { Button, Error, FormField, Loading, RichEditor, TextInput, FileInput } from 'components'
+import { apolloErrorType, historyType, tourType, tripType } from 'lib/propTypes'
+import { Button, Error, FileInput, FormField, Loading, RichEditor, TextInput } from 'components'
 import styles from './TripForm.scss'
 
 class TripForm extends Component {
   static propTypes = {
-    onSubmit: PropTypes.func.isRequired,
-    trip: tripType,
     error: apolloErrorType,
-    loading: PropTypes.bool.isRequired,
-    tours: PropTypes.arrayOf(tourType),
+    history: historyType.isRequired,
+    loading: bool.isRequired,
+    onSubmit: func.isRequired,
+    tours: arrayOf(tourType),
+    trip: tripType,
   }
 
   static defaultProps = {
@@ -61,7 +62,7 @@ class TripForm extends Component {
   handleSummaryChange = summary => this.setState({ summary })
   handleTourIdsChange = tourIds => this.setState({ tourIds })
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault()
 
     const { onSubmit, history } = this.props

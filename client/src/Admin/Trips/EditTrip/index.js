@@ -9,7 +9,7 @@ export default compose(
 
   graphql(EditTripQuery, {
     options: ({ match: { params }, localeCode }) => ({
-      variables: { id: params.id, localeCode }
+      variables: { id: params.id, localeCode },
     }),
     props: ({ data }) => data,
   }),
@@ -20,7 +20,7 @@ export default compose(
         variables: { id: params.id, ...variables, localeCode },
 
         // TODO: Optimistic UI
-      })
+      }),
     }),
   }),
 )(EditTrip)

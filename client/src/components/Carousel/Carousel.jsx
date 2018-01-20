@@ -33,7 +33,7 @@ class Carousel extends Component {
    *
    * @param {number} activeSlide
    */
-  setActiveSlide = activeSlide => { this.setState({ activeSlide })}
+  setActiveSlide = (activeSlide) => { this.setState({ activeSlide }) }
 
   /**
    * Go to the next slide in the carousel

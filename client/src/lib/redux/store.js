@@ -21,7 +21,7 @@ const store = createStore(
     },
     nav: {
       showSidebar: false,
-    }
+    },
   },
   devToolsEnhancer({}),
 )

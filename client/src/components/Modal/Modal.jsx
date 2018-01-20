@@ -19,7 +19,7 @@ class Modal extends Component {
   }
 
   // new way of autobinding a method
-  handleKeyDown = event => {
+  handleKeyDown = (event) => {
     // keyCode 27 is the esc key
     if (event.keyCode === 27) {
       this.handleClose()
@@ -33,7 +33,7 @@ class Modal extends Component {
       <div
         onKeyDown={this.handleKeyDown}
         tabIndex={0}
-        ref={modal => { this.modal = modal }}
+        ref={(modal) => { this.modal = modal }}
         className={styles.overlay}
         onClick={this.handleClose}
       >

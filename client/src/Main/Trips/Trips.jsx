@@ -5,7 +5,7 @@ import { matchType } from 'lib/propTypes'
 const Trips = ({ match }) => (
   <Switch>
     <Route exact path={match.url} component={() => <div>TripList</div>} />
-    <Route path={`${match.url}/:id`} component={() => <div>TripDetails</div>}  />
+    <Route path={`${match.url}/:id`} component={() => <div>TripDetails</div>} />
   </Switch>
 )
 

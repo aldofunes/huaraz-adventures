@@ -14,10 +14,10 @@ export default compose(
   graphql(updateTag, {
     props: ({ ownProps: { localeCode }, mutate }) => ({
       updateTag: variables => mutate({
-        variables: { ...variables, localeCode } ,
+        variables: { ...variables, localeCode },
 
         // TODO: Optimistic UI
-      })
+      }),
     }),
   }),
 

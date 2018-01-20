@@ -12,7 +12,7 @@ export default compose(
     state => ({ localeCode: state.locale.code }),
     dispatch => ({
       signOut: () => dispatch(authActions.signOut()),
-      setLocale: code => dispatch(localeActions.localeSet(code))
-    })
+      setLocale: code => dispatch(localeActions.localeSet(code)),
+    }),
   ),
 )(Sidebar)

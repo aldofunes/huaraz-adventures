@@ -13,7 +13,7 @@ const BlockStyleControls = ({ editorState, onToggle }) => {
 
   return (
     <div className={styles.controls}>
-      {BLOCK_TYPES.map((type) => (
+      {BLOCK_TYPES.map(type => (
         <StyleButton
           key={type.label}
           active={type.style === blockType}
