@@ -1,9 +1,10 @@
-const webpack = require('webpack')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 exports.indexTemplate = ({ title, description, appMountId }) => ({
   plugins: [
@@ -12,16 +13,47 @@ exports.indexTemplate = ({ title, description, appMountId }) => ({
       template: require('html-webpack-template'),
       title,
       appMountId,
+      bodyHtmlSnippet: `
+        <noscript>  
+          <h4 style="font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica;">  
+            Sorry, JavaScript needs to be enabled in order to run this application.  
+          </h4>  
+        </noscript>
+      `,
       mobile: true,
       meta: [
-        { name: 'description', content: description }
+        { name: 'description', content: description },
       ],
       minify: {
         collapseWhitespace: true,
         preserveLineBreaks: true,
       },
+      lang: 'en',
     }),
-    new CopyWebpackPlugin([{ from: 'assets', to: '.' }]),
+    // new CopyWebpackPlugin([{ from: 'assets', to: '.' }]),
+    new FaviconsWebpackPlugin({
+      logo: './assets/logo.png',
+      prefix: 'icons-[hash]/',
+      emitStats: false,
+      statsFilename: 'iconstats-[hash].json',
+      persistentCache: true,
+      inject: true,
+      background: '#fff',
+      title: 'Huaraz Adventures',
+
+      icons: {
+        android: true,
+        appleIcon: true,
+        appleStartup: true,
+        coast: true,
+        favicons: true,
+        firefox: true,
+        opengraph: true,
+        twitter: true,
+        yandex: true,
+        windows: true,
+      }
+    })
   ],
 })
 
@@ -134,15 +166,15 @@ exports.extractCSS = ({ include }) => {
                   importLoaders: 2,
                   sourceMap: true,
                   localIdentName: '[hash]',
-                }
+                },
               },
               {
                 loader: 'postcss-loader',
-                options: { sourceMap: true }
+                options: { sourceMap: true },
               },
               {
                 loader: 'sass-loader',
-                options: { includePaths: ['./node_modules', include], sourceMap: true }
+                options: { includePaths: ['./node_modules', include], sourceMap: true },
               },
             ],
           }),
@@ -155,11 +187,11 @@ exports.extractCSS = ({ include }) => {
             use: [
               {
                 loader: 'css-loader',
-                options: { sourceMap: true }
+                options: { sourceMap: true },
               },
               {
                 loader: 'postcss-loader',
-                options: { sourceMap: true }
+                options: { sourceMap: true },
               },
               {
                 loader: 'sass-loader',
@@ -174,11 +206,10 @@ exports.extractCSS = ({ include }) => {
           use: plugin.extract({
             fallback: 'style-loader',
             use: [
-              { loader: 'css-loader', options: { sourceMap: true } },
-              { loader: 'postcss-loader', options: { sourceMap: true } },
+              { loader: 'css-loader' },
             ],
           }),
-          include,
+          include: [include, /node_modules/],
         },
       ],
     },
@@ -201,15 +232,15 @@ exports.loadCSS = ({ include }) => ({
               importLoaders: 2,
               sourceMap: true,
               localIdentName: '[name]_[local]__[hash:base64:5]',
-            }
+            },
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true }
+            options: { sourceMap: true },
           },
           {
             loader: 'sass-loader',
-            options: { includePaths: ['./node_modules', include], sourceMap: true }
+            options: { includePaths: ['./node_modules', include], sourceMap: true },
           },
         ],
         include,
@@ -220,11 +251,11 @@ exports.loadCSS = ({ include }) => ({
           'style-loader',
           {
             loader: 'css-loader',
-            options: { sourceMap: true }
+            options: { sourceMap: true },
           },
           {
             loader: 'postcss-loader',
-            options: { sourceMap: true }
+            options: { sourceMap: true },
           },
           {
             loader: 'sass-loader',
@@ -237,10 +268,9 @@ exports.loadCSS = ({ include }) => ({
         test: /\.css$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { sourceMap: true } },
-          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { loader: 'css-loader' },
         ],
-        include,
+        include: [include, /node_modules/],
       },
     ],
   },
@@ -253,10 +283,10 @@ exports.analyze = () => ({
       reportFilename: 'bundleReport.html',
       defaultSizes: 'gzip', // `stat`, `parsed` or `gzip`.
       openAnalyzer: true,
-      generateStatsFile: true,
+      generateStatsFile: false,
       statsFilename: 'stats.json',
       statsOptions: null,
-      logLevel: 'info'
+      logLevel: 'info',
     }),
   ],
 })

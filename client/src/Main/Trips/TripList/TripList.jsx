@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { apolloErrorType, localeType, tripType } from 'lib/propTypes'
+import { errorType, localeType, tripType } from 'lib/propTypes'
 import { Error, Loading } from 'components/index'
 import i18n from 'lib/i18n'
 import translations from './TripList.i18n.yaml'
@@ -25,7 +25,7 @@ const TripList = ({ error, loading, trips, locale }) => {
 }
 
 TripList.propTypes = {
-  error: apolloErrorType,
+  error: errorType,
   loading: PropTypes.bool.isRequired,
   trips: PropTypes.arrayOf(tripType),
   locale: localeType,

@@ -1,19 +1,7 @@
 en:
   footer:
-    links:
-      belive: BeLive
-      get_in_touch: Get in Touch
-      institute: Institute
-      privacy_policy: Privacy Policy
-      report: Report
-      support: Support
+    credits: Built in 🇲🇽 with ❤
 
 es:
   footer:
-    links:
-      belive: BeLive
-      get_in_touch: Contáctanos
-      institute: Institute
-      privacy_policy: Política de privacidad
-      report: Report
-      support: Soporte
+    credits: Creado en 🇲🇽 con ❤

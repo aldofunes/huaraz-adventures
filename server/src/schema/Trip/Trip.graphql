@@ -3,7 +3,7 @@ query getTrips {
     id
     title(localeCode: "en")
     duration
-    tours {
+    expeditions {
       id
       name(localeCode: "en")
     }

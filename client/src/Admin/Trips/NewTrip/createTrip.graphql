@@ -1,10 +1,10 @@
 mutation createTripMutation(
 $duration: String!
-$image: URL!
+$image: String!
 $localeCode: String!
 $summary: String!
 $title: String!
-$tourIds: [ID!]!
+$expeditionIds: [ID!]!
 ) {
   createTrip(
     duration: $duration
@@ -12,7 +12,7 @@ $tourIds: [ID!]!
     localeCode: $localeCode
     summary: $summary
     title: $title
-    tourIds: $tourIds
+    expeditionIds: $expeditionIds
   ) {
     id
     title(localeCode: $localeCode)

@@ -2,9 +2,29 @@
 
 .container {
   text-align: center;
-  padding: 1em;
+  width: 100%;
 }
 
-.text {
+.header {
   color: map-get($brand-status-colors, critical);
+}
+
+.small {
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.medium {
+  padding: 1em;
+  font-size: 1em;
+}
+
+.large {
+  padding: 2em;
+  font-size: 1.5em;
+}
+
+.xlarge {
+  padding: 3em;
+  font-size: 2em;
 }

@@ -5,7 +5,7 @@ query EditTripQuery($id: ID! $localeCode: String!) {
     image
     summary(localeCode: $localeCode)
     title(localeCode: $localeCode)
-    tours {
+    expeditions {
       id
       name(localeCode: $localeCode)
     }

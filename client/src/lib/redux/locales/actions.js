@@ -1,8 +1,8 @@
-import { LOCALE_SET } from './actionTypes'
+import { SET_LOCALE } from './actionTypes'
 
-const localeSet = code => ({
-  type: LOCALE_SET,
-  code,
+const setLocale = code => ({
+  type: SET_LOCALE,
+  payload: { code },
 })
 
-export { localeSet }
+export { setLocale }

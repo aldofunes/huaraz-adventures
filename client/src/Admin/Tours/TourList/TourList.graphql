@@ -1,9 +1,0 @@
-query TourListQuery($localeCode: String!) {
-  tours {
-    id
-    image
-    name(localeCode: $localeCode)
-    createdAt
-    modifiedAt
-  }
-}

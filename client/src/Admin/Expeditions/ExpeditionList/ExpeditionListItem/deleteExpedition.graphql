@@ -1,0 +1,3 @@
+mutation deleteExpeditionMutation($id: ID!) {
+  deleteExpedition(id: $id)
+}

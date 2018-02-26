@@ -1,0 +1,22 @@
+query EditExpeditionQuery($id: ID! $localeCode: String!) {
+  expedition(id: $id) {
+    id
+    altitud
+    summary(localeCode: $localeCode)
+    difficulty
+    duration(localeCode: $localeCode)
+    image
+    itinerary(localeCode: $localeCode)
+    lists(localeCode: $localeCode) {
+      name
+      body
+    }
+    location(localeCode: $localeCode)
+    name(localeCode: $localeCode)
+    season(localeCode: $localeCode)
+    tags {
+      id
+      name(localeCode: $localeCode)
+    }
+  }
+}

@@ -2,17 +2,17 @@ import React, { Component } from 'react'
 import { arrayOf, bool, func } from 'prop-types'
 import { convertFromRaw, convertToRaw, EditorState } from 'draft-js'
 import Select from 'react-select'
-import { apolloErrorType, historyType, tourType, tripType } from 'lib/propTypes'
+import { errorType, historyType, expeditionType, tripType } from 'lib/propTypes'
 import { Button, Error, FileInput, FormField, Loading, RichEditor, TextInput } from 'components'
 import styles from './TripForm.scss'
 
 class TripForm extends Component {
   static propTypes = {
-    error: apolloErrorType,
+    error: errorType,
     history: historyType.isRequired,
     loading: bool.isRequired,
     onSubmit: func.isRequired,
-    tours: arrayOf(tourType),
+    expeditions: arrayOf(expeditionType),
     trip: tripType,
   }
 
@@ -29,7 +29,7 @@ class TripForm extends Component {
         image: props.trip.image,
         summary: EditorState.createWithContent(convertFromRaw(JSON.parse(props.trip.summary))),
         title: props.trip.title,
-        tourIds: props.trip.tours.map(({ id, name }) => ({ value: id, label: name })),
+        expeditionIds: props.trip.expeditions.map(({ id, name }) => ({ value: id, label: name })),
       }
     } else {
       this.state = {
@@ -37,7 +37,7 @@ class TripForm extends Component {
         image: '',
         summary: EditorState.createEmpty(),
         title: '',
-        tourIds: [],
+        expeditionIds: [],
         isSavingForm: null,
         formError: null,
       }
@@ -51,7 +51,7 @@ class TripForm extends Component {
         image: nextProps.trip.image,
         summary: EditorState.createWithContent(convertFromRaw(JSON.parse(nextProps.trip.summary))),
         title: nextProps.trip.title,
-        tourIds: nextProps.trip.tourIds,
+        expeditionIds: nextProps.trip.expeditionIds,
       })
     }
   }
@@ -60,13 +60,13 @@ class TripForm extends Component {
   handleChangeInput = event => this.setState({ [event.target.name]: event.target.value })
   handleChangeImage = image => this.setState({ image })
   handleSummaryChange = summary => this.setState({ summary })
-  handleTourIdsChange = tourIds => this.setState({ tourIds })
+  handleExpeditionIdsChange = expeditionIds => this.setState({ expeditionIds })
 
   handleSubmit = (event) => {
     event.preventDefault()
 
     const { onSubmit, history } = this.props
-    const { duration, image, summary, title, tourIds } = this.state
+    const { duration, image, summary, title, expeditionIds } = this.state
 
     this.setState({ isSavingForm: true, formError: null })
 
@@ -75,7 +75,7 @@ class TripForm extends Component {
       image,
       summary: JSON.stringify(convertToRaw(summary.getCurrentContent())),
       title,
-      tourIds: tourIds.map(tour => tour.value),
+      expeditionIds: expeditionIds.map(expedition => expedition.value),
     })
       .then(({ data }) => {
         history.push('/admin/trips')
@@ -86,8 +86,8 @@ class TripForm extends Component {
   }
 
   render() {
-    const { error, loading, tours } = this.props
-    const { duration, image, summary, title, tourIds, isSavingForm, formError } = this.state
+    const { error, loading, expeditions } = this.props
+    const { duration, image, summary, title, expeditionIds, isSavingForm, formError } = this.state
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -130,21 +130,21 @@ class TripForm extends Component {
           />
         </FormField>
 
-        <FormField htmlFor="summary" label="Resúmen">
+        <FormField htmlFor="summary" label="Resumen">
           <RichEditor editorState={summary} onChange={this.handleSummaryChange} />
         </FormField>
 
-        <FormField htmlFor="tourIds" label="Tours incluidos">
+        <FormField htmlFor="expeditionIds" label="Expeditions incluidos">
           {error && <Error error={error} size="small" />}
           {loading && <Loading size="small" />}
-          {tours && (
+          {expeditions && (
             <Select
-              id="tourIds"
-              name="tourIds"
+              id="expeditionIds"
+              name="expeditionIds"
               multi
-              value={tourIds}
-              onChange={this.handleTourIdsChange}
-              options={tours.map(({ id, name }) => ({ value: id, label: name }))}
+              value={expeditionIds}
+              onChange={this.handleExpeditionIdsChange}
+              options={expeditions.map(({ id, name }) => ({ value: id, label: name }))}
             />
           )}
         </FormField>

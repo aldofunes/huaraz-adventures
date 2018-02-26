@@ -15,8 +15,8 @@ const Nav = ({ locale, localeSet }) => {
       <NavLink exact className={styles.link} activeClassName={styles.active} to="/">
         {i18n.t('nav.home')}
       </NavLink>
-      <NavLink exact className={styles.link} activeClassName={styles.active} to="/tours">
-        {i18n.t('nav.tours')}
+      <NavLink exact className={styles.link} activeClassName={styles.active} to="/expeditions">
+        {i18n.t('nav.expeditions')}
       </NavLink>
       <NavLink exact className={styles.link} activeClassName={styles.active} to="/contact">
         {i18n.t('nav.contact')}

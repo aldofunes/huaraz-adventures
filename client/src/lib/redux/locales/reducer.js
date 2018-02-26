@@ -1,10 +1,10 @@
-import { LOCALE_SET } from './actionTypes'
+import { SET_LOCALE } from './actionTypes'
 
-const locale = (state = [], { type, ...rest }) => {
+const locale = (state = {}, { type, payload }) => {
   switch (type) {
-    case LOCALE_SET:
-      localStorage.setItem('locale', rest.code)
-      return { code: rest.code }
+    case SET_LOCALE:
+      localStorage.setItem('locale', payload.code)
+      return { code: payload.code }
 
     default:
       return state

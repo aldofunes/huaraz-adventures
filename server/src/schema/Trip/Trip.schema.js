@@ -1,16 +1,16 @@
 import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
-import Tour from 'schema/Tour'
+import Expedition from 'schema/Expedition'
 import Trip from './Trip'
 
 export const schema = `
 type Trip {
   id: ID!
   duration(localeCode: String!): String!
-  image: URL!
+  image: String!
   summary(localeCode: String!): String!
   title(localeCode: String!): String!
-  tours: [Tour]!
+  expeditions: [Expedition]!
 }
 
 extend type RootQuery {
@@ -22,21 +22,21 @@ extend type RootQuery {
 extend type RootMutation {
   createTrip(
     duration: String!
-    image: URL!
+    image: String!
     localeCode: String!
     summary: String!
     title: String!
-    tourIds: [ID!]!
+    expeditionIds: [ID!]!
   ): Trip
   
   updateTrip(
     id: ID!
     duration: String!
-    image: URL!
+    image: String!
     localeCode: String!
     summary: String!
     title: String!
-    tourIds: [ID!]!
+    expeditionIds: [ID!]!
   ): Trip
   
   deleteTrip(id: ID!): Boolean
@@ -58,9 +58,9 @@ export const resolvers = {
       return findTranslation(i18n, localeCode).title
     },
 
-    tours({ tourIds }) {
-      return Tour.query({
-        KeyConditions: { id: { ComparisonOperator: 'EQ', AttributeValueList: tourIds } },
+    expeditions({ expeditionIds }) {
+      return Expedition.query({
+        KeyConditions: { id: { ComparisonOperator: 'EQ', AttributeValueList: expeditionIds } },
       })
     },
   },
@@ -72,22 +72,22 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createTrip(root, { image, tourIds, ...args }, { jwt }) {
+    createTrip(root, { image, expeditionIds, ...args }, { jwt }) {
       return authorize(jwt)
         .then(user => Trip.create({
           image,
-          tourIds,
+          expeditionIds,
           i18n: [args],
           userId: user.id,
         }))
     },
 
-    updateTrip(root, { id, image, tourIds, localeCode, ...args }, { jwt }) {
+    updateTrip(root, { id, image, expeditionIds, localeCode, ...args }, { jwt }) {
       return authorize(jwt)
         .then(() => Trip.get(id))
         .then(trip => Trip.update(id, {
           image,
-          tourIds,
+          expeditionIds,
           i18n: [
             ...trip.i18n.filter(i => i.localeCode !== localeCode),
             { localeCode: localeCode, ...args },

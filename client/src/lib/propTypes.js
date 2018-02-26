@@ -1,6 +1,6 @@
 import { bool, func, number, object, shape, string, arrayOf } from 'prop-types'
 
-export const apolloErrorType = shape({
+export const errorType = shape({
   message: string.isRequired,
   data: object,
 })
@@ -53,7 +53,7 @@ export const contactType = shape({
   name: string,
 })
 
-export const tourType = shape({
+export const expeditionType = shape({
   id: string.isRequired,
   createdAt: number,
   modifiedAt: number,
@@ -69,7 +69,7 @@ export const tripType = shape({
   title: string,
   image: string,
   duration: string,
-  tours: arrayOf(tourType),
+  expeditions: arrayOf(expeditionType),
 })
 
 export const userType = shape({

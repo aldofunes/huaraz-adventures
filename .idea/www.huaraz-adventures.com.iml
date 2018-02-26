@@ -22,5 +22,13 @@
     <orderEntry type="library" name="@types/react-dom" level="application" />
     <orderEntry type="library" name="@types/draft-js" level="application" />
     <orderEntry type="library" name="@types/d3-geo" level="application" />
+    <orderEntry type="library" name="@types/graphql" level="application" />
+    <orderEntry type="library" name="@types/jsonwebtoken" level="application" />
+    <orderEntry type="library" name="@types/ldapjs" level="application" />
+    <orderEntry type="library" name="@types/mocha" level="application" />
+    <orderEntry type="library" name="@types/node-polyglot" level="application" />
+    <orderEntry type="library" name="@types/query-string" level="application" />
+    <orderEntry type="library" name="@types/sequelize" level="application" />
+    <orderEntry type="library" name="@types/webpack" level="application" />
   </component>
 </module>

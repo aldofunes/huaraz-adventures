@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { apolloErrorType, matchType, userType } from 'lib/propTypes'
+import { errorType, matchType, userType } from 'lib/propTypes'
 import { EmptyList, Error, Loading, Table } from 'components'
 import UserListItem from './UserListItem'
 
@@ -27,7 +27,7 @@ const UserList = ({ error, loading, users, match }) => {
 }
 
 UserList.propTypes = {
-  error: apolloErrorType,
+  error: errorType,
   loading: PropTypes.bool.isRequired,
   users: PropTypes.arrayOf(userType),
   match: matchType.isRequired,

@@ -18,7 +18,7 @@ const common = merge(
       app: PATHS.app,
     },
     resolve: {
-      modules: [PATHS.app, 'node_modules'],
+      modules: ['node_modules', PATHS.app],
       extensions: ['.js', '.jsx', '.json'],
     },
   },

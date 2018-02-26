@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { apolloErrorType, tripType } from 'lib/propTypes'
+import { errorType, tripType } from 'lib/propTypes'
 import { Error, Loading } from 'components'
 import TripForm from '../TripForm'
 
@@ -20,7 +20,7 @@ const EditTrip = ({ error, loading, trip, updateTrip }) => {
 }
 
 EditTrip.propTypes = {
-  error: apolloErrorType,
+  error: errorType,
   loading: PropTypes.bool.isRequired,
   updateTrip: PropTypes.func.isRequired,
   trip: tripType,

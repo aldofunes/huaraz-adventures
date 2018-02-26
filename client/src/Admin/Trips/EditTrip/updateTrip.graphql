@@ -1,11 +1,11 @@
 mutation updateTripMutation(
 $id: ID!
 $duration: String!
-$image: URL!
+$image: String!
 $localeCode: String!
 $summary: String!
 $title: String!
-$tourIds: [ID!]!
+$expeditionIds: [ID!]!
 ) {
   updateTrip(
     id: $id
@@ -14,14 +14,14 @@ $tourIds: [ID!]!
     localeCode: $localeCode
     summary: $summary
     title: $title
-    tourIds: $tourIds
+    expeditionIds: $expeditionIds
   ) {
     id
     duration
     image
     summary(localeCode: $localeCode)
     title(localeCode: $localeCode)
-    tours {
+    expeditions {
       id
       name(localeCode: $localeCode)
     }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { node, string } from 'prop-types'
-import { apolloErrorType } from 'lib/propTypes'
+import { errorType } from 'lib/propTypes'
 import cx from 'classnames'
 import styles from './FormField.scss'
 
@@ -15,7 +15,7 @@ FormField.propTypes = {
   className: string,
   htmlFor: string,
   label: string,
-  error: apolloErrorType,
+  error: errorType,
   children: node.isRequired,
 }
 

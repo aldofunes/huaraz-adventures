@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { apolloErrorType, matchType, tripType } from 'lib/propTypes'
+import { errorType, matchType, tripType } from 'lib/propTypes'
 import { EmptyList, Error, Loading, Table } from 'components'
 import TripListItem from './TripListItem'
 
@@ -27,7 +27,7 @@ const TripList = ({ error, loading, trips, match }) => {
 }
 
 TripList.propTypes = {
-  error: apolloErrorType,
+  error: errorType,
   loading: PropTypes.bool.isRequired,
   trips: PropTypes.arrayOf(tripType),
   match: matchType.isRequired,

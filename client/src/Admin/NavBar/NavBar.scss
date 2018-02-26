@@ -1,4 +1,4 @@
-.header {
+.container {
   position: fixed;
   top: 0;
   right: 0;
@@ -39,4 +39,8 @@
       color: #a00;
     }
   }
+}
+
+.active {
+  background: #eee;
 }

@@ -8,7 +8,6 @@ env:
 plugins:
   - jsx-a11y
   - react
-  - graphql
 
 parserOptions:
   ecmaFeatures:

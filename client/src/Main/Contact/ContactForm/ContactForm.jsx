@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { EditorState } from 'draft-js'
 import { Button, Error, Form, FormField, Loading, RichEditor, TextInput } from 'components'
 import i18n from 'lib/i18n'
-import translations from './ContactForm.translations.yaml'
+import translations from './ContactForm.i18n.yaml'
 
 class ContactForm extends Component {
   state = {

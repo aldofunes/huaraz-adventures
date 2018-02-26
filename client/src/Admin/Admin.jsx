@@ -10,8 +10,7 @@ import NavBar from './NavBar'
 import Sidebar from './Sidebar'
 import SignIn from './SignIn'
 import Tags from './Tags'
-import Tours from './Tours'
-import Trips from './Trips'
+import Expeditions from './Expeditions'
 import Users from './Users'
 import styles from './Admin.scss'
 
@@ -68,8 +67,7 @@ class Admin extends Component {
             <Route exact path={match.url} component={Contacts} />
             <Route path={`${match.url}/contacts`} component={Contacts} />
             <Route path={`${match.url}/tags`} component={Tags} />
-            <Route path={`${match.url}/tours`} component={Tours} />
-            <Route path={`${match.url}/trips`} component={Trips} />
+            <Route path={`${match.url}/expeditions`} component={Expeditions} />
             <Route path={`${match.url}/users`} component={Users} />
 
             {/* Render a not found component when no route is found */}

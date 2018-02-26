@@ -4,7 +4,7 @@ query TripListQuery($localeCode: String!) {
     duration(localeCode: $localeCode)
     image
     title(localeCode: $localeCode)
-    tours {
+    expeditions {
       id
       name(localeCode: $localeCode)
     }

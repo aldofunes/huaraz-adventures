@@ -1,5 +1,5 @@
 query TripFormQuery($localeCode: String!) {
-  tours {
+  expeditions {
     id
     name(localeCode: $localeCode)
   }

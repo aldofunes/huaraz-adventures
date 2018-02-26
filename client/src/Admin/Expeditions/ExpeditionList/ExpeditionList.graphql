@@ -1,0 +1,9 @@
+query ExpeditionListQuery($localeCode: String!) {
+  expeditions {
+    id
+    image
+    name(localeCode: $localeCode)
+    createdAt
+    modifiedAt
+  }
+}

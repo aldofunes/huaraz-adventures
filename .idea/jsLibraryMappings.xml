@@ -4,7 +4,7 @@
     <file url="file://$PROJECT_DIR$" libraries="{www.huaraz-adventures.com/node_modules}" />
     <file url="file://$PROJECT_DIR$/client" libraries="{www.huaraz-adventures.com/client/node_modules}" />
     <file url="file://$PROJECT_DIR$/server" libraries="{www.huaraz-adventures.com/server/node_modules}" />
-    <file url="PROJECT" libraries="{@types/aws-lambda, @types/d3-geo, @types/draft-js, @types/jest, @types/prop-types, @types/react, @types/react-dom, @types/react-router-dom, @types/react-transition-group, www.huaraz-adventures.com/client/node_modules, www.huaraz-adventures.com/node_modules, www.huaraz-adventures.com/server/node_modules}" />
+    <file url="PROJECT" libraries="{@types/aws-lambda, @types/d3-geo, @types/draft-js, @types/graphql, @types/jest, @types/jsonwebtoken, @types/ldapjs, @types/mocha, @types/node-polyglot, @types/prop-types, @types/query-string, @types/react, @types/react-dom, @types/react-router-dom, @types/react-transition-group, @types/sequelize, @types/webpack, www.huaraz-adventures.com/client/node_modules, www.huaraz-adventures.com/node_modules, www.huaraz-adventures.com/server/node_modules}" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>

@@ -1,0 +1,11 @@
+query getCategories {
+  categories(type: KNOWLEDGEBASE) {
+    id
+    name
+    slug
+    articles {
+      id
+      title
+    }
+  }
+}

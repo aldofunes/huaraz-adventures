@@ -11,10 +11,10 @@ const TripCard = ({ trip }) => (
     </div>
 
     <div className={styles.content}>
-      <h4>Tours:</h4>
+      <h4>Expeditions:</h4>
 
       <ul>
-        {trip.tours.map(tour => <li key={tour.id}>{tour.name}</li>)}
+        {trip.expeditions.map(expedition => <li key={expedition.id}>{expedition.name}</li>)}
       </ul>
 
       <Button className={styles.button} primary>Reserve</Button>
