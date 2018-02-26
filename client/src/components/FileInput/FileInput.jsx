@@ -1,36 +1,36 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { bool, func, shape, string } from 'prop-types'
 import S3 from 'aws-sdk/clients/s3'
-import uuid from 'uuid'
-import { apolloErrorType } from 'lib/propTypes'
+import { format } from 'date-fns'
+import { errorType } from 'lib/propTypes'
 import { Error, Loading } from 'components'
-import styles from './FIleInput.scss'
+import styles from './FileInput.scss'
 
 export default class FileInput extends Component {
   static propTypes = {
-    error: apolloErrorType,
-    loading: PropTypes.bool.isRequired,
-    className: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
-    securityToken: PropTypes.shape({
-      accessKeyId: PropTypes.string.isRequired,
-      secretAccessKey: PropTypes.string.isRequired,
-      sessionToken: PropTypes.string.isRequired,
-    }),
+    data: shape({
+      error: errorType,
+      loading: bool.isRequired,
+      securityToken: shape({
+        accessKeyId: string.isRequired,
+        secretAccessKey: string.isRequired,
+        sessionToken: string.isRequired,
+      }),
+    }).isRequired,
+    className: string,
+    onChange: func.isRequired,
   }
 
   static defaultProps = {
-    error: null,
     className: null,
-    securityToken: null,
   }
 
   state = {
-    progress: null,
+    uploading: false,
   }
 
-  handleChangeFile = (event) => {
-    const { securityToken, onChange } = this.props
+  handleChange = (event) => {
+    const { data: { securityToken }, onChange } = this.props
 
     const s3 = new S3({
       region: 'us-east-1',
@@ -42,43 +42,42 @@ export default class FileInput extends Component {
       },
     })
 
-    const file = event.target.files[0]
+    const { files } = event.target
 
-    s3.upload({
-      Key: `uploads/${uuid.v4()}.${file.name.split('.').pop()}`,
+    this.setState({ uploading: true })
+
+    return Promise.all(Array.from(files).map(file => s3.upload({
+      Key: `uploads/${format(new Date(), 'YYYY-MM-DD')}/${file.name}`,
       Body: file,
       ContentType: file.type,
-    }, (error, result) => {
-      if (error) {
-        console.error(error)
-      }
-
-      if (result) {
-        onChange(`https://cdn.huaraz-adventures.com/${result.Key}`)
-        this.setState({ progress: null })
-      }
-    })
-      .on('httpUploadProgress', ({ loaded, total }) => {
-        this.setState({ progress: Math.round((loaded / total) * 100) })
+    }).promise()
+      .then(result => `https://cdn.huaraz-adventures.com/${result.Key}`)))
+      .then((urls) => {
+        this.setState({ uploading: false })
+        return onChange(urls)
+      })
+      .catch((error) => {
+        this.setState({ uploading: false })
+        console.log(error)
       })
   }
 
   render() {
-    const { className, error, loading, ...props } = this.props
-    const { progress } = this.state
+    const { className, data, onChange, ...props } = this.props
+    const { uploading } = this.state
 
-    if (error) { return <Error error={error} /> }
-    if (loading) { return <Loading /> }
+    if (data.error) { return <Error error={data.error} /> }
+    if (data.loading) { return <Loading /> }
 
     return (
       <div className={className}>
         <input
           type="file"
           className={styles.input}
-          onChange={this.handleChangeFile}
+          onChange={this.handleChange}
           {...props}
         />
-        {progress && <progress max="100" value={progress} className={styles.progressBar} />}
+        {uploading && <progress className={styles.progressBar} />}
       </div>
     )
   }

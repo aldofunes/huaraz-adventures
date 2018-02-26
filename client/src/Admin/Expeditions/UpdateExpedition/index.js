@@ -1,8 +1,8 @@
 import { compose, graphql } from 'react-apollo'
 import { connect } from 'react-redux'
 import EditExpeditionQuery from './EditExpedition.graphql'
-import updateExpedition from './updateExpedition.graphql'
-import EditExpedition from './EditExpedition'
+import updateExpeditionMutation from './updateExpedition.graphql'
+import EditExpedition from './UpdateExpedition'
 
 export default compose(
   connect(state => ({ localeCode: state.locale.code })),
@@ -14,7 +14,7 @@ export default compose(
     props: ({ data }) => data,
   }),
 
-  graphql(updateExpedition, {
+  graphql(updateExpeditionMutation, {
     props: ({ ownProps: { match: { params }, localeCode }, mutate }) => ({
       updateExpedition: variables => mutate({
         variables: { id: params.id, ...variables, localeCode },
