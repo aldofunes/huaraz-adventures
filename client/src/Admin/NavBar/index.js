@@ -1,18 +1,26 @@
-import { compose } from 'react-apollo'
-import { connect } from 'react-redux'
+import setLocaleMutation from 'lib/apollo/mutations/setLocale.graphql'
+import signOutMutation from 'lib/apollo/mutations/signOut.graphql'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
+import { compose, graphql } from 'react-apollo'
 import { withRouter } from 'react-router-dom'
-import { actions as authActions } from 'lib/redux/auth'
-import { actions as localeActions } from 'lib/redux/locales'
 import NavBar from './NavBar'
 
 export default compose(
   withRouter,
 
-  connect(
-    state => ({ localeCode: state.locale.code }),
-    dispatch => ({
-      setLocale: code => dispatch(localeActions.setLocale(code)),
-      signOut: () => dispatch(authActions.signOut()),
+  graphql(localeQuery, {
+    props: ({ data }) => ({ localeCode: data.locale.code }),
+  }),
+
+  graphql(setLocaleMutation, {
+    props: ({ mutate }) => ({
+      setLocale: code => mutate({ variables: { code } }),
     }),
-  ),
+  }),
+
+  graphql(signOutMutation, {
+    props: ({ mutate }) => ({
+      signOut: () => mutate(),
+    }),
+  }),
 )(NavBar)

@@ -1,4 +1,3 @@
-import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
 import Tag from 'schema/Tag'
 import Expedition from './Expedition'
@@ -8,14 +7,14 @@ type Expedition {
   id: ID!
   altitud: Int
   summary(localeCode: String!): String
-  difficulty: String
   duration(localeCode: String!): String
   itinerary(localeCode: String!): String
-  image: String
+  difficulty: String
   lists(localeCode: String!): [ServiceList]
   location(localeCode: String!): String
   name(localeCode: String!): String
   season(localeCode: String!): String
+  image: String
   tags: [Tag]
   
   createdAt: DateTime!
@@ -125,21 +124,19 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createExpedition(root, { altitud, difficulty, image, tagIds, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(user => Expedition.create({
-          altitud,
-          difficulty,
-          image,
-          tagIds,
-          i18n: [args],
-          userId: user.id,
-        }))
+    createExpedition(root, { altitud, difficulty, image, tagIds, ...args }, { userId }) {
+      return Expedition.create({
+        altitud,
+        difficulty,
+        image,
+        tagIds,
+        i18n: [args],
+        userId: userId,
+      })
     },
 
-    updateExpedition(root, { id, altitud, difficulty, image, tagIds, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(() => Expedition.get(id))
+    updateExpedition(root, { id, altitud, difficulty, image, tagIds, ...args }) {
+      return Expedition.get(id)
         .then(({ i18n = [] }) => Expedition.update(id, {
           altitud,
           difficulty,

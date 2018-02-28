@@ -1,5 +1,4 @@
 import { STS } from 'aws-sdk'
-import { authorize } from 'lib/auth'
 
 const sts = new STS()
 
@@ -18,11 +17,10 @@ extend type RootQuery {
 
 export const resolvers = {
   RootQuery: {
-    s3SecurityToken: (root, args, { jwt }) => authorize(jwt)
-      .then(() => sts.assumeRole({
-        RoleArn: process.env.AWS_ROLE_S3_UPLOADS,
-        RoleSessionName: jwt.toString('base64').substr(0, 32),
-      }).promise())
+    s3SecurityToken: (root, args, { userId }) => sts.assumeRole({
+      RoleArn: process.env.AWS_ROLE_S3_UPLOADS,
+      RoleSessionName: userId,
+    }).promise()
       .then(({ Credentials }) => ({
         accessKeyId: Credentials.AccessKeyId,
         secretAccessKey: Credentials.SecretAccessKey,

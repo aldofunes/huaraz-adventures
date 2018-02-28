@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button, FormField, TextInput } from 'components'
+import fetch from 'unfetch'
 import styles from './SignIn.scss'
 
 class SignIn extends Component {
   static propTypes = {
     setJwt: PropTypes.func.isRequired,
-    signIn: PropTypes.func.isRequired,
   }
 
   state = {
@@ -19,12 +19,18 @@ class SignIn extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
 
-    const { signIn, setJwt } = this.props
+    const { setJwt } = this.props
     const { email, password } = this.state
-
-    signIn({ email, password })
-      .then(({ data }) => { setJwt({ jwt: data.signIn }) })
-      .catch((error) => { console.error(error) })
+    fetch(`${process.env.BACKEND_URL}/signIn`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    })
+      .then(response => response.json())
+      .then(({ jwt }) => setJwt(jwt))
+      .catch((error) => { console.log(error) })
   }
 
   render() {

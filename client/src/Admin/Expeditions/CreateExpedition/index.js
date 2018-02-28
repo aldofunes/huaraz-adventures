@@ -1,11 +1,11 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import ExpeditionListQuery from '../ExpeditionList/ExpeditionList.graphql'
 import createExpeditionMutation from './createExpedition.graphql'
 import ExpeditionNew from './CreateExpedition'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   graphql(createExpeditionMutation, {
     props: ({ ownProps: { localeCode }, mutate }) => ({

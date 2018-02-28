@@ -1,4 +1,3 @@
-import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
 import Expedition from 'schema/Expedition'
 import Trip from './Trip'
@@ -72,19 +71,17 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createTrip(root, { image, expeditionIds, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(user => Trip.create({
-          image,
-          expeditionIds,
-          i18n: [args],
-          userId: user.id,
-        }))
+    createTrip(root, { image, expeditionIds, ...args }, { userid }) {
+      return Trip.create({
+        image,
+        expeditionIds,
+        i18n: [args],
+        userId,
+      })
     },
 
-    updateTrip(root, { id, image, expeditionIds, localeCode, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(() => Trip.get(id))
+    updateTrip(root, { id, image, expeditionIds, localeCode, ...args }) {
+      return Trip.get(id)
         .then(trip => Trip.update(id, {
           image,
           expeditionIds,
@@ -95,9 +92,8 @@ export const resolvers = {
         }))
     },
 
-    deleteTrip(root, { id }, { jwt }) {
-      return authorize(jwt)
-        .then(() => Trip.delete(id))
+    deleteTrip(root, { id }) {
+      return Trip.delete(id)
     },
   },
 }

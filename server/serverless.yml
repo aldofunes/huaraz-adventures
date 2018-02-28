@@ -17,10 +17,11 @@ provider:
   timeout: 10 # Default is 30
   environment:
     AWS_ROLE_S3_UPLOADS: arn:aws:iam::966447780516:role/s3-uploads
-    SERVICE_NAME: ${self:service}
-    NODE_ENV: ${file(./settings.${opt:stage}.yml):NODE_ENV}
+    CONTACT_EMAIL: ${file(./settings.${opt:stage}.yml):CONTACT_EMAIL}
     DYNAMODB_ENDPOINT: ${file(./settings.${opt:stage}.yml):DYNAMODB_ENDPOINT}
+    NODE_ENV: ${file(./settings.${opt:stage}.yml):NODE_ENV}
     PRIVATE_KEY: ${file(./settings.${opt:stage}.yml):PRIVATE_KEY}
+    SERVICE_NAME: ${self:service}
   iamRoleStatements:
     - Effect: Allow
       Action:
@@ -39,14 +40,63 @@ provider:
 
 functions:
   # GraphQL Public Endpoint
-  graphql:
+  public:
     tracing: true
     handler: src/graphql.handler
     events:
       - http:
-          path: graphql
+          path: public
           method: post
-          cors: true
+          cors:
+            origin: ${file(./settings.${opt:stage}.yml):ORIGN}
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Locale-Code
+            allowCredentials: false
+
+  signIn:
+    tracing: true
+    handler: src/signIn.handler
+    events:
+      - http:
+          path: signIn
+          method: post
+          cors:
+            origin: ${file(./settings.${opt:stage}.yml):ORIGN}
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+            allowCredentials: false
+
+  # GraphQL Private Endpoint
+  private:
+    tracing: true
+    handler: src/graphql.handler
+    events:
+      - http:
+          path: private
+          method: post
+          cors:
+            origin: ${file(./settings.${opt:stage}.yml):ORIGN}
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Locale-Code
+            allowCredentials: false
+          authorizer:
+            name: authorizer
+            resultTtlInSeconds: 60
+            identitySource: method.request.header.Authorization
+            identityValidationExpression: ^Bearer[ ]+([^ ]+)[ ]*$
+            type: token
+
+  # Custom OAuth2.0 Authorizer
+  authorizer:
+    handler: src/authorizer.handler
 
 resources:
   Resources:
@@ -90,8 +140,18 @@ custom:
           - table: ${self:service}-users-${file(./settings.${opt:stage}.yml):NODE_ENV}
             sources: [./src/schema/User/User.seed.json]
 
+  customDomain:
+     domainName: api.huaraz-adventures.com
+     basePath: ${opt:stage}
+     stage: ${opt:stage}
+     certificateName: "*.huaraz-adventures.com"
+     hostedZoneId: Z3Q53TNZZF9HWH
+     createRoute53Record: true
+
+
 plugins:
   - serverless-plugin-tracing
   - serverless-webpack
   - serverless-dynamodb-local
   - serverless-offline
+  - serverless-domain-manager

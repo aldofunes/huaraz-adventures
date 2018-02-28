@@ -1,11 +1,11 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import TripListQuery from '../TripList/TripList.graphql'
 import createTrip from './createTrip.graphql'
 import NewTrip from './NewTrip'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   graphql(createTrip, {
     props: ({ ownProps: { localeCode }, mutate }) => ({

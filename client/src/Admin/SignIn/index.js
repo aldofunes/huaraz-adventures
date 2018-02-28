@@ -1,22 +1,9 @@
-import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
-import { actions } from 'lib/redux/auth'
-import signIn from './signIn.graphql'
+import setJwtMutation from 'lib/apollo/mutations/setJwt.graphql'
+import { graphql } from 'react-apollo'
 import SignIn from './SignIn'
 
-export default compose(
-  connect(
-    null,
-    dispatch => ({
-      setJwt: (payload) => {
-        dispatch(actions.signIn(payload))
-      },
-    }),
-  ),
-
-  graphql(signIn, {
-    props: ({ mutate }) => ({
-      signIn: variables => mutate({ variables }),
-    }),
+export default graphql(setJwtMutation, {
+  props: ({ mutate }) => ({
+    setJwt: jwt => mutate({ variables: { jwt } }),
   }),
-)(SignIn)
+})(SignIn)

@@ -1,4 +1,7 @@
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
+import { graphql } from 'react-apollo'
 import Home from './Home'
 
-export default connect(state => ({ locale: state.locale }))(Home)
+export default graphql(localeQuery, {
+  props: ({ data }) => ({ localeCode: data.locale.code }),
+})(Home)

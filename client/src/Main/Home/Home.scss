@@ -1,10 +1,38 @@
 .container {
-  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.hero {
+  width: 100%;
+  background: #eee;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
 .callToAction {
   margin: 1em 0;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.expeditionList {
+  flex: 1 1;
+}
+
+.side {
+  flex: 0 1 20em;
+  padding: 1em;
+  border-left: 1px solid #ddd;
 }

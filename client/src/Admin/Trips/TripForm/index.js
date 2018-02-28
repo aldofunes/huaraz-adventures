@@ -1,11 +1,11 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import { withRouter } from 'react-router-dom'
 import TripFormQuery from './TripForm.graphql'
 import TripForm from './TripForm'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   withRouter,
 

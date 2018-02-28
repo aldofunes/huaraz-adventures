@@ -1,4 +1,4 @@
-import { SES } from 'aws-sdk' // eslint-disable-line node/no-unpublished-require
+import sendEmail from 'lib/sendEmail'
 import Contact from './Contact'
 
 export const schema = `
@@ -39,46 +39,28 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createContact: (root, { name, company, email, message }) => {
-      const ses = new SES({ region: 'eu-west-1' })
-      ses.sendEmail({
-        Destination: {
-          ToAddresses: [process.env.MAIL_TO],
-        },
-        Message: {
-          Body: {
-            Html: {
-              Charset: 'UTF-8',
-              Data: `
-                    <h3>Someone has filled out the contact form in www.lovis.company:</h3>
-                    <ul>
-                      <li>Name: ${name}</li>
-                      <li>Company: ${company}</li>
-                      <li>Email: ${email}</li>
-                      <li>Message: ${message}</li>
-                    </ul>
-                  `,
-            },
-            Text: {
-              Charset: 'UTF-8',
-              Data: `
-                  Someone has filled out the contact form in www.lovis.company:\n\n
-                  Name: ${name}\n
-                  Company: ${company}\n
-                  Email: ${email}\n
-                  Message: ${message}\n
-                `,
-            },
-          },
-          Subject: {
-            Charset: 'UTF-8',
-            Data: 'New contact from LOVIS Company',
-          },
-        },
-        ReplyToAddresses: ['support@lovis.email'],
-        Source: 'LOVIS Company <lovis.company@lovis.co>',
-      })
+    createContact(root, { name, company, email, message }) {
       return Contact.create({ name, company, email, message })
+        .then(contact => sendEmail({
+          from: 'webmaster@huaraz-adventures.com',
+          to: ['aldo.funes@icloud.com'],
+          subject: 'Nuevo contacto en www.huaraz-adventures.com',
+          htmlBody: `
+            <h3>Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo</h3>
+            <ul>
+              <li><strong>Nombre</strong>: ${contact.name}</li>
+              <li><strong>Correo electrónico</strong>: ${contact.email}</li>
+              <li><strong>Mensaje</strong>: ${contact.message}</li>
+            </ul>
+          `,
+          textBody: `
+            Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo\n\n
+            Nombre: ${name}\n
+            Correo electrónico: ${email}\n
+            Mensaje: ${message}\n
+          `,
+        })
+          .then(() => contact))
     },
 
     deleteContact: (root, { id }) => Contact.delete(id),

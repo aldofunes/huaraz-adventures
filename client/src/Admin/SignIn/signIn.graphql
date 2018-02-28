@@ -1,3 +1,0 @@
-mutation signInMutation($email: String! $password: String!) {
-  signIn(email: $email password: $password)
-}

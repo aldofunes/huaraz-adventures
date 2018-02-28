@@ -6,10 +6,7 @@ process.env.BABEL_ENV = process.env.npm_lifecycle_event
 
 const PATHS = {
   app: path.join(__dirname, 'src'),
-  build: {
-    dev: path.join(__dirname, 'build-dev'),
-    prod: path.join(__dirname, 'build-prod'),
-  },
+  build: path.join(__dirname, 'build'),
 }
 
 const common = merge(
@@ -35,35 +32,20 @@ const common = merge(
 let config
 
 switch (process.env.npm_lifecycle_event) {
-  case 'build:dev':
+  case 'build':
     config = merge(
       common,
       {
         output: {
-          path: PATHS.build.dev,
-          filename: '[name].[chunkhash].js',
-          publicPath: '/',
-        },
-      },
-      parts.clean([PATHS.build.dev]),
-      parts.extractCSS({ include: PATHS.app }),
-      parts.setFreeVariable('process.env.NODE_ENV', 'development'),
-    )
-    break
-  case 'build:prod':
-    config = merge(
-      common,
-      {
-        output: {
-          path: PATHS.build.prod,
+          path: PATHS.build,
           filename: '[name].[chunkhash].js',
           chunkFilename: '[chunkhash].js',
           publicPath: '/',
         },
       },
-      parts.clean([PATHS.build.prod]),
+      parts.clean([PATHS.build]),
       parts.extractCSS({ include: PATHS.app }),
-      parts.setFreeVariable('process.env.NODE_ENV', 'production'),
+      parts.setFreeVariable('process.env.BACKEND_URL', 'https://api.huaraz-adventures.com/prod'),
       parts.analyze(),
     )
     break
@@ -79,7 +61,7 @@ switch (process.env.npm_lifecycle_event) {
       },
       parts.devServer({ host: '0.0.0.0', port: 3000 }),
       parts.loadCSS({ include: PATHS.app }),
-      parts.setFreeVariable('process.env.NODE_ENV', 'local'),
+      parts.setFreeVariable('process.env.BACKEND_URL', 'http://localhost:4000'),
       parts.enableReactPerformanceTools(),
     )
 }

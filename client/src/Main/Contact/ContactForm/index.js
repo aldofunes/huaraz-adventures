@@ -1,10 +1,12 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import createContactMutation from './createContact.graphql'
 import ContactForm from './ContactForm'
 
 export default compose(
-  connect(state => ({ locale: state.locale })),
+  graphql(localeQuery, {
+    props: ({ data }) => ({ localeCode: data.locale.code }),
+  }),
 
   graphql(createContactMutation, {
     props: ({ mutate }) => ({

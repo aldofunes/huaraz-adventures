@@ -1,5 +1,6 @@
 import Button from './Button'
 import Carousel from './Carousel'
+import DraftConvert from './DraftConvert'
 import EmptyList from './EmptyList'
 import Error from './Error'
 import FileInput from './FileInput'
@@ -18,6 +19,7 @@ import TextInput from './TextInput'
 export {
   Button,
   Carousel,
+  DraftConvert,
   EmptyList,
   Error,
   FileInput,

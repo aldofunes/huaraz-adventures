@@ -1,4 +1,3 @@
-import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
 import Tag from './Tag'
 
@@ -56,9 +55,8 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createTag(root, args, { jwt }) {
-      return authorize(jwt)
-        .then(user => Tag.create({ userId: user.id }))
+    createTag(root, args, { userId }) {
+      return Tag.create({ userId })
     },
 
     /**
@@ -67,12 +65,10 @@ export const resolvers = {
      * @param [id]
      * @param [slug]
      * @param [args]
-     * @param [jwt]
      * @returns {Promise<any>}
      */
-    updateTag(root, { id, slug, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(() => Tag.get(id))
+    updateTag(root, { id, slug, ...args }) {
+      return Tag.get(id)
         .then(({ i18n = [] }) => {
           return Tag.update(id, {
             slug,
