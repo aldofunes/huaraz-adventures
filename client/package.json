@@ -55,7 +55,8 @@
     "remarkable": "^1.7.1",
     "slugg": "^1.2.1",
     "unfetch": "^3.0.0",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",

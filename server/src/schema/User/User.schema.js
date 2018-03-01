@@ -1,5 +1,7 @@
-import { generatePassword, hashPassword } from 'lib/auth'
+import { generatePassword, hashPassword, verifyPassword } from 'lib/auth'
+import { ForbiddenError } from 'lib/errors'
 import sendEmail from 'lib/sendEmail'
+import zxcvbn from 'zxcvbn'
 import User from './User'
 
 export const schema = `
@@ -32,6 +34,13 @@ extend type RootMutation {
     email: String
     isEnabled: Boolean!
     name: String
+  ): User @auth
+  
+  changePassword(
+    id: ID!
+    password: String!
+    newPassword: String!
+    verificationPassword: String!
   ): User @auth
   
   deleteUser(id: ID!): Boolean @auth
@@ -91,6 +100,29 @@ export const resolvers = {
 
     updateUser(root, { id, ...args }) {
       return User.update({ id }, args)
+    },
+
+    changePassword(root, { id, password, newPassword, verificationPassword }) {
+      if (newPassword !== verificationPassword) {
+        // Return an error if the password does not match with the hash in the database
+        throw new ForbiddenError({ message: 'La contraseña no es igual a la verificación' })
+      }
+
+      if (zxcvbn(newPassword).score < 3) {
+        // Return an error if the password does not match with the hash in the database
+        throw new ForbiddenError({ message: 'La nueva contraseña es demasiado débil' })
+      }
+
+      return User.get({ id }).then(user => {
+        return verifyPassword(password, user.passwordDigest).then((passwordIsValid) => {
+          if (!passwordIsValid) {
+            // Return an error if the password does not match with the hash in the database
+            throw new ForbiddenError({ message: 'Contraseña incorrecta' })
+          }
+
+          return User.update({ id }, { passwordDigest: hashPassword(newPassword) })
+        })
+      })
     },
 
     deleteUser(root, { id }) {

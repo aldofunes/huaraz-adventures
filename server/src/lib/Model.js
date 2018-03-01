@@ -46,6 +46,7 @@ export default class Model {
       .promise()
       .then(data => data.Count)
   }
+
   // endregion
 
   //region Write Methods
@@ -53,7 +54,7 @@ export default class Model {
     const id = uuid.v4()
     return docClient.put({
       TableName: this.tableName,
-      Item: { id, createdAt: Date.now(), modifiedAt: Date.now(), ...doc },
+      Item: { id, ...doc, createdAt: Date.now(), modifiedAt: Date.now() },
     }).promise().then(() => this.get({ id }))
   }
 

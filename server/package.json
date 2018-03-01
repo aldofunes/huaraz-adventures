@@ -21,7 +21,8 @@
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",
     "sinon": "^4.4.2",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "aws-sdk": "^2.202.0",

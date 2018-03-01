@@ -59,3 +59,16 @@ mutation updateUser {
 mutation deleteUser {
   deleteUser(id: "59a426d979ac8d154073d341")
 }
+
+
+mutation changePassword {
+  changePassword(
+    id: "65090932-c6a6-45e5-928f-690a73ba973e"
+    password: "test"
+    newPassword: "holA1234s_"
+    verificationPassword: "holA1234s_"
+  ) {
+    id
+    email
+  }
+}
