@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom'
 import { Transition } from 'react-transition-group'
 import styles from './Admin.scss'
 import Contacts from './Contacts'
+import Profile from './Profile'
 import Expeditions from './Expeditions'
 import NavBar from './NavBar'
 import Sidebar from './Sidebar'
@@ -68,6 +69,7 @@ class Admin extends Component {
             <Route path={`${match.url}/tags`} component={Tags} />
             <Route path={`${match.url}/expeditions`} component={Expeditions} />
             <Route path={`${match.url}/users`} component={Users} />
+            <Route path={`${match.url}/profile`} component={Profile} />
 
             {/* Render a not found component when no route is found */}
             <Route path={`${match.url}/*`} component={NotFound} />

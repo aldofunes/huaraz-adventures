@@ -18,7 +18,12 @@ const UserListItem = ({ user, match, deleteUser }) => {
 
   return (
     <tr>
-      <td><Link to={`${match.url}/${user.id}`}>{user.name}</Link></td>
+      <td>
+        <img className={styles.avatar} src={user.avatar} alt="" />
+      </td>
+      <td>
+        <Link to={`${match.url}/${user.id}`}>{user.name}</Link>
+      </td>
       <td>{user.email}</td>
       <td className={styles.actions}>
         <Button plain onClick={handleDelete} icon={<FontAwesomeIcon icon={faTimes} />} />

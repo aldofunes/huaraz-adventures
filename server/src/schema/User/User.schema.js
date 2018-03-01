@@ -1,3 +1,4 @@
+import crypto from 'crypto'
 import { generatePassword, hashPassword, verifyPassword } from 'lib/auth'
 import { ForbiddenError } from 'lib/errors'
 import sendEmail from 'lib/sendEmail'
@@ -7,6 +8,7 @@ import User from './User'
 export const schema = `
 type User {
   id: ID!
+  avatar: String!
   name: String
   email: String!
   isEnabled: Boolean!
@@ -48,7 +50,15 @@ extend type RootMutation {
 `
 
 export const resolvers = {
-  User: {},
+  User: {
+    avatar({ email }) {
+      const hash = crypto
+        .createHash('md5')
+        .update(email.trim().toLowerCase())
+        .digest('hex')
+      return `https://www.gravatar.com/avatar/${hash}?d=mm&s=280`
+    },
+  },
 
   RootQuery: {
     user: (root, { id }) => User.get({ id }),

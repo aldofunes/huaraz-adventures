@@ -1,9 +1,9 @@
-query UserListQuery {
-  users {
+query ProfileQuery {
+  user: myUser {
     id
     avatar
     email
-    name
     isEnabled
+    name
   }
 }
