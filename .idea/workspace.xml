@@ -2,129 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60df2680-a01d-4eac-9d5b-fb2bbb1bbfa7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/CreateExpedition.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionListItem/ExpeditionListItem.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionListItem/deleteExpedition.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionListItem/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/Expeditions.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/UpdateExpedition.jsx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Category/Category.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Category/Category.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Category/Category.schema.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Category/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.graphql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.schema.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/changePassword.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/Profile.graphql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/Profile.jsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/Profile.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/Admin/Profile/index.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" afterPath="$PROJECT_DIR$/.idea/www.huaraz-adventures.com.iml" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintrc" afterPath="$PROJECT_DIR$/client/.eslintrc" />
-      <change beforePath="$PROJECT_DIR$/client/assets/android-chrome-192x192.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/android-chrome-512x512.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon-120x120.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon-152x152.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon-180x180.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon-60x60.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon-76x76.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/apple-touch-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/browserconfig.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/favicon-16x16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/favicon-32x32.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/logo.png" afterPath="$PROJECT_DIR$/client/assets/logo.png" />
-      <change beforePath="$PROJECT_DIR$/client/assets/logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/manifest.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/mstile-144x144.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/mstile-150x150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/mstile-310x150.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/mstile-310x310.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/mstile-70x70.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/assets/safari-pinned-tab.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
       <change beforePath="$PROJECT_DIR$/client/src/Admin/Admin.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Contacts/ContactList/ContactList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/NavBar/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/NavBar/index.js" />
       <change beforePath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Tags/Tags.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/EditExpedition.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/EditTour.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/EditTour/updateTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/updateExpedition.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/TourForm.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourForm/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/TourListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/ExpeditionListItem/ExpeditionListItem.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/deleteTour.graphql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/TourListItem/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourList/index.js" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionList/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/TourNew.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/createTour.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/createExpedition.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/TourNew/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.jsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/Tours.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Expeditions/Expeditions.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Tours/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/EditTrip.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/updateTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/EditTrip/updateTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/createTrip.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/NewTrip/createTrip.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripForm/TripForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Trips/TripList/TripList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.translations.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Footer/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Footer/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Nav/Nav.i18n.yaml" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.i18n.yaml" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Nav/index.js" afterPath="$PROJECT_DIR$/client/src/Main/Nav/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripCard/TripCard.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.graphql" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.jsx" afterPath="$PROJECT_DIR$/client/src/Main/Trips/TripList/TripList.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Button/Button.scss" afterPath="$PROJECT_DIR$/client/src/components/Button/Button.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Error/Error.jsx" afterPath="$PROJECT_DIR$/client/src/components/Error/Error.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Error/Error.scss" afterPath="$PROJECT_DIR$/client/src/components/Error/Error.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FIleInput/FIleInput.graphql" afterPath="$PROJECT_DIR$/client/src/components/FileInput/FileInput.graphql" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FIleInput/FIleInput.jsx" afterPath="$PROJECT_DIR$/client/src/components/FileInput/FileInput.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FIleInput/FIleInput.scss" afterPath="$PROJECT_DIR$/client/src/components/FileInput/FileInput.scss" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FIleInput/index.js" afterPath="$PROJECT_DIR$/client/src/components/FileInput/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FormField/FormField.jsx" afterPath="$PROJECT_DIR$/client/src/components/FormField/FormField.jsx" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" afterPath="$PROJECT_DIR$/client/src/components/index.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/propTypes.js" afterPath="$PROJECT_DIR$/client/src/lib/propTypes.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/redux/locales/actionTypes.js" afterPath="$PROJECT_DIR$/client/src/lib/redux/locales/actionTypes.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/redux/locales/actions.js" afterPath="$PROJECT_DIR$/client/src/lib/redux/locales/actions.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/lib/redux/locales/reducer.js" afterPath="$PROJECT_DIR$/client/src/lib/redux/locales/reducer.js" />
-      <change beforePath="$PROJECT_DIR$/client/webpack.config.js" afterPath="$PROJECT_DIR$/client/webpack.config.js" />
-      <change beforePath="$PROJECT_DIR$/client/webpack.parts.js" afterPath="$PROJECT_DIR$/client/webpack.parts.js" />
-      <change beforePath="$PROJECT_DIR$/graphql.config.json" afterPath="$PROJECT_DIR$/graphql.config.json" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
-      <change beforePath="$PROJECT_DIR$/server/serverless.yml" afterPath="$PROJECT_DIR$/server/serverless.yml" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.graphql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.js" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.schema.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.seed.json" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.seed.json" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/Tour.table.yaml" afterPath="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.table.yaml" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Tour/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Trip/Trip.graphql" afterPath="$PROJECT_DIR$/server/src/schema/Trip/Trip.graphql" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Trip/Trip.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/Trip/Trip.schema.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/Trip/Trip.seed.json" afterPath="$PROJECT_DIR$/server/src/schema/Trip/Trip.seed.json" />
-      <change beforePath="$PROJECT_DIR$/server/src/schema/index.js" afterPath="$PROJECT_DIR$/server/src/schema/index.js" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change beforePath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql" />
+      <change beforePath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx" />
+      <change beforePath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss" afterPath="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss" />
+      <change beforePath="$PROJECT_DIR$/server/src/schema/User/User.schema.js" afterPath="$PROJECT_DIR$/server/src/schema/User/User.schema.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,52 +30,80 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="updateExpedition.graphql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/updateExpedition.graphql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="46" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.45865303">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Profile.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/Profile.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ChangePassword.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="React Function" />
         <option value="GraphQL Query" />
+        <option value="React Component" />
+        <option value="GraphQL Mutation" />
+        <option value="React index" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.all({})</find>
-      <find>.all({ limit })</find>
-      <find>.find</find>
-      <find>handleInputC</find>
-      <find>.query</find>
-      <find>PropTypes.</find>
-      <find>aws-sdk'</find>
-      <find>aws-sdk</find>
-      <find>draft-js'</find>
-      <find>tour</find>
-      <find>JSON</find>
-      <find>: URL</find>
-      <find>UUID</find>
-      <find>props.expedition.</find>
-      <find>nextprops.expedition.</find>
-      <find>URL</find>
-      <find>: Email</find>
-      <find>console.log</find>
       <find>article</find>
       <find>isSavingForm</find>
       <find>apolloErrorType</find>
       <find>Ini</find>
       <find>resúmen</find>
       <find>required</find>
+      <find>locale: state</find>
+      <find>state.locale</find>
+      <find>import { connect } from 'react-redux'</find>
+      <find>connect(state =&gt; ({ localeCode: state.locale.code }))</find>
+      <find>connect</find>
+      <find>{ locale }</find>
+      <find>locale.code</find>
+      <find>reset</find>
+      <find>rest</find>
+      <find>draft-js</find>
+      <find>aut</find>
+      <find>import { autho</find>
+      <find>import { authorize } from 'lib/auth'</find>
+      <find>jwt</find>
+      <find>SES</find>
+      <find>trip</find>
+      <find>loc</find>
+      <find>localeQuery</find>
+      <find>.get(id)</find>
+      <find>.update(id</find>
+      <find>.delete(id)</find>
+      <find>DateTime</find>
+      <find>Expedition</find>
+      <find>Edit</find>
     </findStrings>
     <replaceStrings>
       <replace>.scan()</replace>
@@ -186,77 +111,93 @@
       <replace>tag</replace>
       <replace>: String</replace>
       <replace>String</replace>
-      <replace>expedition</replace>
       <replace>errorType</replace>
       <replace>resumen</replace>
+      <replace>import localeQuery from 'lib/apollo/queries/locale.graphql'</replace>
+      <replace>graphql(localeQuery, {    props: ({ data }) =&gt; ({ localeCode: data.locale.code }),  })</replace>
+      <replace>{ localeCode }</replace>
+      <replace>localeCode</replace>
+      <replace>expedition</replace>
+      <replace>.get({ id })</replace>
+      <replace>.update({ id {</replace>
+      <replace>.update({ id }</replace>
+      <replace>.delete({ id })</replace>
+      <replace>User</replace>
+      <replace>Update</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/server/src/schema/Tag</dir>
-      <dir>$PROJECT_DIR$/server/src</dir>
       <dir>$PROJECT_DIR$/client/src/Admin/Tags</dir>
       <dir>$PROJECT_DIR$/client/src/</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/server</dir>
       <dir>$PROJECT_DIR$/client</dir>
+      <dir>$PROJECT_DIR$/client/src</dir>
+      <dir>$PROJECT_DIR$/server/src</dir>
+      <dir>$PROJECT_DIR$/client/src/Main/Expeditions</dir>
+      <dir>$PROJECT_DIR$/client/src/Admin/Users</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response50.json" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/components/Form/Form.jsx" />
-        <option value="$PROJECT_DIR$/client/src/components/FormField/FormField.jsx" />
-        <option value="$PROJECT_DIR$/server/src/lib/docClient.js" />
-        <option value="$PROJECT_DIR$/client/src/components/FIleInput/FIleInput.jsx" />
-        <option value="$PROJECT_DIR$/client/src/index.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Main/Nav/Nav.i18n.yaml" />
-        <option value="$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Main/Nav/Nav.scss" />
         <option value="$PROJECT_DIR$/server/src/schema/index.js" />
-        <option value="$PROJECT_DIR$/client/.eslintrc" />
+        <option value="$PROJECT_DIR$/server/src/schema/User/index.js" />
+        <option value="$PROJECT_DIR$/server/webpack.config.js" />
         <option value="$PROJECT_DIR$/server/package.json" />
-        <option value="$PROJECT_DIR$/client/package.json" />
-        <option value="$PROJECT_DIR$/client/src/components/FIleInput/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/FIleInput/FileInput.jsx" />
-        <option value="$PROJECT_DIR$/client/src/components/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/FileInput/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/FileInput/FileInput.jsx" />
-        <option value="$PROJECT_DIR$/client/src/components/FileInput/FileInput.scss" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/index.js" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss" />
-        <option value="$PROJECT_DIR$/client/webpack.config.js" />
-        <option value="$PROJECT_DIR$/client/webpack.parts.js" />
-        <option value="$PROJECT_DIR$/client/src/Admin/NavBar/index.js" />
-        <option value="$PROJECT_DIR$/client/src/lib/redux/locales/actionTypes.js" />
-        <option value="$PROJECT_DIR$/client/src/lib/redux/locales/actions.js" />
-        <option value="$PROJECT_DIR$/client/src/lib/redux/locales/reducer.js" />
-        <option value="$PROJECT_DIR$/client/src/Main/Footer/index.js" />
-        <option value="$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml" />
-        <option value="$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Main/Nav/index.js" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss" />
-        <option value="$PROJECT_DIR$/client/src/components/Button/Button.scss" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/CreateExpedition.jsx" />
-        <option value="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.graphql" />
-        <option value="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.seed.json" />
+        <option value="$PROJECT_DIR$/server/src/authorizer.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/directiveResolvers.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/directiveResolvers.test.js" />
+        <option value="$PROJECT_DIR$/server/serverless.yml" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/CreateUser/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/EditUser.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/updateUser.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/index.js" />
         <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/index.js" />
-        <option value="$PROJECT_DIR$/client/src/lib/propTypes.js" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/UpdateExpedition.jsx" />
-        <option value="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.schema.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UserForm/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/UpdateUser.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/CreateUser/CreateUser.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UserForm/UserForm.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/CreateUser/createUser.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/UpdateUser.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/updateUserMutation.graphql" />
+        <option value="$PROJECT_DIR$/client/src/components/Button/Button.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/Users.jsx" />
         <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/Expeditions.jsx" />
-        <option value="$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.i18n.yaml" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.jsx" />
+        <option value="$PROJECT_DIR$/server/src/schema/Contact/Contact.schema.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/Expedition/Expedition.schema.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/SecurityToken/SecurityToken.schema.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/Service/Service.schema.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/Trip/Trip.schema.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/server/src/lib/Model.js" />
+        <option value="$PROJECT_DIR$/server/src/schema/User/User.graphql" />
+        <option value="$PROJECT_DIR$/client/.gitignore" />
+        <option value="$PROJECT_DIR$/server/src/schema/User/User.schema.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql" />
         <option value="$PROJECT_DIR$/graphql.config.json" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.scss" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/updateExpedition.graphql" />
-        <option value="$PROJECT_DIR$/client/src/components/Error/Error.jsx" />
-        <option value="$PROJECT_DIR$/client/src/components/Error/Error.scss" />
-        <option value="$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/createExpedition.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Profile/Profile.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Profile/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Sidebar/Profile/Profile.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Admin.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/Profile.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/Profile.scss" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/changePassword.graphql" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.scss" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/index.js" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.jsx" />
+        <option value="$PROJECT_DIR$/client/src/components/Modal/Modal.jsx" />
+        <option value="$PROJECT_DIR$/client/src/Admin/Profile/Profile.jsx" />
       </list>
     </option>
   </component>
@@ -270,7 +211,6 @@
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
-    <annotation-enable>false</annotation-enable>
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
@@ -287,10 +227,9 @@
     <dismissed value="$PROJECT_DIR$/client/package.json" />
     <dismissed value="$PROJECT_DIR$/server/package.json" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="878" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -347,12 +286,6 @@
               <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -382,28 +315,15 @@
             <path>
               <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Sidebar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www.huaraz-adventures.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www.huaraz-adventures.com" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-              <item name="Tag" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,21 +350,157 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/graphql-custom-types/lib/factory.js&#10;true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="createExp&#9;null&#9;null" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha-webpack" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="com.intellij.lang.jsgraphql.ide.endpoints.JSGraphQLEndpointsModel.index" value="1" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/Admin/Users" />
       <recent name="$PROJECT_DIR$/server/src/schema" />
-      <recent name="$PROJECT_DIR$/client/assets" />
-      <recent name="$PROJECT_DIR$/client/src/Admin/Tags" />
-      <recent name="$PROJECT_DIR$/client/src/Admin/Tags/TagList/TagListItem" />
-      <recent name="$PROJECT_DIR$/client/src/Admin" />
+      <recent name="$PROJECT_DIR$/client/src/Main/Expeditions" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/lib/apollo/mutations" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/Admin/Tags" />
-      <recent name="$PROJECT_DIR$/client/src/Main" />
-      <recent name="$PROJECT_DIR$/client/src" />
-      <recent name="$PROJECT_DIR$/client/src/layouts/Admin" />
+      <recent name="$PROJECT_DIR$/client/src/Admin" />
+      <recent name="$PROJECT_DIR$/client/src/Main/Home" />
+      <recent name="$PROJECT_DIR$/server/src/lib" />
+      <recent name="$PROJECT_DIR$/client/src/lib/apollo" />
+      <recent name="$PROJECT_DIR$/client/src/lib/apollo/link/state" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:4000" />
+          <option name="urlPath" value="/signIn" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;email&quot;:&quot;admin@example.com&quot;,&quot;password&quot;:&quot;test&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:4000" />
+          <option name="urlPath" value="/signIn" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;email&quot;:&quot;admin@example.com&quot;,&quot;password&quot;:&quot;admin&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:4000" />
+          <option name="urlPath" value="/signIn" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;email&quot;: &quot;admin@exaple.com&quot;,   &quot;password&quot;: &quot;admin&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:4000" />
+          <option name="urlPath" value="/signIn" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;email&quot;: &quot;admin@example.com&quot;,   &quot;password&quot;: &quot;admin&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:4000" />
+          <option name="urlPath" value="/signIn" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application-json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{   &quot;email&quot;: &quot;admin@example.com&quot;,   &quot;password&quot;: &quot;admin&quot; }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -457,6 +513,24 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Server TDD" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$/server</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs>
+        <env name="DYNAMODB_ENDPOINT" value="http://localhost:8000" />
+        <env name="STAGE" value="test" />
+        <env name="SERVICE_NAME" value="huaraz-adventures" />
+        <env name="NODE_ENV" value="development" />
+      </envs>
+      <ui>tdd</ui>
+      <extra-mocha-options>--watch</extra-mocha-options>
+      <test-kind>PATTERN</test-kind>
+      <test-pattern>src/**/*.test.js</test-pattern>
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -472,6 +546,8 @@
       <workItem from="1516455917559" duration="181000" />
       <workItem from="1516456130214" duration="12088000" />
       <workItem from="1516471556023" duration="2958000" />
+      <workItem from="1519669779335" duration="33216000" />
+      <workItem from="1519914570513" duration="14624000" />
     </task>
     <task id="LOCAL-00001" summary="🙌 - Support Tag type in server">
       <created>1516459631328</created>
@@ -515,47 +591,90 @@
       <option name="project" value="LOCAL" />
       <updated>1516485526408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="🙌 - Add passwordChange mutation">
+      <created>1519927151083</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1519927151083</updated>
+    </task>
+    <task id="LOCAL-00008" summary="🙌 - Add passwordChange mutation">
+      <created>1519927201059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1519927201059</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 17m 02s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 17m 52s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 04s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 05s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 06s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 07s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 08s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 09s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 21s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Server_TDD - 2018.03.01 at 10h 33m 24s.xml">
+      <configuration name="Server TDD" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23015000" />
+    <option name="totallyTimeSpent" value="71145000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31176472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31176472" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32705882" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32043532" sideWeight="0.49722221" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3282353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31176472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,75 +715,48 @@
     <MESSAGE value=" - Support Tags" />
     <MESSAGE value=" - Start fixing ESLint errors" />
     <MESSAGE value=" - Make Admin dynamic import" />
-    <option name="LAST_COMMIT_MESSAGE" value=" - Make Admin dynamic import" />
+    <MESSAGE value=" - Add user support and auth" />
+    <MESSAGE value=" - Add passwordChange mutation" />
+    <option name="LAST_COMMIT_MESSAGE" value=" - Add passwordChange mutation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/components/FileInput/FileInput.graphql">
+    <entry file="file://$PROJECT_DIR$/server/src/schema/directiveResolvers.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/FileInput/FileInput.scss">
+    <entry file="file://$PROJECT_DIR$/server/src/graphql.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/index.js">
+    <entry file="file://$PROJECT_DIR$/server/serverless.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="265">
+          <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.scss">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/CreateUser/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Button/Button.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/NavBar/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/webpack.parts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/redux/auth/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/UpdateExpedition.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -672,272 +764,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/redux/locales/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/NavBar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="54" lean-forward="false" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/redux/locales/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/redux/locales/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/redux/locales/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Footer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Footer/Footer.i18n.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Nav/Nav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Nav/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Footer/Footer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Admin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/NavBar/NavBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Button/Button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/apollo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/CreateExpedition.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/EditExpedition.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Expedition/Expedition.graphql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Tag/Tag.seed.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Expedition/Expedition.seed.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="420">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/lib/propTypes.js">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserForm/UserForm.graphql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/UpdateExpedition.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserForm/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/UpdateUser.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/CreateUser/CreateUser.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="59" column="27" lean-forward="true" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        <state relative-caret-position="405">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/lib/Model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/Expeditions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Contact/Contact.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Contact/ContactForm/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/CreateUser/createUser.graphql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/UpdateUser.graphql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="99" column="28" lean-forward="true" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Main/Contact/ContactForm/ContactForm.i18n.yaml">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/updateUserMutation.graphql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/FileInput/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/FileInput/FileInput.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserForm/UserForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
@@ -945,7 +836,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphql.config.json">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Button/Button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/Users.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/Expeditions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Category/Category.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1297">
+          <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Contact/Contact.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <marker date="1519925313552" expanded="true" signature="1208:1504" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Expedition/Expedition.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="71" column="42" lean-forward="false" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/SecurityToken/SecurityToken.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Service/Service.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Tag/Tag.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/Trip/Trip.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/signIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/lib/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -953,23 +950,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/schema/Expedition/Expedition.schema.js">
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="221" column="34" lean-forward="true" selection-start-line="221" selection-start-column="34" selection-end-line="221" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.scss">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -977,34 +966,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Error/Error.scss">
+    <entry file="file://$PROJECT_DIR$/graphql.config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="205">
+          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Error/Error.jsx">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserList/UserListItem/UserListItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Sidebar/Sidebar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UserList/UserList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Admin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/User/User.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/Profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/Profile.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/changePassword.graphql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="9" />
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="12" />
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Users/UpdateUser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/ExpeditionForm/ExpeditionForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="318" column="26" lean-forward="true" selection-start-line="318" selection-start-column="26" selection-end-line="318" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/schema/User/User.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="134" column="8" lean-forward="true" selection-start-line="134" selection-start-column="8" selection-end-line="134" selection-end-column="8" />
+          <folding>
+            <marker date="1519927699583" expanded="true" signature="1985:2178" ph="..." />
+            <marker date="1519927699583" expanded="true" signature="2208:2396" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/ChangePassword/ChangePassword.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="61" column="13" lean-forward="true" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/CreateExpedition/createExpedition.graphql">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Modal/Modal.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="330">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/Admin/Expeditions/UpdateExpedition/updateExpedition.graphql">
+    <entry file="file://$PROJECT_DIR$/client/src/Admin/Profile/Profile.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding />
         </state>
       </provider>

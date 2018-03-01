@@ -1,10 +1,8 @@
-import React, { Component, createElement } from 'react'
-import { render } from 'react-dom'
+import { privateClient } from 'lib/apollo'
+import React, { Component } from 'react'
 import { ApolloProvider } from 'react-apollo'
-import { Provider } from 'react-redux'
+import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import client from 'lib/apollo'
-import { store } from 'lib/redux'
 import 'stylesheets/styles.global.scss'
 import Main from './Main'
 
@@ -16,24 +14,26 @@ class Admin extends Component {
   }
 
   render() {
-    const { component } = this.state
-    if (component) { return createElement(component, this.props) }
+    const { component: WrappedComponent } = this.state
+    if (WrappedComponent) {
+      return (
+        <ApolloProvider client={privateClient}>
+          <WrappedComponent {...this.props} />
+        </ApolloProvider>
+      )
+    }
     return null
   }
 }
 
 render(
   (
-    <ApolloProvider client={client}>
-      <Provider store={store}>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/admin" component={Admin} />
-            <Route path="/" component={Main} />
-          </Switch>
-        </BrowserRouter>
-      </Provider>
-    </ApolloProvider>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/admin" component={Admin} />
+        <Route path="/" component={Main} />
+      </Switch>
+    </BrowserRouter>
   ), document.getElementById('app'),
 )
 

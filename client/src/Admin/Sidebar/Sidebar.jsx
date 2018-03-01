@@ -13,6 +13,7 @@ const Sidebar = ({ match, className }) => (
       <NavLink activeClassName={styles.active} to={`${match.url}/tags`}>Etiquetas</NavLink>
       <NavLink activeClassName={styles.active} to={`${match.url}/expeditions`}>Expediciones</NavLink>
       <NavLink activeClassName={styles.active} to={`${match.url}/users`}>Usuarios</NavLink>
+      <NavLink activeClassName={styles.active} to={`${match.url}/profile`}>Mi perfil</NavLink>
     </nav>
   </div>
 )

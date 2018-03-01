@@ -1,8 +1,5 @@
 // (C) Copyright 2014-2016 Hewlett Packard Enterprise Development LP
-
 $brand-color: #d12a2f;
-$brand-neutral-colors: (#0a64a0, #dc2878, #501eb4, #49516f);
-$brand-accent-colors: (#def, #ff7d28);
 $brand-link-color: #a00;
 $brand-status-colors: (
   critical: #ff324d,
@@ -10,20 +7,26 @@ $brand-status-colors: (
   warning: #ffd602,
   ok: #8cc800,
   unknown: #a8a8a8,
-  disabled: #a8a8a8
+  disabled: #a8a8a8,
 );
-$brand-grey-colors: (#000001, #333, #3b3b3b, #434343, #666);
-$heading-text-color: $brand-color !important;
 
-$button-secondary-color: $brand-color;
+$brand-font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$brand-font-weight: 300;
+$brand-font-line-height: 1.5;
 
-$brand-font-family: 'Helvetica Neue', Helvetica, sans-serif;
+$brand-heading-font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$brand-heading-font-weight: 300;
+
 $brand-paragraph-font-family: Minion, Times, serif;
-$brand-large-number-font-family: 'Helvetica Neue', Helvetica, sans-serif;
-$code-font-family: Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace;
-$text-strong-font-weight: 300;
 
-$readable-text-width: 800px;
+$brand-code-font-family: Consolas, Menlo, 'DejaVu Sans Mono', 'Liberation Mono', monospace;
+
+$brand-strong-font-weight: 400;
+
+$breakpoints: (
+  small: 40em,
+  medium: 64em,
+);
 
 /**
  * React Select

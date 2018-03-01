@@ -1,17 +1,9 @@
 en:
   home:
-    sliders:
-      - text: asdf
-      - text: asdf
-      - text: asdf
-      - text: asdf
+    hero: Experience the Peruvian Andes
     contact: Contact Us
 
 es:
   home:
-    sliders:
-      - text: qqwerty
-      - text: qqwerty
-      - text: qqwerty
-      - text: qqwerty
+    hero: Vive la experiencia de los Andes peruanos
     contact: Contáctanos

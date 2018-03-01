@@ -1,0 +1,5 @@
+mutation setLocaleMutation($code: String!) {
+  setLocale(code: $code) @client {
+    code
+  }
+}

@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/client/build" />
       <excludeFolder url="file://$MODULE_DIR$/client/build-dev" />
       <excludeFolder url="file://$MODULE_DIR$/client/build-prod" />
       <excludeFolder url="file://$MODULE_DIR$/client/coverage" />
@@ -30,5 +31,7 @@
     <orderEntry type="library" name="@types/query-string" level="application" />
     <orderEntry type="library" name="@types/sequelize" level="application" />
     <orderEntry type="library" name="@types/webpack" level="application" />
+    <orderEntry type="library" name="@types/chai" level="application" />
+    <orderEntry type="library" name="@types/sinon" level="application" />
   </component>
 </module>

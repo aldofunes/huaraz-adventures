@@ -1,11 +1,11 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import EditTripQuery from './EditTrip.graphql'
 import updateTrip from './updateTrip.graphql'
 import EditTrip from './EditTrip'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   graphql(EditTripQuery, {
     options: ({ match: { params }, localeCode }) => ({

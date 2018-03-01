@@ -1,10 +1,9 @@
 const path = require('path')
 const { lib } = require('serverless-webpack')
 
-module.exports = {
+const config = {
   entry: lib.entries,
   target: 'node',
-  externals: ['aws-sdk'],
   resolve: {
     modules: ['node_modules', path.join(__dirname, 'src')],
     extensions: ['.js', '.jsx'],
@@ -30,3 +29,14 @@ module.exports = {
     ],
   },
 }
+
+switch (process.env.STAGE) {
+  case 'test':
+    break
+
+  default:
+    config.externals = ['aws-sdk']
+    break
+}
+
+module.exports = config

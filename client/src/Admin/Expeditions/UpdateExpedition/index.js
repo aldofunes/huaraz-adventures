@@ -1,13 +1,13 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
-import EditExpeditionQuery from './EditExpedition.graphql'
-import updateExpeditionMutation from './updateExpedition.graphql'
-import EditExpedition from './UpdateExpedition'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
+import UpdateExpeditionQuery from './UpdateExpedition.graphql'
+import updateExpeditionMutation from './updateExpeditionMutation.graphql'
+import UpdateExpedition from './UpdateExpedition'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
-  graphql(EditExpeditionQuery, {
+  graphql(UpdateExpeditionQuery, {
     options: ({ match: { params }, localeCode }) => ({
       variables: { id: params.id, localeCode },
     }),
@@ -19,8 +19,31 @@ export default compose(
       updateExpedition: variables => mutate({
         variables: { id: params.id, ...variables, localeCode },
 
-        // TODO: Optimistic UI
+        optimisticResponse: {
+          updateUser: {
+            __typename: 'Expedition',
+            id: params.id,
+            localeCode,
+            ...variables,
+          },
+        },
+
+        update: (store, { data: { updateUser } }) => {
+          // Read the data from our cache for this query.
+          const data = store.readQuery({
+            query: UpdateExpeditionQuery,
+            variables: { id: params.id, localeCode },
+          })
+          // Add from the mutation to the end.
+          data.expedition = updateUser
+          // Write our data back to the cache.
+          store.writeQuery({
+            data,
+            query: UpdateExpeditionQuery,
+            variables: { id: params.id, localeCode },
+          })
+        },
       }),
     }),
   }),
-)(EditExpedition)
+)(UpdateExpedition)

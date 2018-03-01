@@ -1,10 +1,12 @@
-import { compose } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
+import { compose, graphql } from 'react-apollo'
 import { withRouter } from 'react-router-dom'
 import Footer from './Footer'
 
 export default compose(
   withRouter,
 
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, {
+    props: ({ data }) => ({ localeCode: data.locale.code }),
+  }),
 )(Footer)

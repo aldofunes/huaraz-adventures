@@ -1,7 +1,9 @@
 query UserListQuery {
   users {
     id
+    avatar
     email
     name
+    isEnabled
   }
 }

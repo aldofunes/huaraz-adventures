@@ -1,13 +1,11 @@
 mutation createContactMutation (
 $name: String!
 $email: String!
-$company: String!
 $message: String
 ) {
   createContact(
     name: $name
     email: $email
-    company: $company
     message: $message
   ) { id }
 }

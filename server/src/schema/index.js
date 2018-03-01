@@ -1,3 +1,4 @@
+import directiveResolvers from './directiveResolvers'
 import { merge } from 'lodash'
 import { makeExecutableSchema } from 'graphql-tools'
 import { GraphQLDateTime } from 'lib/customScalars'
@@ -10,6 +11,9 @@ import * as Trip from './Trip'
 import * as User from './User'
 
 const rootSchema = `
+  # directive @auth on QUERY | FIELD
+  directive @auth on FIELD_DEFINITION
+  
   type RootQuery {
     test: String @deprecated
   }
@@ -30,6 +34,7 @@ const rootSchema = `
 `
 
 const schema = makeExecutableSchema({
+  directiveResolvers,
   typeDefs: [
     rootSchema,
     Contact.schema,

@@ -11,13 +11,12 @@ import schema from './schema'
  * @param callback
  */
 export const handler = (event, context, callback) => {
-  const bearerTokenPattern = /^Bearer[ ]+([^ ]+)[ ]*$/i
-  const jwt = bearerTokenPattern.exec(event.headers['Authorization'] || event.headers['authorization'])
+  const { authorizer } = event.requestContext
 
   const handler = graphqlLambda({
     schema,
     // All the resolvers will have access to this context as the third argument
-    context: { jwt: jwt && jwt[1] },
+    context: { userId: authorizer && authorizer.principalId },
     formatError,
     debug: true,
   })

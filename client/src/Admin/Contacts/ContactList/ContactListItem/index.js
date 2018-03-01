@@ -1,17 +1,19 @@
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import deleteContact from './deleteContact.graphql'
 import ContactListQuery from '../ContactList.graphql'
 import ContactListItem from './ContactListItem'
+import deleteContactMutation from './deleteContact.graphql'
 
 export default compose(
   withRouter,
 
-  connect(state => ({ locale: state.locale })),
+  graphql(localeQuery, {
+    props: ({ data }) => ({ localeCode: data.locale.code }),
+  }),
 
-  graphql(deleteContact, {
-    props: ({ ownProps: { locale }, mutate }) => ({
+  graphql(deleteContactMutation, {
+    props: ({ ownProps: { localeCode }, mutate }) => ({
       deleteContact: variables => mutate({
         variables,
 
@@ -20,7 +22,7 @@ export default compose(
             // Read the data from our cache for this query.
             const data = store.readQuery({
               query: ContactListQuery,
-              variables: { localeCode: locale.code },
+              variables: { localeCode: localeCode },
             })
             // Remove item from the data
             data.posts = data.posts.filter(item => item.id !== variables.id)
@@ -28,7 +30,7 @@ export default compose(
             store.writeQuery({
               data,
               query: ContactListQuery,
-              variables: { localeCode: locale.code },
+              variables: { localeCode: localeCode },
             })
           }
         },

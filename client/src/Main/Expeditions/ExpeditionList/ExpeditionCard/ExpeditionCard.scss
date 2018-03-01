@@ -1,0 +1,49 @@
+.card {
+  border-radius: 5px;
+  position: relative;
+  transition: all 200ms;
+  color: #555;
+
+  &:hover {
+    box-shadow: 2px 4px 15px #bbb;
+    transform: scale(1.05);
+    color: #555;
+  }
+}
+
+.image {
+  object-fit: cover;
+  position: absolute;
+  height: 12em;
+  width: 100%;
+  z-index: -1;
+}
+
+.title {
+  height: 12em;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.titleText {
+  margin: 0;
+  padding: 0.2em;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+}
+
+.content {
+  padding: 0.5em;
+}
+
+.button {
+  position: absolute;
+  bottom: 0.5em;
+  width: calc(100% - 1em);
+}

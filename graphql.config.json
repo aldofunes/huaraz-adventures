@@ -1,8 +1,7 @@
 {
-
   "schema": {
     "request": {
-      "url" : "http://localhost:4000/graphql",
+      "url" : "http://localhost:4000/public",
       "method" : "POST",
       "postIntrospectionQuery" : true,
       "options" : {
@@ -16,11 +15,21 @@
 
   "endpoints" : [
     {
-      "name": "Local",
-      "url": "http://localhost:4000/graphql",
+      "name": "Local Public",
+      "url": "http://localhost:4000/public",
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    },
+    {
+      "name": "Local Private",
+      "url": "http://localhost:4000/private",
       "options" : {
         "headers": {
           "user-agent" : "JS GraphQL",
+          "Authorization2": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE2ZGQ2ZThjLTU2MzgtNGFkOC1iYzlkLTE4YWFjOTA1ZWVmYSIsImlhdCI6MTUxOTkyMTQ3NX0.V8NAhwrjebz7gn2qO161RlbVwS09ARjAl_EVeZz1hYI",
           "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDkwOTMyLWM2YTYtNDVlNS05MjhmLTY5MGE3M2JhOTczZSIsImVtYWlsIjoiYWRtaW5AZXhhbXBsZS5jb20iLCJpYXQiOjE1MTI5NTE3NTB9.G3FNHUT5ukxcT8c1UJbb8XaJE51K9SnCgeUIKSYE6ro"
         }
       }

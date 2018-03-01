@@ -1,16 +1,18 @@
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import deleteTrip from './deleteTrip.graphql'
 import TripListQuery from '../TripList.graphql'
+import deleteTripMutation from './deleteTrip.graphql'
 import TripListItem from './TripListItem'
 
 export default compose(
   withRouter,
 
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, {
+    props: ({ data }) => ({ localeCode: data.locale.code }),
+  }),
 
-  graphql(deleteTrip, {
+  graphql(deleteTripMutation, {
     props: ({ ownProps: { localeCode }, mutate }) => ({
       deleteTrip: variables => mutate({
         variables,

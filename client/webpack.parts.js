@@ -52,8 +52,8 @@ exports.indexTemplate = ({ title, description, appMountId }) => ({
         twitter: true,
         yandex: true,
         windows: true,
-      }
-    })
+      },
+    }),
   ],
 })
 
@@ -83,9 +83,10 @@ exports.loaders = ({ include, exclude }) => ({
           },
         },
       },
-      { test: /\.json$/, use: 'json-loader', include, exclude },
-      { test: /\.(yml|yaml)$/, use: 'yaml-import-loader', include, exclude },
-      { test: /\.(graphql|gql)$/, use: 'graphql-tag/loader', include, exclude },
+      { test: /\.json$/, use: [{ loader: 'json-loader' }], include, exclude },
+      { test: /\.(yml|yaml)$/, use: [{ loader: 'yaml-import-loader' }], include, exclude },
+      { test: /\.(graphql|gql)$/, use: [{ loader: 'graphql-tag/loader' }], include, exclude,
+      },
       {
         test: /\.(svg|jpg|png)$/,
         use: [{ loader: 'file-loader', options: { outputPath: 'images/' } }],
@@ -106,8 +107,8 @@ exports.minify = () => ({
       '@fortawesome/fontawesome-free-brands$': '@fortawesome/fontawesome-free-brands/shakable.es.js',
       '@fortawesome/fontawesome-free-regular$': '@fortawesome/fontawesome-free-regular/shakable.es.js',
       '@fortawesome/fontawesome-free-solid$': '@fortawesome/fontawesome-free-solid/shakable.es.js',
-    }
-  }
+    },
+  },
 })
 
 exports.enableReactPerformanceTools = () => ({

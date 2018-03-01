@@ -1,4 +1,4 @@
-import { SES } from 'aws-sdk' // eslint-disable-line node/no-unpublished-require
+import sendEmail from 'lib/sendEmail'
 import Contact from './Contact'
 
 export const schema = `
@@ -13,9 +13,9 @@ type Contact{
 }
 
 extend type RootQuery {
-  contact(id: ID!): Contact
-  contacts(limit: Int): [Contact]
-  contactsCount: Int
+  contact(id: ID!): Contact @auth
+  contacts(limit: Int): [Contact] @auth
+  contactsCount: Int @auth
 }
 
 extend type RootMutation {
@@ -25,7 +25,7 @@ extend type RootMutation {
     message: String
   ): Contact
   
-  deleteContact(id: ID!): Boolean
+  deleteContact(id: ID!): Boolean @auth
 }
 `
 
@@ -33,54 +33,49 @@ export const resolvers = {
   Contact: {},
 
   RootQuery: {
-    contact: (root, { id }) => Contact.get(id),
+    contact: (root, { id }) => Contact.get({ id }),
     contacts: (root, { limit }) => Contact.scan({ Limit: limit }),
     contactsCount: () => Contact.count(),
   },
 
   RootMutation: {
-    createContact: (root, { name, company, email, message }) => {
-      const ses = new SES({ region: 'eu-west-1' })
-      ses.sendEmail({
-        Destination: {
-          ToAddresses: [process.env.MAIL_TO],
-        },
-        Message: {
-          Body: {
-            Html: {
-              Charset: 'UTF-8',
-              Data: `
-                    <h3>Someone has filled out the contact form in www.lovis.company:</h3>
-                    <ul>
-                      <li>Name: ${name}</li>
-                      <li>Company: ${company}</li>
-                      <li>Email: ${email}</li>
-                      <li>Message: ${message}</li>
-                    </ul>
-                  `,
-            },
-            Text: {
-              Charset: 'UTF-8',
-              Data: `
-                  Someone has filled out the contact form in www.lovis.company:\n\n
-                  Name: ${name}\n
-                  Company: ${company}\n
-                  Email: ${email}\n
-                  Message: ${message}\n
-                `,
-            },
-          },
-          Subject: {
-            Charset: 'UTF-8',
-            Data: 'New contact from LOVIS Company',
-          },
-        },
-        ReplyToAddresses: ['support@lovis.email'],
-        Source: 'LOVIS Company <lovis.company@lovis.co>',
-      })
+    createContact(root, { name, company, email, message }) {
       return Contact.create({ name, company, email, message })
+        .then(contact => sendEmail({
+          from: 'webmaster@huaraz-adventures.com',
+          to: ['aldo.funes@icloud.com'],
+          subject: 'Nuevo contacto en www.huaraz-adventures.com',
+          htmlBody: `
+            <h3>Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo</h3>
+            <dl>
+              <dt>Nombre</dt>
+              <dd>${contact.name}</dd>
+              <br>
+              
+              <dt>Correo electrónico</dt>
+              <dd>${contact.email}</dd>
+              <br>
+
+              <dt>Mensaje</dt>
+              <dd>${contact.message}</dd>
+            </dl>
+          `,
+          textBody: `
+            Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo\n\n
+            
+            Nombre:\n
+            ${name}\n\n
+            
+            Correo electrónico:\n
+            ${email}\n\n
+            
+            Mensaje:\n
+            ${message}\n\n
+          `,
+        })
+          .then(() => contact))
     },
 
-    deleteContact: (root, { id }) => Contact.delete(id),
+    deleteContact: (root, { id }) => Contact.delete({ id }),
   },
 }

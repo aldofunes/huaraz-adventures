@@ -1,10 +1,12 @@
-import { compose } from 'react-apollo'
-import { connect } from 'react-redux'
+import jwtQuery from 'lib/apollo/queries/jwt.graphql'
 import isMobile from 'lib/isMobile'
+import { compose, graphql } from 'react-apollo'
 import Admin from './Admin'
 
 export default compose(
-  connect(state => ({ jwt: state.auth.jwt })),
+  graphql(jwtQuery, {
+    props: ({ data }) => ({ jwt: data.auth.jwt }),
+  }),
 
   isMobile(),
 )(Admin)

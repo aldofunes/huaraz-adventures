@@ -1,6 +1,5 @@
-import Service from './Service'
 import { findTranslation } from 'lib/i18n'
-import { authorize } from 'lib/auth'
+import Service from './Service'
 
 export const schema = `
 type Service {
@@ -21,13 +20,13 @@ extend type RootMutation {
   createService(
     localeCode: String!
     name: String!
-  ): Service
+  ): Service @auth
   
   updateService(
     id: ID!
     localeCode: String!
     name: String!
-  ): Service
+  ): Service @auth
   
   deleteService(id: ID!): Boolean
 }
@@ -39,24 +38,35 @@ export const resolvers = {
   },
 
   RootQuery: {
-    service: (root, { id, slug }) => id ? Service.get(id) : Service.findBySlug(slug),
-    services: (root, { limit }) => Service.scan({ Limit: limit }),
-    servicesCount: () => Service.count(),
+    service(root, { id, slug }) {
+      return id ? Service.get({ id }) : Service.findBySlug(slug)
+    },
+    services(root, { limit }) {
+      return Service.scan({ Limit: limit })
+    },
+    servicesCount() {
+      return Service.count()
+    },
   },
 
 
   RootMutation: {
-    createService: (root, args) => Service.create({ i18n: [args] }),
+    createService(root, args) {
+      return Service.create({ i18n: [args] })
+    },
 
-    updateService: (root, { id, localeCode, ...args }, { jwt }) => authorize(jwt)
-      .then(() => Service.get(id))
-      .then(service => Service.update(id, {
-        i18n: [
-          ...service.i18n.filter(i => i.localeCode !== localeCode),
-          { localeCode: localeCode, args },
-        ],
-      })),
+    updateService(root, { id, localeCode, ...args }) {
+      return Service.get({ id })
+        .then(service => Service.update({ id }, {
+          i18n: [
+            ...service.i18n.filter(i => i.localeCode !== localeCode),
+            { localeCode: localeCode, args },
+          ],
+        }))
+    },
 
-    deleteService: (root, { id }) => Service.delete(id),
+    deleteService(root, { id }) {
+      return Service.delete({ id })
+    },
   },
 }

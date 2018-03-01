@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
+import cx from 'classnames'
+import { NotFound } from 'components'
+import { matchType } from 'lib/propTypes'
 import { bool, string } from 'prop-types'
+import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Transition } from 'react-transition-group'
-import cx from 'classnames'
-import { matchType } from 'lib/propTypes'
-import { NotFound } from 'components'
+import styles from './Admin.scss'
 import Contacts from './Contacts'
+import Profile from './Profile'
+import Expeditions from './Expeditions'
 import NavBar from './NavBar'
 import Sidebar from './Sidebar'
 import SignIn from './SignIn'
 import Tags from './Tags'
-import Expeditions from './Expeditions'
 import Users from './Users'
-import styles from './Admin.scss'
 
 class Admin extends Component {
   static propTypes = {
@@ -46,7 +47,6 @@ class Admin extends Component {
 
     return (
       <div className={styles.container}>
-
         <NavBar isMobile={isMobile} toggleSidebar={this.toggleSidebar} />
 
         <Transition in={!isMobile || showSidebar} timeout={300}>
@@ -69,6 +69,7 @@ class Admin extends Component {
             <Route path={`${match.url}/tags`} component={Tags} />
             <Route path={`${match.url}/expeditions`} component={Expeditions} />
             <Route path={`${match.url}/users`} component={Users} />
+            <Route path={`${match.url}/profile`} component={Profile} />
 
             {/* Render a not found component when no route is found */}
             <Route path={`${match.url}/*`} component={NotFound} />

@@ -1,10 +1,10 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import ExpeditionFormQuery from './ExpeditionForm.graphql'
 import ExpeditionForm from './ExpeditionForm'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   graphql(ExpeditionFormQuery, {
     options: ({ localeCode }) => ({ variables: { localeCode } }),

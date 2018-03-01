@@ -1,0 +1,9 @@
+query ProfileQuery {
+  user: myUser {
+    id
+    avatar
+    email
+    isEnabled
+    name
+  }
+}

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header {
+  height: 30em;
+  max-height: calc(100vh - 4em);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #efefef;
+}
+
+.headerText {
+  margin: 0;
+  padding: 0.2em;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+}
+
+.summary {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.itinerary {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.lists {
+  padding: 1em;
+}
+
+.content {
+  flex: 1 1;
+}
+
+.side {
+  flex: 0 1 20em;
+  border-left: 1px solid #ddd;
+  padding: 1em;
+}

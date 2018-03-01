@@ -1,0 +1,218 @@
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"email":"admin@example.com","password":"test"}
+
+<> 2018-03-01T114721.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"email":"admin@example.com","password":"admin"}
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"email":"admin@example.com","password":"admin"}
+
+<> 2018-03-01T114648.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@exaple.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101759-2.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101759-1.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101759.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101758.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101757.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101756.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101754.200.json
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+###
+
+POST http://localhost:4000/signIn
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application-json
+
+{   "email": "admin@example.com",   "password": "admin" }
+
+<> 2018-02-28T101700.400.json
+
+###
+

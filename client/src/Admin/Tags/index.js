@@ -1,11 +1,11 @@
 import { compose, graphql } from 'react-apollo'
-import { connect } from 'react-redux'
+import localeQuery from 'lib/apollo/queries/locale.graphql'
 import TagListQuery from './Tags.graphql'
 import createTag from './createTag.graphql'
 import Tags from './Tags'
 
 export default compose(
-  connect(state => ({ localeCode: state.locale.code })),
+  graphql(localeQuery, { props: ({ data }) => ({ localeCode: data.locale.code }) }),
 
   graphql(TagListQuery, {
     options: ({ localeCode }) => ({ variables: { localeCode } }),

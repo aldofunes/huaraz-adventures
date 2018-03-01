@@ -1,16 +1,16 @@
+import { faList, faPlus } from '@fortawesome/fontawesome-free-solid'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { Button, Header } from 'components'
+import { matchType } from 'lib/propTypes'
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faList, faPlus } from '@fortawesome/fontawesome-free-solid'
-import { matchType } from 'lib/propTypes'
-import { Button, Header } from 'components'
-import ExpeditionList from './ExpeditionList'
 import ExpeditionNew from './CreateExpedition'
+import ExpeditionList from './ExpeditionList'
 import EditExpedition from './UpdateExpedition'
 
 const Expeditions = ({ match }) => (
   <div>
-    <Header to={match.url} title="Expeditions">
+    <Header title="Expeditions">
       <div>
         <Link to={`${match.url}/new`}>
           <Button plain icon={<FontAwesomeIcon icon={faPlus} />} />

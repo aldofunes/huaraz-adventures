@@ -1,4 +1,3 @@
-import { authorize } from 'lib/auth'
 import { findTranslation } from 'lib/i18n'
 import Tag from './Tag'
 
@@ -20,16 +19,16 @@ extend type RootQuery {
 }
 
 extend type RootMutation {
-  createTag: Tag
+  createTag: Tag @auth
   
   updateTag(
     id: ID!
     slug: String!
     localeCode: String!
     name: String!
-  ): Tag
+  ): Tag @auth
   
-  deleteTag(id: ID!): Boolean
+  deleteTag(id: ID!): Boolean @auth
 }
 `
 
@@ -43,7 +42,7 @@ export const resolvers = {
   RootQuery: {
     tag(root, { id, slug }) {
       if (slug) { return Tag.getBySlug(id) }
-      return Tag.get(id)
+      return Tag.get({ id })
     },
 
     tags() {
@@ -56,9 +55,8 @@ export const resolvers = {
   },
 
   RootMutation: {
-    createTag(root, args, { jwt }) {
-      return authorize(jwt)
-        .then(user => Tag.create({ userId: user.id }))
+    createTag(root, args, { userId }) {
+      return Tag.create({ userId })
     },
 
     /**
@@ -67,14 +65,12 @@ export const resolvers = {
      * @param [id]
      * @param [slug]
      * @param [args]
-     * @param [jwt]
      * @returns {Promise<any>}
      */
-    updateTag(root, { id, slug, ...args }, { jwt }) {
-      return authorize(jwt)
-        .then(() => Tag.get(id))
+    updateTag(root, { id, slug, ...args }) {
+      return Tag.get({ id })
         .then(({ i18n = [] }) => {
-          return Tag.update(id, {
+          return Tag.update({ id }, {
             slug,
             i18n: [...i18n.filter(i => i.localeCode !== args.localeCode), args],
           })
@@ -82,7 +78,7 @@ export const resolvers = {
     },
 
     deleteTag(root, { id }) {
-      return Tag.delete(id)
+      return Tag.delete({ id })
     },
   },
 }

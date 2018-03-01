@@ -1,23 +1,30 @@
-const { v4 } = require('uuid')
 import docClient from 'lib/docClient'
+import { NotFoundError } from 'lib/errors'
+import uuid from 'uuid'
 
 export default class Model {
   /**
-   * Build a Model with a collection and a scope. `deletedAt: null` is always included in the
-   * default scope
-   * @param collection {string} collection The name of the MongoDB collection
-   * @param defaultScope {Object} defaultScope The query options for the default scope
-   * @param indices {Array<Object>} indices An array of the indices to create
+   * Build a Model with a tableName
+   * @param collection {string} collection The name of the DynamoDB collection
    */
   constructor({ tableName }) {
     this.tableName = tableName
   }
 
-  get(id) {
+  // region Read Methods
+  get(Key) {
     return docClient
-      .get({ TableName: this.tableName, Key: { id } })
+      .get({ TableName: this.tableName, Key })
       .promise()
       .then(data => data.Item)
+  }
+
+  batchGet(Keys, args) {
+    if (!Keys || Keys.length === 0) { return null }
+
+    return docClient.batchGet({ RequestItems: { [this.tableName]: { Keys }, ...args } })
+      .promise()
+      .then(data => data.Responses[this.tableName])
   }
 
   query(args) {
@@ -40,43 +47,53 @@ export default class Model {
       .then(data => data.Count)
   }
 
+  // endregion
+
+  //region Write Methods
   create(doc) {
-    doc.id = v4()
-    doc.createdAt = Date.now()
-    doc.modifiedAt = Date.now()
+    const id = uuid.v4()
     return docClient.put({
       TableName: this.tableName,
-      Item: doc,
-      ConditionalExpression: 'attribute_not_exists(id)',
-    }).promise().then(() => doc)
+      Item: { id, ...doc, createdAt: Date.now(), modifiedAt: Date.now() },
+    }).promise().then(() => this.get({ id }))
   }
 
-  upsert(doc) {
-    doc.modifiedAt = Date.now()
-    return docClient.put({
-      TableName: this.tableName,
-      Item: doc,
-    }).promise().then(() => doc)
-  }
+  update(Key, doc) {
+    return this.get(Key)
+      .then((item) => {
+        if (!item) { throw new NotFoundError() }
 
-  update(id, doc) {
-    return docClient.get({ TableName: this.tableName, Key: { id } })
-      .promise()
-      .then(({ Item }) => {
-        if (!Item) { throw new Error('Item does not exist') } else {
-
-          return docClient.put({
-            TableName: this.tableName,
-            Item: Object.assign({}, Item, doc),
-          }).promise().then(() => Object.assign({}, Item, doc))
-        }
+        return docClient.put({
+          TableName: this.tableName,
+          Item: { ...item, ...doc, modifiedAt: Date.now() },
+        }).promise()
       })
+      .then(() => this.get(Key))
   }
 
-  delete(id) {
-    return docClient.delete({ TableName: this.tableName, Key: { id } })
-      .promise()
-      .then(() => true)
-      .catch(() => false)
+  upsert(Key, doc) {
+    return this.get(Key)
+      .then((item) => {
+        let Item = { ...item, ...doc, modifiedAt: Date.now() }
+
+        if (!item) {
+          Item = { ...Item, ...Key, createdAt: Date.now() }
+        }
+
+        return docClient.put({ TableName: this.tableName, Item }).promise()
+      })
+      .then(() => this.get(Key))
   }
+
+  delete(Key) {
+    return this.get(Key)
+      .then(item => {
+        if (!item) { throw new NotFoundError() }
+
+        return docClient.delete({ TableName: this.tableName, Key }).promise()
+      })
+      .then(() => true)
+  }
+
+  //endregion
 }

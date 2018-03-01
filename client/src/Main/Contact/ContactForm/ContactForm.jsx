@@ -1,8 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { EditorState } from 'draft-js'
-import { Button, Error, Form, FormField, Loading, RichEditor, TextInput } from 'components'
+import { Button, Error, Form, FormField, Loading, TextInput } from 'components'
 import i18n from 'lib/i18n'
+import PropTypes from 'prop-types'
+import React, { Component } from 'react'
 import translations from './ContactForm.i18n.yaml'
 
 class ContactForm extends Component {
@@ -13,12 +12,9 @@ class ContactForm extends Component {
     isSavingForm: false,
     savedForm: false,
     formError: null,
-    editorState: EditorState.createEmpty(),
   }
 
   handleChangeInput = (event) => { this.setState({ [event.target.name]: event.target.value }) }
-
-  handleEditorChange = editorState => this.setState({ editorState })
 
   handleSubmit = (event) => {
     event.preventDefault()
@@ -47,9 +43,10 @@ class ContactForm extends Component {
   }
 
   render() {
-    const { locale } = this.props
-    const { name, email, message, isSavingForm, savedForm, formError, editorState } = this.state
-    i18n.extend(translations[locale.code])
+    const { localeCode } = this.props
+    const { name, email, message, isSavingForm, savedForm, formError } = this.state
+
+    i18n.extend(translations[localeCode])
 
     const emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -105,9 +102,6 @@ class ContactForm extends Component {
               onChange={this.handleChangeInput}
             />
           </FormField>
-          <FormField label={i18n.t('contact_message')}>
-            <RichEditor editorState={editorState} onChange={this.handleEditorChange} />
-          </FormField>
         </div>
         <Button type="submit" fill disabled={!isValid}>{i18n.t('contact_submit')}</Button>
       </Form>
@@ -116,15 +110,8 @@ class ContactForm extends Component {
 }
 
 ContactForm.propTypes = {
-  locale: PropTypes.shape({
-    code: PropTypes.string.isRequired,
-  }),
+  localeCode: PropTypes.string.isRequired,
   createContact: PropTypes.func.isRequired,
-}
-
-ContactForm.defaultProps = {
-  errorTranslations: null,
-  translations: null,
 }
 
 export default ContactForm

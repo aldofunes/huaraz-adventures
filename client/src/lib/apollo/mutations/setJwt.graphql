@@ -1,0 +1,3 @@
+mutation setLocaleMutation($jwt: String!) {
+  setJwt(jwt: $jwt) @client
+}

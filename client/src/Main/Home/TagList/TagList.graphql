@@ -1,0 +1,6 @@
+query TagListQuery ($localeCode: String!) {
+  tags {
+    id
+    name(localeCode: $localeCode)
+  }
+}
