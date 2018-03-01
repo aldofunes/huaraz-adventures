@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken'
+import User from 'schema/User'
 
 export const handler = (event, context, callback) => {
   // Regular expression to extract an access token from
@@ -9,22 +10,25 @@ export const handler = (event, context, callback) => {
 
   if (!token) {
     callback('Unauthorized')
-  }
-  else {
-    jwt.verify(token[1], process.env.PRIVATE_KEY, (error, user) => {
+  } else {
+    jwt.verify(token[1], process.env.PRIVATE_KEY, (error, { id }) => {
       if (error) { callback('Unauthorized')} else {
-        callback(null, {
-          principalId: user.id,
-          policyDocument: {
-            Version: '2012-10-17',
-            Statement: [
-              {
-                Action: 'execute-api:Invoke',
-                Effect: 'Allow',
-                Resource: '*',
+        User.get({ id }).then(user => {
+          if (!user) { callback('Unauthorized') } else {
+            callback(null, {
+              principalId: id,
+              policyDocument: {
+                Version: '2012-10-17',
+                Statement: [
+                  {
+                    Action: 'execute-api:Invoke',
+                    Effect: 'Allow',
+                    Resource: '*',
+                  },
+                ],
               },
-            ],
-          },
+            })
+          }
         })
       }
     })

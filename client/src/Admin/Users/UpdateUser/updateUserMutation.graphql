@@ -1,0 +1,18 @@
+mutation updateUserMutation(
+$id: ID!
+$email: String
+$isEnabled: Boolean!
+$name: String
+) {
+  updateUser(
+    id: $id
+    email: $email
+    isEnabled: $isEnabled
+    name: $name
+  ) {
+    id
+    email
+    isEnabled
+    name
+  }
+}

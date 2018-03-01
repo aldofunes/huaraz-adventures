@@ -30,5 +30,7 @@
     <orderEntry type="library" name="@types/query-string" level="application" />
     <orderEntry type="library" name="@types/sequelize" level="application" />
     <orderEntry type="library" name="@types/webpack" level="application" />
+    <orderEntry type="library" name="@types/chai" level="application" />
+    <orderEntry type="library" name="@types/sinon" level="application" />
   </component>
 </module>

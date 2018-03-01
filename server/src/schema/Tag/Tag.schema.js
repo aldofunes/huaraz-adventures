@@ -19,16 +19,16 @@ extend type RootQuery {
 }
 
 extend type RootMutation {
-  createTag: Tag
+  createTag: Tag @auth
   
   updateTag(
     id: ID!
     slug: String!
     localeCode: String!
     name: String!
-  ): Tag
+  ): Tag @auth
   
-  deleteTag(id: ID!): Boolean
+  deleteTag(id: ID!): Boolean @auth
 }
 `
 
@@ -42,7 +42,7 @@ export const resolvers = {
   RootQuery: {
     tag(root, { id, slug }) {
       if (slug) { return Tag.getBySlug(id) }
-      return Tag.get(id)
+      return Tag.get({ id })
     },
 
     tags() {
@@ -68,9 +68,9 @@ export const resolvers = {
      * @returns {Promise<any>}
      */
     updateTag(root, { id, slug, ...args }) {
-      return Tag.get(id)
+      return Tag.get({ id })
         .then(({ i18n = [] }) => {
-          return Tag.update(id, {
+          return Tag.update({ id }, {
             slug,
             i18n: [...i18n.filter(i => i.localeCode !== args.localeCode), args],
           })
@@ -78,7 +78,7 @@ export const resolvers = {
     },
 
     deleteTag(root, { id }) {
-      return Tag.delete(id)
+      return Tag.delete({ id })
     },
   },
 }

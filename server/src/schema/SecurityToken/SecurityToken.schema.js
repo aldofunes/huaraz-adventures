@@ -11,7 +11,7 @@ type SecurityToken {
 }
 
 extend type RootQuery {
-  s3SecurityToken: SecurityToken
+  s3SecurityToken: SecurityToken @auth
 }
 `
 

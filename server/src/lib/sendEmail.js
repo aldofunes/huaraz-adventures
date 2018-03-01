@@ -11,28 +11,15 @@ const ses = new SES({ region: 'us-east-1' })
  * @param textBody
  * @param to
  */
-export default ({ from, htmlBody, reply, subject, textBody, to }) => {
-  return ses.sendEmail({
-    Destination: {
-      ToAddresses: to,
+export default ({ from, htmlBody, reply, subject, textBody, to }) => ses.sendEmail({
+  Source: from,
+  ReplyToAddresses: [reply],
+  Destination: { ToAddresses: to },
+  Message: {
+    Subject: { Charset: 'UTF-8', Data: subject },
+    Body: {
+      Html: { Charset: 'UTF-8', Data: htmlBody },
+      Text: { Charset: 'UTF-8', Data: textBody },
     },
-    Message: {
-      Body: {
-        Html: {
-          Charset: 'UTF-8',
-          Data: htmlBody,
-        },
-        Text: {
-          Charset: 'UTF-8',
-          Data: textBody,
-        },
-      },
-      Subject: {
-        Charset: 'UTF-8',
-        Data: subject,
-      },
-    },
-    ReplyToAddresses: [reply],
-    Source: from,
-  }).promise()
-}
+  },
+}).promise()

@@ -13,9 +13,9 @@ type Contact{
 }
 
 extend type RootQuery {
-  contact(id: ID!): Contact
-  contacts(limit: Int): [Contact]
-  contactsCount: Int
+  contact(id: ID!): Contact @auth
+  contacts(limit: Int): [Contact] @auth
+  contactsCount: Int @auth
 }
 
 extend type RootMutation {
@@ -25,7 +25,7 @@ extend type RootMutation {
     message: String
   ): Contact
   
-  deleteContact(id: ID!): Boolean
+  deleteContact(id: ID!): Boolean @auth
 }
 `
 
@@ -33,7 +33,7 @@ export const resolvers = {
   Contact: {},
 
   RootQuery: {
-    contact: (root, { id }) => Contact.get(id),
+    contact: (root, { id }) => Contact.get({ id }),
     contacts: (root, { limit }) => Contact.scan({ Limit: limit }),
     contactsCount: () => Contact.count(),
   },
@@ -47,22 +47,35 @@ export const resolvers = {
           subject: 'Nuevo contacto en www.huaraz-adventures.com',
           htmlBody: `
             <h3>Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo</h3>
-            <ul>
-              <li><strong>Nombre</strong>: ${contact.name}</li>
-              <li><strong>Correo electrónico</strong>: ${contact.email}</li>
-              <li><strong>Mensaje</strong>: ${contact.message}</li>
-            </ul>
+            <dl>
+              <dt>Nombre</dt>
+              <dd>${contact.name}</dd>
+              <br>
+              
+              <dt>Correo electrónico</dt>
+              <dd>${contact.email}</dd>
+              <br>
+
+              <dt>Mensaje</dt>
+              <dd>${contact.message}</dd>
+            </dl>
           `,
           textBody: `
             Un visitante de www.huaraz-adventures.com quiere ponerse en contacto contigo\n\n
-            Nombre: ${name}\n
-            Correo electrónico: ${email}\n
-            Mensaje: ${message}\n
+            
+            Nombre:\n
+            ${name}\n\n
+            
+            Correo electrónico:\n
+            ${email}\n\n
+            
+            Mensaje:\n
+            ${message}\n\n
           `,
         })
           .then(() => contact))
     },
 
-    deleteContact: (root, { id }) => Contact.delete(id),
+    deleteContact: (root, { id }) => Contact.delete({ id }),
   },
 }

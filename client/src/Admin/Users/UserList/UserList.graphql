@@ -3,5 +3,6 @@ query UserListQuery {
     id
     email
     name
+    isEnabled
   }
 }

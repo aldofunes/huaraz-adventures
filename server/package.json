@@ -4,8 +4,9 @@
   "scripts": {
     "kill": "kill -9 $(lsof -ti tcp:8000)",
     "prestart": "serverless dynamodb install --stage dev",
-    "start": "serverless offline start --stage dev",
+    "start": "AWS_PROFILE=personal serverless offline start --stage dev",
     "deploy": "serverless deploy --verbose --stage prod",
+    "test": "DYNAMODB_ENDPOINT=http://localhost:8000 STAGE=test SERVICE_NAME=huaraz-adventures NODE_ENV=development mocha-webpack 'src/**/*.test.js'",
     "test:lint": "eslint . --fix --ext .js --cache"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "lodash": "^4.17.5",
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5",
+    "sinon": "^4.4.2",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
@@ -29,10 +31,14 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-3": "^6.24.1",
     "casual": "^1.5.19",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^4.18.1",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-node": "^6.0.1",
     "json-loader": "^0.5.7",
+    "mocha": "^5.0.1",
+    "mocha-webpack": "^1.0.1",
     "serverless-domain-manager": "^2.3.2",
     "serverless-dynamodb-local": "^0.2.27",
     "serverless-offline": "^3.18.0",

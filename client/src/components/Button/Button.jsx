@@ -1,7 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
+import React from 'react'
 import styles from './Button.scss'
 
 const Button = ({
@@ -24,16 +23,11 @@ const Button = ({
     [styles.fill]: fill,
   })
 
-  const button = (
+  return (
     <button type={type} onClick={onClick} className={cn} {...props}>
       {icon} {children}
     </button>
   )
-
-  if (to) {
-    return <Link to={to}>{button}</Link>
-  }
-  return <a href={href}>{button}</a>
 }
 
 Button.propTypes = {

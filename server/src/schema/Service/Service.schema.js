@@ -20,13 +20,13 @@ extend type RootMutation {
   createService(
     localeCode: String!
     name: String!
-  ): Service
+  ): Service @auth
   
   updateService(
     id: ID!
     localeCode: String!
     name: String!
-  ): Service
+  ): Service @auth
   
   deleteService(id: ID!): Boolean
 }
@@ -39,7 +39,7 @@ export const resolvers = {
 
   RootQuery: {
     service(root, { id, slug }) {
-      return id ? Service.get(id) : Service.findBySlug(slug)
+      return id ? Service.get({ id }) : Service.findBySlug(slug)
     },
     services(root, { limit }) {
       return Service.scan({ Limit: limit })
@@ -56,8 +56,8 @@ export const resolvers = {
     },
 
     updateService(root, { id, localeCode, ...args }) {
-      return Service.get(id)
-        .then(service => Service.update(id, {
+      return Service.get({ id })
+        .then(service => Service.update({ id }, {
           i18n: [
             ...service.i18n.filter(i => i.localeCode !== localeCode),
             { localeCode: localeCode, args },
@@ -66,7 +66,7 @@ export const resolvers = {
     },
 
     deleteService(root, { id }) {
-      return Service.delete(id)
+      return Service.delete({ id })
     },
   },
 }

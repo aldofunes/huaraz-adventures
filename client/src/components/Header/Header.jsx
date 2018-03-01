@@ -1,14 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
 import cx from 'classnames'
+import PropTypes from 'prop-types'
+import React from 'react'
 import styles from './Header.scss'
 
 const Header = ({ children, className, to, title, ...props }) => (
   <div className={cx(styles.container, className)} {...props}>
-    <h3 className={styles.title}>
-      {to ? <Link to={to}>{title}</Link> : title}
-    </h3>
+    <h3 className={styles.title}>{title}</h3>
     {children}
   </div>
 )

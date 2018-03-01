@@ -51,7 +51,7 @@ extend type RootMutation {
     name: String
     season: String
     tagIds: [ID]
-  ): Expedition
+  ): Expedition @auth
   
   updateExpedition(
     id: ID!
@@ -67,9 +67,9 @@ extend type RootMutation {
     name: String
     season: String
     tagIds: [ID]
-  ): Expedition
+  ): Expedition @auth
   
-  deleteExpedition(id: ID!): Boolean
+  deleteExpedition(id: ID!): Boolean @auth
 }
 `
 
@@ -113,7 +113,7 @@ export const resolvers = {
 
   RootQuery: {
     expedition(root, { id, slug }) {
-      return id ? Expedition.get(id) : Expedition.findBySlug(slug)
+      return id ? Expedition.get({ id }) : Expedition.findBySlug(slug)
     },
     expeditions() {
       return Expedition.scan()
@@ -136,8 +136,8 @@ export const resolvers = {
     },
 
     updateExpedition(root, { id, altitud, difficulty, image, tagIds, ...args }) {
-      return Expedition.get(id)
-        .then(({ i18n = [] }) => Expedition.update(id, {
+      return Expedition.get({ id })
+        .then(({ i18n = [] }) => Expedition.update({ id }, {
           altitud,
           difficulty,
           image,
@@ -147,7 +147,7 @@ export const resolvers = {
     },
 
     deleteExpedition(root, { id }) {
-      return Expedition.delete(id)
+      return Expedition.delete({ id })
     },
   },
 }

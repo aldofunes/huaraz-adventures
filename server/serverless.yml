@@ -54,7 +54,6 @@ functions:
               - X-Amz-Date
               - Authorization
               - X-Locale-Code
-            allowCredentials: false
 
   signIn:
     tracing: true
@@ -68,8 +67,6 @@ functions:
             headers:
               - Content-Type
               - X-Amz-Date
-              - Authorization
-            allowCredentials: false
 
   # GraphQL Private Endpoint
   private:
@@ -86,7 +83,6 @@ functions:
               - X-Amz-Date
               - Authorization
               - X-Locale-Code
-            allowCredentials: false
           authorizer:
             name: authorizer
             resultTtlInSeconds: 60

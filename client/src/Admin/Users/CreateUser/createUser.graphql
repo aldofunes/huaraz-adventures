@@ -1,0 +1,16 @@
+mutation createUserMutation(
+$email: String!
+$name: String!
+$isEnabled: Boolean!
+) {
+  createUser(
+    email: $email
+    name: $name
+    isEnabled: $isEnabled
+  ) {
+    id
+    name
+    email
+    isEnabled
+  }
+}

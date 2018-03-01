@@ -1,5 +1,6 @@
 import User from './User'
 import { resolvers, schema } from './User.schema'
+
 /**
  * The DynamoDB table name
  * @type {string}
